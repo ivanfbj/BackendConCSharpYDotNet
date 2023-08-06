@@ -85,3 +85,29 @@ dotnet run
 Al abrir Postman se utiliza la URL para consumir los datos de demostración que tiene el proyecto:
 
 `http://localhost:5254/WeatherForecast`
+
+## Clase 7 - Análisis del template para APIs de .NET
+
+### Modelo arquitectónico
+
+**MVC:** Sepración de responsabilidades dentro de la estructura del proyecto.
+
+- **Model** = datos
+- **View** = interfaz de usuario
+- **Controller** = logica
+
+**MXC:** Este es el que se utiliza en el template webapi de .NET
+
+- **Model** = datos
+- **Controller** = logica
+
+**Análisis de los archivos:**
+
+- **Controllers:** Este directorio contiene los controladores de la API. Cada controlador es responsable de manejar una o varias solicitudes HTTP y devolver una respuesta.
+- **WeatherForecast.cs:** es una clase que contiene las propiedades que se necesitan para alojar o guardar la información.
+- **WeatherForecastController.cs:** Es el que se encarga de manejar toda la lógica para poder devolver los datos y exponer las funciones que afecten ese modelo de WeatherForecast.
+- **BackendConCSharpYDotNet.csproj:** es el archivo del proyecto, el "TargetFramework" nos dice la versión de framework y el SDK (para las api es el .Web).
+- **Program.cs:** es el archivo que contiene toda la configuración del proyecto y la forma de ejecución.
+- **appsettings.json:** es el archivo que contiene todas las opciones para configurar el proyecto
+- **appsettings.Development.json:** archivo donde normalmente se guardan las conexiones de la base de datos, donde se guardan claves o tokens de servicios en la nube o parametros configurables.
+- **launchSettings.json:** es el archivo que contiene la parte de como se ejecuta la API.

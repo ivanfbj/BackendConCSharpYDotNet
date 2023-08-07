@@ -111,3 +111,8 @@ Al abrir Postman se utiliza la URL para consumir los datos de demostración que 
 - **appsettings.json:** es el archivo que contiene todas las opciones para configurar el proyecto
 - **appsettings.Development.json:** archivo donde normalmente se guardan las conexiones de la base de datos, donde se guardan claves o tokens de servicios en la nube o parametros configurables.
 - **launchSettings.json:** es el archivo que contiene la parte de como se ejecuta la API.
+
+## Clase 8 - Atributos para verbos HTTP
+
+Modificación del método GET y creación del método Post y Delete.  
+Se realizan pruebas con Postman para verificar el funcionamiento.

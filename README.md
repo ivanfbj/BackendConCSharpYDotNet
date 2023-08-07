@@ -131,3 +131,15 @@ El enrutamiento se puede hacer a nivel de controlador y también se puede realiz
 Un mismo método puede tener uno o más rutas de enrutamiento, osea que se puede acceder por diferentes URL al mismo método REST.
 
 El enrutamiento tiene otra palabra dinamica ademas  de `[controller]`, también se puede usar `[Route("[action]")]`, esto nos permite poder utilizar el mismo nombre del método para llamar a la API.
+
+## Clase 10 - Minimal API vs. Web API
+
+**Minimal API:** Se crea para ayudar a entender un poco más fácil a los desarrolladores el como funciona .NET.
+
+- Nueva plantilla con un estilo minimalista.
+- Utiliza las últimas mejoras de C# y .Net para disminuir las líneas de código.
+- Facilita la curva de aprendizaje de APIs en .NET.
+
+Los método de Get, Put, Post o Delete se relizarían directamente en el archivo `Program.cs`, cambiando así en la estructura.
+
+Minimal API, está diseñado para proyectos pequeños que no contenga muchos endPoints y sean proyectos simples.

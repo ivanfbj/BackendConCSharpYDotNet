@@ -116,3 +116,18 @@ Al abrir Postman se utiliza la URL para consumir los datos de demostración que 
 
 Modificación del método GET y creación del método Post y Delete.  
 Se realizan pruebas con Postman para verificar el funcionamiento.
+
+## Clase 9 - Manejo de rutas
+
+Les recomiendo usar el comando:
+
+`dotnet watch run`, en lugar de `dotnet run`.
+Lo que hace este comando es, compilar de forma automática cada vez que se modifica un archivo y no tener que estar bajando el servicio cada vez que modificamos algo.
+
+En la linea `[Route("[controller]")]` del archivo `WeatherForecastController.cs` lo que nos permite es tener una ruta dinamica con base en el nombre de la clase si hacemos el cambio a `[Route("api/[controller]")]` la ruta de la api cambiaria a `http://localhost:5254/api/WeatherForecast`.
+
+El enrutamiento se puede hacer a nivel de controlador y también se puede realizar un enrutamiento a cada una de las funciones del controlador.
+
+Un mismo método puede tener uno o más rutas de enrutamiento, osea que se puede acceder por diferentes URL al mismo método REST.
+
+El enrutamiento tiene otra palabra dinamica ademas  de `[controller]`, también se puede usar `[Route("[action]")]`, esto nos permite poder utilizar el mismo nombre del método para llamar a la API.

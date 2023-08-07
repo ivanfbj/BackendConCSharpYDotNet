@@ -140,6 +140,36 @@ El enrutamiento tiene otra palabra dinamica ademas  de `[controller]`, también 
 - Utiliza las últimas mejoras de C# y .Net para disminuir las líneas de código.
 - Facilita la curva de aprendizaje de APIs en .NET.
 
-Los método de Get, Put, Post o Delete se relizarían directamente en el archivo `Program.cs`, cambiando así en la estructura.
+Las peticiones Get, Put, Post o Delete se relizarían directamente en el archivo `Program.cs`, cambiando así en la estructura.
 
 Minimal API, está diseñado para proyectos pequeños que no contenga muchos endPoints y sean proyectos simples.
+
+## Clase 11 - ¿Qué son los middlewares?
+
+- Es una serie de instrucciones de código que se agregan al ciclo de vida de una peticion HTTP.
+- Provee una ejecucion de peticiones a través de capas.
+- Facilitan la implementacion de interceptores y filtros sobre las peticiones en un API.
+
+Cada vez que se realiza una petición HTTP, lo que pasa es que la petición entra en una línea de diferentes middlewares que van a afectar de alguna manera dicha petición, van a realizar el procesamiento debido para devolver la información que espera el usuario.
+
+Los middlewares hacen el tratamiento desde que inicia el request hasta que devuelve una respuesta.
+
+Los middlewares proveen una ejecución de peticiones atravez de capaz, lo que permite entender la linea de tiempo que va a tener el REQUEST y de esa manera permite saber en donde se requiere crear el middleware o agregarlo para realizar la transformación o el cambio dentro del Request.
+
+[Orden de Middlewares en .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/blob/cursoDeApisConDotNet/imgs/Orden_de_Middlewares_en_dotNET.png)
+![Orden de Middlewares en .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/blob/cursoDeApisConDotNet/imgs/Orden_de_Middlewares_en_dotNET.png)
+![Orden de Middlewares en .NET](imgs/Orden_de_Middlewares_en_dotNET.png)
+
+Los Custom midddlewares se deben ubicar antes del middleware de Endpoints y después del middleware de autorización. Este orden se debe respetar ya que se pueden generar comportamientos extraños.
+
+En la clase `Program.cs` las lineas de:
+
+```c#
+app.UseSwagger();
+app.UseSwaggerUI();
+app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
+```
+
+Son cada uno son los middlewares que se declaran luego de la linea del build `var app = builder.Build();`.

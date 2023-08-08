@@ -47,9 +47,9 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
-    [Route("get/weatherforecast")]
-    [Route("get/weatherforecast2")]
-    [Route("[action]")] //Permite que el nombre de la ruta sea el mismo nombre del método que se usa.
+    //[Route("get/weatherforecast")]
+    //[Route("get/weatherforecast2")]
+    //[Route("[action]")] //Permite que el nombre de la ruta sea el mismo nombre del método que se usa.
     public IEnumerable<WeatherForecast> Get()
     {
 

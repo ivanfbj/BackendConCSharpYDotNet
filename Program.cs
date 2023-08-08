@@ -1,3 +1,5 @@
+// using BackendConCSharpYDotNet.Middlewares;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -34,7 +36,9 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 // Middleware que permite agregar una pagina de bienvenida, cada vez que se ingrese a la API.
-app.UseWelcomePage();
+// app.UseWelcomePage();
+
+app.UseTimeMiddleware();
 
 app.MapControllers();
 

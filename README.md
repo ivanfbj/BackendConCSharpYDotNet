@@ -173,3 +173,9 @@ app.MapControllers();
 ```
 
 Son cada uno son los middlewares que se declaran luego de la linea del build `var app = builder.Build();`.
+
+## Clase 12 - Creando un nuevo middleware
+
+En esta clase se crea un middleware que añade la hora al JSON si en la URL de la petición HTTP se agrega la opción de "?time".
+
+Los middleware nos pueden permitir realizar inicios de sesión, crear bitacora de todos los request en ejecución para guardar la información, interceptar todos los request que han generado error para guardarlos, en alguna archivo o servicio.

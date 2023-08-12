@@ -189,3 +189,9 @@ Imagina que tienes una clase A que necesita utilizar una funcionalidad proporcio
 En el contexto de las APIs en .NET, la inyección de dependencias es útil para separar las responsabilidades y facilitar el mantenimiento y la prueba de tu código. En lugar de tener componentes que crean sus propias dependencias internamente, estas dependencias se proporcionan desde fuera, lo que hace que tu código sea más modular y más fácil de reemplazar o cambiar en el futuro.
 
 En resumen, la inyección de dependencias es como dar a tus componentes las piezas que necesitan para funcionar, en lugar de pedirles que creen esas piezas por sí mismos. Esto ayuda a mejorar la organización y flexibilidad de tu código.
+
+- **AddScoped:** crea una instancia por cada request del cliente.
+- **AddTransient:** crea una instancia por cada controlador.
+- **AddSingelton:** crea una sola instancia para todo lo que dure la ejecución de la API.
+
+[Tipos de Inyección de dependencias en ASP .Net | Transient vs Scoped vs Singleton](https://www.youtube.com/watch?v=srPGwwMwAoA&ab_channel=hdeleon.net)

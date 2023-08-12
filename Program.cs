@@ -24,7 +24,10 @@ builder.Services.AddSwaggerGen();
 // El .AddScoped: Es una forma de realiza la inyección de la dependencia, se creará una nueva instancia de la dependecia que se está utilizando
 //  pero a nivel de controlador o de a nivel de clase, por lo cual no importa si se inyecta varias veces o en diferentes partes de la clase, se inyectará la misma
 //  implementación para ese elemento.
-builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
+// builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
+
+//Otra forma de realizar la inyección de la dependencia sin utilizar una interfaz.
+builder.Services.AddScoped<IHelloWorldService>(p => new HelloWorldService());
 
 var app = builder.Build();
 

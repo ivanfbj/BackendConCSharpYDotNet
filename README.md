@@ -37,11 +37,11 @@ Una URL en una API REST debe tener las siguientes propiedades:
 **Verbos Http:**
 HTTP es un protocolo utilizado para transferir información en la web, y los verbos HTTP son los comandos utilizados para solicitar una acción en un recurso en la web. Los verbos HTTP más comunes son los siguientes:
 
-**`GET`**: utilizado para recuperar información de un recurso. Este es el verbo HTTP más utilizado y es utilizado para recuperar información de una página web o un API.
-**`POST`**: utilizado para enviar información a un recurso para que sea procesada. Por ejemplo, cuando se envía un formulario en una página web, se utiliza el verbo POST para enviar los datos del formulario al servidor.
-**`PUT`**: utilizado para actualizar un recurso existente. Por ejemplo, si desea actualizar la información de un producto en una base de datos, utilizaría el verbo PUT para enviar la nueva información al servidor.
-**`DELETE`**: utilizado para eliminar un recurso. Por ejemplo, si desea eliminar un producto de una base de datos, utilizaría el verbo DELETE para enviar una solicitud al servidor para que lo elimine.
-**`HEAD`**: utilizado para recuperar la cabecera de un recurso sin la respuesta completa.
+**`GET`**: utilizado para recuperar información de un recurso. Este es el verbo HTTP más utilizado y es utilizado para recuperar información de una página web o un API.  
+**`POST`**: utilizado para enviar información a un recurso para que sea procesada. Por ejemplo, cuando se envía un formulario en una página web, se utiliza el verbo POST para enviar los datos del formulario al servidor.  
+**`PUT`**: utilizado para actualizar un recurso existente. Por ejemplo, si desea actualizar la información de un producto en una base de datos, utilizaría el verbo PUT para enviar la nueva información al servidor.  
+**`DELETE`**: utilizado para eliminar un recurso. Por ejemplo, si desea eliminar un producto de una base de datos, utilizaría el verbo DELETE para enviar una solicitud al servidor para que lo elimine.  
+**`HEAD`**: utilizado para recuperar la cabecera de un recurso sin la respuesta completa.  
 **`PATCH`**: utilizado para actualizar parcialmente un recurso existente. Por ejemplo, si desea actualizar solo algunos campos de un producto en una base de datos, utilizaría el verbo PATCH para enviar la información actualizada al servidor.
 
 **Respuestas Http:**
@@ -156,8 +156,6 @@ Los middlewares hacen el tratamiento desde que inicia el request hasta que devue
 
 Los middlewares proveen una ejecución de peticiones atravez de capaz, lo que permite entender la linea de tiempo que va a tener el REQUEST y de esa manera permite saber en donde se requiere crear el middleware o agregarlo para realizar la transformación o el cambio dentro del Request.
 
-[Orden de Middlewares en .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/blob/cursoDeApisConDotNet/imgs/Orden_de_Middlewares_en_dotNET.png)
-![Orden de Middlewares en .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/blob/cursoDeApisConDotNet/imgs/Orden_de_Middlewares_en_dotNET.png)
 ![Orden de Middlewares en .NET](imgs/Orden_de_Middlewares_en_dotNET.png)
 
 Los Custom midddlewares se deben ubicar antes del middleware de Endpoints y después del middleware de autorización. Este orden se debe respetar ya que se pueden generar comportamientos extraños.
@@ -179,3 +177,15 @@ Son cada uno son los middlewares que se declaran luego de la linea del build `va
 En esta clase se crea un middleware que añade la hora al JSON si en la URL de la petición HTTP se agrega la opción de "?time".
 
 Los middleware nos pueden permitir realizar inicios de sesión, crear bitacora de todos los request en ejecución para guardar la información, interceptar todos los request que han generado error para guardarlos, en alguna archivo o servicio.
+
+## Clase 13 - Inyección de dependencias
+
+La inyección de dependencias es un concepto en programación que se refiere a cómo los componentes de un programa obtienen las dependencias que necesitan para funcionar correctamente. Imagina que estás construyendo una casa con diferentes piezas, como ladrillos, ventanas, puertas, etc.
+
+En términos de programación, los "componentes" son clases o módulos que hacen ciertas tareas. Estos componentes a menudo dependen de otros componentes para funcionar. La inyección de dependencias es como asegurarte de que cada componente obtenga las piezas que necesita para hacer su trabajo en lugar de crear esas piezas dentro del componente mismo.
+
+Imagina que tienes una clase A que necesita utilizar una funcionalidad proporcionada por una clase B. En lugar de crear una instancia de la clase B dentro de la clase A, la inyección de dependencias te anima a crear una instancia de la clase B por separado y luego "inyectarla" en la clase A. Esto se hace a menudo pasando la instancia de B como un parámetro en el constructor de A.
+
+En el contexto de las APIs en .NET, la inyección de dependencias es útil para separar las responsabilidades y facilitar el mantenimiento y la prueba de tu código. En lugar de tener componentes que crean sus propias dependencias internamente, estas dependencias se proporcionan desde fuera, lo que hace que tu código sea más modular y más fácil de reemplazar o cambiar en el futuro.
+
+En resumen, la inyección de dependencias es como dar a tus componentes las piezas que necesitan para funcionar, en lugar de pedirles que creen esas piezas por sí mismos. Esto ayuda a mejorar la organización y flexibilidad de tu código.

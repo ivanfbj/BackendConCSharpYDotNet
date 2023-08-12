@@ -20,6 +20,12 @@ builder.Services.AddSwaggerGen();
 // }
 // )
 
+// La inyección de la dependencia se rebe realizar antes de "var app = builder.Build();"
+// El .AddScoped: Es una forma de realiza la inyección de la dependencia, se creará una nueva instancia de la dependecia que se está utilizando
+//  pero a nivel de controlador o de a nivel de clase, por lo cual no importa si se inyecta varias veces o en diferentes partes de la clase, se inyectará la misma
+//  implementación para ese elemento.
+builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -38,7 +44,7 @@ app.UseAuthorization();
 // Middleware que permite agregar una pagina de bienvenida, cada vez que se ingrese a la API.
 // app.UseWelcomePage();
 
-app.UseTimeMiddleware();
+// app.UseTimeMiddleware();
 
 app.MapControllers();
 

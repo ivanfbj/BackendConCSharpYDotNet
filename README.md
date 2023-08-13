@@ -195,3 +195,9 @@ En resumen, la inyección de dependencias es como dar a tus componentes las piez
 - **AddSingelton:** crea una sola instancia para todo lo que dure la ejecución de la API.
 
 [Tipos de Inyección de dependencias en ASP .Net | Transient vs Scoped vs Singleton](https://www.youtube.com/watch?v=srPGwwMwAoA&ab_channel=hdeleon.net)
+
+
+## Clase 14 -Agregando Logging a API
+
+Al implementar "Logging" nos permite realizar la trazabilidad de lo que esta ocurriendo en las diferentes acciones de la API, nos permite llevar un registro de cada acción, se puede agragar esta trazabilidad en cualquier punto de la API ya sea en el controlador o en una clase especifica.
+

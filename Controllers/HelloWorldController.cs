@@ -6,15 +6,18 @@ namespace BackendConCSharpYDotNet.Controllers;
 [Route("api/[controller]")]
 public class HelloWorldController : ControllerBase
 {
+    private readonly ILogger<HelloWorldController> _logger;
     IHelloWorldService helloWorldService;
 
-    public HelloWorldController(IHelloWorldService helloWorld)
+    public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger)
     {
         helloWorldService = helloWorld;
+        _logger = logger;
     }
 
     public IActionResult Get()
     {
+        _logger.LogInformation("Retornando infromación de la inyección de dependencia generada anteriormente.");
         return Ok(helloWorldService.GetHelloWorld());
     }
 }

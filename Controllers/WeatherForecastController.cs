@@ -52,7 +52,15 @@ public class WeatherForecastController : ControllerBase
     //[Route("[action]")] //Permite que el nombre de la ruta sea el mismo nombre del método que se usa.
     public IEnumerable<WeatherForecast> Get()
     {
-
+        // Estos mensajes escritos con el logger van a ir apareciendo en la consola.
+        // Y pueden ser leidos por diferentes servicios para tener trazabilidad de Logs.
+        // _logger.LogInformation("Retornando la lista de WeatherForecast");
+        
+        // Existen diferente tipo de LOG en el ILogger, Trace, Debug, Information, Warning, Error, Critical, None
+        //  En el appsettings.Development.json y appsettings.json se configurar el nivel de acceso para el ILogger
+        //  Por lo cual dependiendo del cual este configurado si mostrará o no el mensaje que se requiera mostrar, en el LogInformation 
+        //  o  LogDebug.
+        _logger.LogDebug("Retornando la lista de WeatherForecast");
         return ListWeatherForecast;
     }
 

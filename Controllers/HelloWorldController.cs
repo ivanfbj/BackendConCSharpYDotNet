@@ -1,3 +1,4 @@
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackendConCSharpYDotNet.Controllers;
@@ -15,6 +16,7 @@ public class HelloWorldController : ControllerBase
         _logger = logger;
     }
 
+    [HttpGet]
     public IActionResult Get()
     {
         _logger.LogInformation("Retornando infromación de la inyección de dependencia generada anteriormente.");

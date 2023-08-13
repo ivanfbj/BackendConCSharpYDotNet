@@ -196,8 +196,14 @@ En resumen, la inyección de dependencias es como dar a tus componentes las piez
 
 [Tipos de Inyección de dependencias en ASP .Net | Transient vs Scoped vs Singleton](https://www.youtube.com/watch?v=srPGwwMwAoA&ab_channel=hdeleon.net)
 
-
-## Clase 14 -Agregando Logging a API
+## Clase 14 - Agregando Logging a API
 
 Al implementar "Logging" nos permite realizar la trazabilidad de lo que esta ocurriendo en las diferentes acciones de la API, nos permite llevar un registro de cada acción, se puede agragar esta trazabilidad en cualquier punto de la API ya sea en el controlador o en una clase especifica.
 
+## Clase 15 -  Documentando API con Swagger
+
+Swagger es una herramienta de documentación de API muy popular que se utiliza para describir, producir y visualizar documentación de API. En .NET, se puede integrar Swagger fácilmente en una aplicación Web API mediante la adición de un paquete NuGet llamado Swashbuckle.
+
+Después de habilitar Swagger en la aplicación, puede acceder a la documentación de la API en la dirección /swagger. La documentación incluye información sobre los endpoints de la API, los verbos HTTP permitidos, los parámetros de entrada y las respuestas.
+
+Además, Swagger también proporciona una interfaz de usuario para probar la API, lo que puede ser muy útil durante el desarrollo y la depuración.

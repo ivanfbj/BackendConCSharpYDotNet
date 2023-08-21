@@ -240,3 +240,8 @@ Se crean los servicios para los modelos de Categoria y Tarea.
 Luego de realizar la implementación de los servicios realizados que tienen la logica CRUD, ahora se realizará la configuración de la inyección de dependencias para estos servicios, utilizando las herramientas que tiene por defecto el poryecto.  
 
 En la clase "Program.cs" es donde se realizan las inyecciones de dependiencias y nos permitirán ser utilizadas dentro de un controlador.
+
+## Clase 20 - Creando controladores
+
+Se crean los controladores de Categoria y Tarea para exponer los servicios por medio de las peticiones Get, Post, Delete.
+

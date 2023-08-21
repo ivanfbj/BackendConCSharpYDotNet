@@ -8,7 +8,7 @@ public class CategoriaService : ICategoriaService
 
     public CategoriaService(TareasContext dbcontext)
     {
-        this.context = dbcontext;
+        context = dbcontext;
     }
 
     public IEnumerable<Categoria> Get()

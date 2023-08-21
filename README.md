@@ -208,7 +208,7 @@ Después de habilitar Swagger en la aplicación, puede acceder a la documentaci�
 
 Además, Swagger también proporciona una interfaz de usuario para probar la API, lo que puede ser muy útil durante el desarrollo y la depuración.
 
-## Clase 16 -  Agregando librerías para Entity Framework
+## Clase 16 - Agregando librerías para Entity Framework
 
 La librerías se pueden buscar en la pagina de [Nuget.org](https://www.nuget.org), en este caso se buscan las librerias de Entity Framework que se usaran en las próximas clases, se selecciona una versión que no esté en "preview":
 
@@ -223,3 +223,9 @@ dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 7.0.10
 ```bash
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.10
 ```
+
+## Clase 17 - Configuración de Entity framework y clases base
+
+Se realiza una configuración de Entity framework y de algunos modelos, reutilizando código de otro curso.
+
+Se crea la carpeta Models y se agregan 2 clases "Categoria.cs" y "Tarea.cs", adicionalmente se agrega la clase "TareasContext.cs"

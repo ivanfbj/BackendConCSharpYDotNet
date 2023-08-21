@@ -207,3 +207,19 @@ Swagger es una herramienta de documentación de API muy popular que se utiliza p
 Después de habilitar Swagger en la aplicación, puede acceder a la documentación de la API en la dirección /swagger. La documentación incluye información sobre los endpoints de la API, los verbos HTTP permitidos, los parámetros de entrada y las respuestas.
 
 Además, Swagger también proporciona una interfaz de usuario para probar la API, lo que puede ser muy útil durante el desarrollo y la depuración.
+
+## Clase 16 -  Agregando librerías para Entity Framework
+
+La librerías se pueden buscar en la pagina de [Nuget.org](https://www.nuget.org), en este caso se buscan las librerias de Entity Framework que se usaran en las próximas clases, se selecciona una versión que no esté en "preview":
+
+```bash
+dotnet add package Microsoft.EntityFrameworkCore --version 7.0.10
+```
+
+```bash
+dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 7.0.10
+```
+
+```bash
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.10
+```

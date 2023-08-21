@@ -233,3 +233,10 @@ Se crea la carpeta Models y se agregan 2 clases "Categoria.cs" y "Tarea.cs", adi
 ## Clase 18 - Creación de servicios
 
 Los servicios normalmente en una API son los que tienen la logica para poder comunicarse con la base de datos, en esta caso utilizando Entity framework, estos son lo que tendrán las acciones que serán ejecutadas desde los controladores.
+Se crean los servicios para los modelos de Categoria y Tarea.
+
+## Clase 19 - Inyectando servicios como dependencia
+
+Luego de realizar la implementación de los servicios realizados que tienen la logica CRUD, ahora se realizará la configuración de la inyección de dependencias para estos servicios, utilizando las herramientas que tiene por defecto el poryecto.  
+
+En la clase "Program.cs" es donde se realizan las inyecciones de dependiencias y nos permitirán ser utilizadas dentro de un controlador.

@@ -1,16 +1,19 @@
 // using BackendConCSharpYDotNet.Middlewares;
 
+using BackendConCSharpYDotNet.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Para activar el CORS y poder consumir el API desde una app de front
-// builder.Services.AddCors(options => 
+// builder.Services.AddCors(options =>
 // {
 //     options.AddPolicy("NuevaPolitica", app => {
 //         app.AllowAnyOrigin()
@@ -27,7 +30,11 @@ builder.Services.AddSwaggerGen();
 // builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
 
 //Otra forma de realizar la inyección de la dependencia sin utilizar una interfaz.
-builder.Services.AddScoped<IHelloWorldService>(p => new HelloWorldService());
+builder.Services.AddScoped<IHelloWorldService>(p => new HelloWorldService()); //Esta forma se utiliza cuando tenemos que pasar algun parametro especifico a la clase que se está implementendo.
+
+//Se implementan los servicios de categorias y tareas:
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<ITareasService, TareasService>();
 
 var app = builder.Build();
 

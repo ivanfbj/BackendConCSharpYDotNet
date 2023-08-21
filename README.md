@@ -229,3 +229,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.10
 Se realiza una configuración de Entity framework y de algunos modelos, reutilizando código de otro curso.
 
 Se crea la carpeta Models y se agregan 2 clases "Categoria.cs" y "Tarea.cs", adicionalmente se agrega la clase "TareasContext.cs"
+
+## Clase 18 - Creación de servicios
+
+Los servicios normalmente en una API son los que tienen la logica para poder comunicarse con la base de datos, en esta caso utilizando Entity framework, estos son lo que tendrán las acciones que serán ejecutadas desde los controladores.

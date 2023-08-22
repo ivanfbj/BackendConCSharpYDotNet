@@ -38,3 +38,35 @@
 
 **SOLID** nos ayuda a **tener código limpio y buenas prácticas**
 
+## Clase 4 - ¿Qué son los principios SOLID?
+
+Cada letra de la palabra SOLID, representa un principio en particular:
+
+**S:** Single responsibility principle - Principio de responsabilidad única
+**O:** Open/closed principle - Principio de abierto/cerrado
+**L:** Liskov substitution principle - Principio de sustitución de Liskov
+**I:** Interface segregation principle - Principio de segregación de la interfaz
+**D:** Dependency inversion principie - Principio de inversión de la dependencia
+
+**S:** Asignar una unica responsabilidad a cada uno de los componentes involucrados en el sistema.
+**O:** Un código debe estar abierto a extensiones y cerrado para cambios.
+**L:** Habla de la relación que deben tener los tipos y subtipos dentro de un sistema.
+**I:** Nos ayuda a asignar una responsabilidad especifica a cada una de la interfaces que tiene el sistema, los tipos abstractos que estemos utilizando.
+**D:** Habla del concepto de inyección de dependencias y la importancia para evitar dependencias directas entre un componente y otro, para evitar el acoplamiento de un sistema.
+
+**Característica de SOLID:**
+
+- Orientada al paradigma de orientación a objetos (POO).
+- Se le atribuye a Robert C. Martin.
+- Diseño y refactorización de código.
+- Se debe implementar desde el inicio del proyecto cuando se crean los componentes.
+
+**SOLID Ayuda a:**
+
+- Lograr código escalable.
+- Evitar deuda técnica (Technical debt).
+- Plantear los fundamentos para el desarrollo guiado por pruebas (TDD).
+- Tener un estándar claro en cada uno de los proyectos de un portafolio.
+
+**Lecturas recomendadas:**
+[Procedimientos recomendados en C#](https://learn.microsoft.com/es-es/archive/msdn-magazine/2014/may/csharp-best-practices-dangers-of-violating-solid-principles-in-csharp)

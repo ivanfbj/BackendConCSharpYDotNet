@@ -1,5 +1,6 @@
 // using BackendConCSharpYDotNet.Middlewares;
 
+using BackendConCSharpYDotNet;
 using BackendConCSharpYDotNet.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSqlServer<TareasContext>("Data Source=localhost\\sqlexpress;Initial Catalog=TareaDb;user=AspNetCoreWebApi;password=W3b4p12023*;TrustServerCertificate=True");
 
 //Para activar el CORS y poder consumir el API desde una app de front
 // builder.Services.AddCors(options =>

@@ -245,3 +245,14 @@ En la clase "Program.cs" es donde se realizan las inyecciones de dependiencias y
 
 Se crean los controladores de Categoria y Tarea para exponer los servicios por medio de las peticiones Get, Post, Delete.
 
+## Clase 21 - Probando API con una base de datos SQL server
+
+Se realiza la conexión de todos los métodos, servicio y controladores a una base de datos SQL Server con Entity framework.
+
+En la clase "Program.cs" se debe realizar la configuración del Entity framework para poder realizar la conexión con la base de datos.
+
+```c#
+builder.Services.AddSqlServer<TareasContext>("{ConnectionStrings}")
+```
+
+En el controlador de HelloWorld (HelloWorldController.cs) se crea un endpoint que permite crear la base de datos en caso de que no exista e inmediatamente crea las tablas e inserta la información, para que esto pueda ejecutar sin ningún inconveniente es necesario que el usuario que se utilice en el "ConnectionStrings" debe tener permisos de `Sysadmin` en el SQL Server.

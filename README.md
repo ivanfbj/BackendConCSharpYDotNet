@@ -70,3 +70,16 @@ Cada letra de la palabra SOLID, representa un principio en particular:
 
 **Lecturas recomendadas:**
 [Procedimientos recomendados en C#](https://learn.microsoft.com/es-es/archive/msdn-magazine/2014/may/csharp-best-practices-dangers-of-violating-solid-principles-in-csharp)
+
+## Clase 5 - Conociendo el principio de responsabilidad única
+
+- Single responsibility principle
+- Distribuye las responsabilidades en diferentes componentes dentro de un sistema, donde cada componente tiene una única responsabilidad
+- Aplica para módulos, clases, métodos y funciones.
+
+Ejemplo: (Una idea de como analizar una historia de usuario, aplicando el principio de responsabilidad única)
+
+Como usuario luego de confirmar la compra espero ver un **mensaje de confirmación**, tener la posibilidad de **descargar la factura** y un **correo electrónico de confirmación**.
+
+Demo - Escenario:
+Tenemos una clase StudentRepository encargada de administrar los datos para el modelo student, pero en este momento no cumple con el principio de responsabilidad única, debe solucionarse.

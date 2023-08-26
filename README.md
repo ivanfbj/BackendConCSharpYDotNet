@@ -116,3 +116,22 @@ Demo - Escenario
 Tenemos un proyecto que tiene una clase **EmployeeFullTime** para empleados a tiempo completo y **EmployeePartTime** para medio tiempo y necesitamos agregar **EmployeeContractor** para empleados externos cumpliendo con el principio Abierto/Cerrado.
 
 Carpeta: **2-OpenClose**
+
+## Clase 8 - Aplicando el principio abierto/cerrado
+
+Demo - Escenario
+
+Tenemos un proyecto que tiene una clase **EmployeeFullTime** para empleados a tiempo completo y **EmployeePartTime** para medio tiempo y necesitamos agregar **EmployeeContractor** para empleados externos cumpliendo con el principio Abierto/Cerrado.
+
+Carpeta: **2-OpenClose**
+
+El `Program.cs` hay un método que recibe una lista de los 2 tipos de empleados y se encarga de calcular el salario, en el momento de implementar la nueva clase que solicitan, se debe hacer una modificación en la clase `Program.cs` ya que tiene un condicional if-else.
+
+La clase `Program.cs` no cumple con el principio de responsabilidad única ya que dicha clase se debe encargar unicamente de realizar la ejecución del programa y no contener lógica adicional para calcular el salario mensual de los trabajadores.
+
+Se crea la clase abstracta llamada `Employee.cs`, al ser la clase padre que va a tener las referencias para todas las demás clases, debe contener las propiedades que se van a reutilizar en todas las clases.
+
+Se requiere que la clase de cada uno de los tipos de empleados realice su propio cálculo de salario y no que se realice desde la clase `Program.cs`.
+
+Una vez se crea la nueva clase `Employee.cs`, se eran sus atributos y métodos a las clases `EmployeeFullTime.cs` y `EmployeePartTime.cs`, y la lógica para calcaular el salario del empleado se mueve de la clase `Program.cs` a cada clase de tipo de empleado.
+

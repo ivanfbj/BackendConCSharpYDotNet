@@ -83,3 +83,21 @@ Como usuario luego de confirmar la compra espero ver un **mensaje de confirmaci�
 
 Demo - Escenario:
 Tenemos una clase StudentRepository encargada de administrar los datos para el modelo student, pero en este momento no cumple con el principio de responsabilidad única, debe solucionarse.
+
+## Clase 6 - Aplicando el principio de responsabilidad única
+
+Demo - Escenario:
+Tenemos una clase StudentRepository encargada de administrar los datos para el modelo student, pero en este momento no cumple con el principio de responsabilidad única, debe solucionarse.
+
+Esta clase debe tener alguna funcionalidad adicional que no deberia de estar realizando y se debe corregir.
+
+Carpeta: **1-SingleResponsability**
+
+- `Students.cs`: es el módelo con sus respectivos atributos y constructures.
+- `FakeStorage.cs`: Brinda una interfaz generica para poder manejar información en memoria. Ayuda a la administración de los datos para no tener que utilizar una base de datos.
+- `StudentRepository.cs`: Es la clase que tiene problemas y la que se debe ajusta con el principio de responsabilidad unica.
+El problema de la clase está en el método "Export" ya que allí se encuentra una lógica que se encarga de exportar datos y la clase `StudentRepository.cs` solo debe tener la responsabilidad de manipular los datos de "Student".
+
+Para separar esta lógica, lo que se debe hacer es crear la clase `ExportHelper.cs`
+
+En el archivo `Program.cs` se puede evidenciar los cambios realizados, donde la clase `StudentRepository.cs` queda con la responsabilidad de manipular los datos de estudiantes, mientras que la clase `ExportHelper.cs` queda con la responsabilidad de exportar datos.

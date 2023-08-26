@@ -135,3 +135,4 @@ Se requiere que la clase de cada uno de los tipos de empleados realice su propio
 
 Una vez se crea la nueva clase `Employee.cs`, se eran sus atributos y métodos a las clases `EmployeeFullTime.cs` y `EmployeePartTime.cs`, y la lógica para calcaular el salario del empleado se mueve de la clase `Program.cs` a cada clase de tipo de empleado.
 
+Con los cambios realizados, osea crear y **extender** la clase `Employee.cs`, nos permite extender de una forma más fácil las funcionalidades y así poder crear más rápida y fácilmente la clase `EmployeeContractor.cs`.

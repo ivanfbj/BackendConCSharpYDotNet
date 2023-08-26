@@ -101,3 +101,18 @@ El problema de la clase está en el método "Export" ya que allí se encuentra u
 Para separar esta lógica, lo que se debe hacer es crear la clase `ExportHelper.cs`
 
 En el archivo `Program.cs` se puede evidenciar los cambios realizados, donde la clase `StudentRepository.cs` queda con la responsabilidad de manipular los datos de estudiantes, mientras que la clase `ExportHelper.cs` queda con la responsabilidad de exportar datos.
+
+## Clase 7 - Conociendo el principio de abierto/cerrado
+
+- Open/closed principle
+- Bertrand Meyer - Robert Martin.
+- Un componente debe ser abierto para extensiones y cerrado para cambios. (No se debería de mover código existente y funcional, solo que también debe estar preparada para poderse extender.)
+- Se deben utilizar tipos abstractos y múltiples implementaciones para lograrlo. (apoyarnos en las interfaces)
+
+En el caso de **C#** debido a que no soporta multiples gerencias, se pueden implementar múltiples interfaces.
+
+Demo - Escenario
+
+Tenemos un proyecto que tiene una clase **EmployeeFullTime** para empleados a tiempo completo y **EmployeePartTime** para medio tiempo y necesitamos agregar **EmployeeContractor** para empleados externos cumpliendo con el principio Abierto/Cerrado.
+
+Carpeta: **2-OpenClose**

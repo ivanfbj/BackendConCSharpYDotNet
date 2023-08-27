@@ -42,11 +42,11 @@
 
 Cada letra de la palabra SOLID, representa un principio en particular:
 
-**S:** Single responsibility principle - Principio de responsabilidad única. 
-**O:** Open/closed principle - Principio de abierto/cerrado. 
-**L:** Liskov substitution principle - Principio de sustitución de Liskov. 
-**I:** Interface segregation principle - Principio de segregación de la interfaz. 
-**D:** Dependency inversion principie - Principio de inversión de la dependencia
+**S:** Single responsibility principle - Principio de responsabilidad única.  
+**O:** Open/closed principle - Principio de abierto/cerrado.  
+**L:** Liskov substitution principle - Principio de sustitución de Liskov.  
+**I:** Interface segregation principle - Principio de segregación de la interfaz.  
+**D:** Dependency inversion principie - Principio de inversión de la dependencia.  
 
 **S:** Asignar una unica responsabilidad a cada uno de los componentes involucrados en el sistema.  
 **O:** Un código debe estar abierto a extensiones y cerrado para cambios.  

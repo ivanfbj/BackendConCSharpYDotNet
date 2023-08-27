@@ -149,3 +149,14 @@ Con los cambios realizados, osea crear y **extender** la clase `Employee.cs`, no
 Demo - Escenario
 
 En una aplicación tenemos 2 tipos de empleados, contractor y full-time, solo un empleado full-time tiene derecho a horas extras. El valor de la hora es 50 para full-time y de 40 para contractor. Ajustar el código para cumplir con los principios SOLID.
+
+## Clase 10 - Aplicando el principio de sustitución de Liskov
+
+Se realizan ajustes sobre la clase ya que el código no solamente no cumple con el principio de substitución Liskov sino con el principio de abierto/cerrado.
+
+Esto se debe a que la clase Employee no deberia de contener el atributo de horas extras, ya que es una condición que solo aplica a empleados tipo FullTime y no de tipo Contractor.
+
+La clase de tipo padre debe de tener las implementación que apliquen para todos los subtipos.
+
+En en código final se puede evidenciar que los subtipos o subclases `EmployeeFullTime.cs` y `EmployeePartTime.cs` quedarón exactamente con los mismos tipos (atributos y método) que el tipo o clase padre `Employee.cs`, cada subclase tiene sus propios comportamientos y funcionamiento.
+

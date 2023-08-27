@@ -136,3 +136,16 @@ Se requiere que la clase de cada uno de los tipos de empleados realice su propio
 Una vez se crea la nueva clase `Employee.cs`, se eran sus atributos y métodos a las clases `EmployeeFullTime.cs` y `EmployeePartTime.cs`, y la lógica para calcaular el salario del empleado se mueve de la clase `Program.cs` a cada clase de tipo de empleado.
 
 Con los cambios realizados, osea crear y **extender** la clase `Employee.cs`, nos permite extender de una forma más fácil las funcionalidades y así poder crear más rápida y fácilmente la clase `EmployeeContractor.cs`.
+
+## Clase 9 - Conociendo el principio de sustitución de Liskov
+
+- Liskov substitution principle
+- Barbara Liskov - Robert Martin
+- Tipo / Subtipo
+- Los objetos dentro de un programa deben poderse reemplazar por subtipos de este sin alterar la lógica o el funcionamiento.
+
+- Sea (x) una propiedad comprobable acerca de los objetos x de tipo T. Entonces debe ser verdad para los objetos y del tipo S, donde S es un subtipo de T.
+
+Demo - Escenario
+
+En una aplicación tenemos 2 tipos de empleados, contractor y full-time, solo un empleado full-time tiene derecho a horas extras. El valor de la hora es 50 para full-time y de 40 para contractor. Ajustar el código para cumplir con los principios SOLID.

@@ -171,3 +171,13 @@ Demo - Escenario
 
 Tenemos una interfaz que implementa múltiples actividades o responsabilidades de diferentes roles dentro de un proyecto, se debe aplicar el principio de ISP para distribuir de manera acorde las actividades e implementar solo lo necesario.
 
+## Clase 12 - Aplicando el principio de segregación de la interfaz
+
+Con base en el código que se está modificando, la interfaz `IActivities.cs` tiene varios métodos, la idea es aplicarle el principio de responsabilidad única a la interfaz, por lo cuál es necesario crear varias interfaces para distribuir dichas responsabilidades en las interfaces, en este caso `IDesignActivities.cs`,`IDevelopActivities.cs`,`ITestActivities.cs` y `IWorkTeamActivities.cs`.
+
+Luego a las clases `Developer.cs`, `ScrumMaster.cs` y `Tester.cs` lo que realizamos es quitarle los métodos que no le corresponden a sus responsabilidades y pasarle las interfaces que le correspondan.
+
+En caso de que se requiera una interfaz que contenga todas las actividades o un grupo grande de actividades que son en común, lo que se puede hacer es ir a `IActivities.cs` y realizarle la herencia de todas las otras interfaces.
+
+
+

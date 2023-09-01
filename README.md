@@ -160,3 +160,14 @@ La clase de tipo padre debe de tener las implementación que apliquen para todos
 
 En en código final se puede evidenciar que los subtipos o subclases `EmployeeFullTime.cs` y `EmployeePartTime.cs` quedarón exactamente con los mismos tipos (atributos y método) que el tipo o clase padre `Employee.cs`, cada subclase tiene sus propios comportamientos y funcionamiento.
 
+## Clase 11 - Conociendo el principio de segregación de interfaces
+
+- Interface segregation principle.
+- Dividir interfaces grandes en pequeñas interfaces con una responsabilidad única.
+- Permite desacoplar los componentes y hacerlos crecer de una manera ordenada.
+- El principio de responsabilidad única aplicado a las interfaces.
+
+Demo - Escenario
+
+Tenemos una interfaz que implementa múltiples actividades o responsabilidades de diferentes roles dentro de un proyecto, se debe aplicar el principio de ISP para distribuir de manera acorde las actividades e implementar solo lo necesario.
+

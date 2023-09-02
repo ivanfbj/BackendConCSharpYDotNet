@@ -179,5 +179,21 @@ Luego a las clases `Developer.cs`, `ScrumMaster.cs` y `Tester.cs` lo que realiza
 
 En caso de que se requiera una interfaz que contenga todas las actividades o un grupo grande de actividades que son en común, lo que se puede hacer es ir a `IActivities.cs` y realizarle la herencia de todas las otras interfaces.
 
+## Clase 13 - Conociendo el principio de inversión de la dependencia
+
+- Dependency inversion principle.
+- Busca desacoplar los componentes de la aplicación. (Busca que no exista dependencia directa entre componentes, cuando se haga un ajuste en el componente se quiebren el resto de comportentes que lo esten utilzando.)
+- Nos ayuda a realizar cambios afectando el código lo menos posible.
+- Se debe implementar con tipos abstractos. (Para poder aplicar este principio)
+- Existen 3 tipos de inyección de dependencia, por constructor, por propiedad y por parámetro.
+- Dependencia por constructor es la más común.
+
+La inyección de dependencias es fundamental para **poder aplicar la metodología Test driven development (TDD)**
+
+Demo - Escenario
+
+Tenemos una API que devuelve una lista de estudiantes. Esta API utiliza un repositorio que devuelve una colección de datos y utiliza una bitácora (logbook) para guardar los eventos o llamadas a la API.   
+Debemos aplicar el principio de inversión de la dependencia en esta API.
+
 
 

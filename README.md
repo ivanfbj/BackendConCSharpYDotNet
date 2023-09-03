@@ -195,5 +195,43 @@ Demo - Escenario
 Tenemos una API que devuelve una lista de estudiantes. Esta API utiliza un repositorio que devuelve una colección de datos y utiliza una bitácora (logbook) para guardar los eventos o llamadas a la API.   
 Debemos aplicar el principio de inversión de la dependencia en esta API.
 
+## Clase 14 - Aplicando el principio de inversión de la dependencia - Parte I
 
+El problema está en la clase controlador `StudentController.cs`, Ya que se crea un nuevo objeto dentro del controlador y esto hace que exista una dependencia completa entre el tipo `StudentController` y el tipo `StudentRepository` y con esto se está violando el principio de la inversión de la dependencia.
+
+Al momento de ejecutarse las pruebas de `StudentTest.cs` también se está ejecutando internamente toda la lógica que tiene `StudentRepository` y toda la lógica que tiene `LogBook`. Sobre todo la logica que tiene `LogBook` es la má peligrosa porqué esa lógica está creando un archivo dentro del sistema y está guardando información ahí, eso no lo deben hacer las pruebas unitarias. Las pruebas unitarias deben enfocarse en el código como tal.
+
+Dentro de la carpeta Api.Tests se ejecuta el comando
+
+```bash
+dotnet test
+```
+
+Para ejecutar las pruebas del código.
+
+Para el demo del principio de inversión de la dependencia, nos da una idea erronea de que el código está bien porqué las pruebas están pasando pero realmente el código está mal implementado.
+
+1- La clase `StudentRepository.cs` se crea la interfaz.
+2- Se implementa la interfaz.
+3- En la clase `StudentController.cs` se cambian las instancias de studentRepository y logbook por las interfaces creadas de "IStudentRepository" y "ILogbook".
+4- Recibir la dependencia de las interfaces en el constructor de la clase `StudentController.cs`.
+5- Para agregar las dependencias dentro de la API se realiza dentro de la clase `Program.cs`, con el método AddScope.
+
+```c#
+builder.Services.AddSingleton();
+builder.Services.AddScope();
+builder.Services.AddTransient();
+```
+
+El método **AddSingleton()** básicamente lo que hace es que esa referencia va a ser la misma dentros de todo el ciclo de vida de la API.
+
+El método **AddScope()** lo que va a pasar es que se va a crear por cada componente que lo este utilizando. La referencia se agrega de manera global y queda disponible para cualquier controlador o clase que la necesite.
+
+El método **AddTransient()** hará que se cree una referencia de esa dependencia en toda la parte en donde se utilice, incluso dentro del mismo componente, puede ser dentro de la misma clase dentro de alguna propiedad o constructor se creará una instancia para cada uno de esos puntos en donde se necesiten.
+Con esto la API debe de poder obtener ambas dependencias sin ningún problema.
+
+La clase `StudentTest.cs` comienza a generar error ya que debemos inyectar la dependencia.
+El controlador en la clase `StudentTest.cs` necesita que se le inyecten las dependencias que se están utilizando en el constructor (IstudentRepository y ILogbook), lo bueno de esto es que ahora se puede cambiar la forma en que esas dependiencias son inyectadas (cambia el comportamiento de esas dependencias), en este ejemplo de API no hay ningún inconveniente en que "ILogbook" escriba en el archivo "logbook.txt", sin embargo en el caso particular de las pruebas como tal en la clase `StudentTest.cs` no se requiere que las pruebas tengan ningún efecto o tenga ningún tipo de acceso a datos, bases de datos, servicios externos o archivos temporales, etc.
+
+Las pruebas unitarias deben poder correr en cualquier ambiente en donde se ejecuten, y la unica manera es quitando cualquier dependencia que exista sobre el sistema operativo o sobre archivos o sobre bases de datos, etc.
 

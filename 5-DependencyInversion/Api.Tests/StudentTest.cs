@@ -11,7 +11,9 @@ public class StudentTest
     [Fact]
     public void GetStudent()
     {
-        var studentController = new StudentController();
+        //var studentController = new StudentController();// Genera error ya que necesita las dos dependencias que se han creado de IstudentRepository y ILogbook
+
+        
 
         var resultGetStudents = studentController.Get();
 

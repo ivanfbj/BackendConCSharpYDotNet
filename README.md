@@ -235,3 +235,8 @@ El controlador en la clase `StudentTest.cs` necesita que se le inyecten las depe
 
 Las pruebas unitarias deben poder correr en cualquier ambiente en donde se ejecuten, y la unica manera es quitando cualquier dependencia que exista sobre el sistema operativo o sobre archivos o sobre bases de datos, etc.
 
+## Clase 15 - Aplicando el principio de inversión de la dependencia - Parte II
+
+Se utiliza el método "GetStudent" que estaba comentado en la clase `StudentTest.cs`, este método tiene unas instancias de tipo Mock para simular las interfaces que se requieren pero sin hacer que dependan de la conexión a la base de datos, servidor, archivos de configuración, archivos externos o algun tipo de conexión.
+
+Con el cambio realizados se implementan buenas practicas para cambiar la lógica del codgio y dejar funcionando correctamente las pruebas unitarias.

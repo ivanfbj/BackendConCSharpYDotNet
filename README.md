@@ -240,3 +240,5 @@ Las pruebas unitarias deben poder correr en cualquier ambiente en donde se ejecu
 Se utiliza el método "GetStudent" que estaba comentado en la clase `StudentTest.cs`, este método tiene unas instancias de tipo Mock para simular las interfaces que se requieren pero sin hacer que dependan de la conexión a la base de datos, servidor, archivos de configuración, archivos externos o algun tipo de conexión.
 
 Con el cambio realizados se implementan buenas practicas para cambiar la lógica del codgio y dejar funcionando correctamente las pruebas unitarias.
+
+## Clase 16 - Resumen y cierre del curso de principios SOLID en C#

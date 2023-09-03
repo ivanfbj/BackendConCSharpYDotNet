@@ -11,3 +11,8 @@ C# es uno de los lenguajes de programación más utilizados para desarrollo web 
 
 Pensamiento lógico y programación básica.
 
+## Clase 2 - ¿Por qué aprender C#?
+
+Es un lenguaje comprensible, orientado a objetos, multiplataforma (linux, windows), tiene un soporte enorme, está constantemente en actualización.
+
+**.NET**: es el entorno para desarrollar una gran cantidad de aplicaciones, desde aplicaciones de escritorio hasta aplicaciones web, móviles, video juegos (Unity). Proporciona un conjunto de herramientas y bibliotecas robustas que simplifican el proceso de desarrollo, lo que lo convierte en una opción popular entre los desarrolladores de software.

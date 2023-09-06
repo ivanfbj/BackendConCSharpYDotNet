@@ -51,3 +51,16 @@ El proyecto nuevo de consola que se ha creado viene con un ejemplo de "Hello, Wo
 - **Importancia**: El tiempo de ejecución es crucial porque es cuando los usuarios interactúan con la aplicación y esta produce resultados. Durante el tiempo de ejecución, se asignan recursos de hardware y se administran, como memoria y CPU, para que el programa funcione correctamente.
 
 En resumen, la compilación es el proceso de traducir el código fuente a un formato ejecutable, mientras que RunTime es el período en el que el programa se ejecuta y realiza sus funciones. Ambos conceptos son fundamentales en el desarrollo de software con C# y otros lenguajes de programación.
+
+## Clase 6 - Tipos de datos primitivos
+
+| Tipo de dato | Espacio en memoria | Rango                    | Descripción                                              |
+|--------------|--------------------|--------------------------------|----------------------------------------------------|
+| int          | 4 bytes            | -2,147,483,648 a 2,147,483,647 | Representa números enteros de 32 bits              |
+| bool         | 1 bit             | 0 a 1                          | Representa un valor booleano (verdadero o falso)   |
+| float        | 4 bytes            | -3.402823e38 a 3.402823e38     | Representa números de punto flotante de precisión simple |
+| double       | 8 bytes            | -1.79769313486232e308 a 1.79769313486232e308 | Representa números de punto flotante de precisión doble |
+| char         | 2 bytes            | Un solo carácter       | Representa un solo carácter Unicode               |
+| string       | 2 bytes por carácter           | Variable                 | Representa una secuencia de caracteres            |
+| long         | 8 bytes            | -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 | Representa números enteros de 64 bits     |
+| uint         | 4 bytes            | 0 a 4,294,967,295        | Representa números enteros sin signo de 32 bits    |

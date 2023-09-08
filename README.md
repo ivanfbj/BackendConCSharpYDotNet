@@ -64,3 +64,8 @@ En resumen, la compilación es el proceso de traducir el código fuente a un for
 | string       | 2 bytes por carácter           | Variable                 | Representa una secuencia de caracteres            |
 | long         | 8 bytes            | -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 | Representa números enteros de 64 bits     |
 | uint         | 4 bytes            | 0 a 4,294,967,295        | Representa números enteros sin signo de 32 bits    |
+
+## Clase 7 - Variables
+
+Programa en el archivo `Program.cs` contiene un programa sencillo de calcular el área de un rectángulo con lado A y lado B, donde se declaran los tipos de datos en las variables.
+

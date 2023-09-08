@@ -89,3 +89,22 @@ const double EstaVariablesEsConstanteTipoDouble = 0d;
 ```
 
 Las variables de tipo constante, en programación, son valores que no pueden ser modificados después de haber sido asignados durante la ejecución del programa. Una vez que se les asigna un valor, ese valor no puede ser cambiado posteriormente. Esto significa que las variables de tipo constante son inmutables.
+
+## Clase 10 - Operadores aritméticos
+
+El operador `++` es equivalente a sumar 1 a la variable.  
+El operador `--` es equivalente a restar 1 a la variable.  
+
+Ejemplo:
+
+```C#
+int numero1 = 5;
+int numero2 = 15;
+
+numero1++; //Resultado: 6
+numero2--; //Resultado: 14
+```
+
+El operador `*` permite multiplicar.  
+El operador `/` permite dividir.  
+El `%` es el operador de residuo, devuelve el restante de una división.  

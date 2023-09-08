@@ -69,3 +69,6 @@ En resumen, la compilación es el proceso de traducir el código fuente a un for
 
 Programa en el archivo `Program.cs` contiene un programa sencillo de calcular el área de un rectángulo con lado A y lado B, donde se declaran los tipos de datos en las variables.
 
+## Clase 8 - La palabra reservada var
+
+El tipo de variable "var" se utiliza para declarara de forma implicita variables, por lo cuál se deja que C# infiera el tipo de variable que se requiera. La variables de forma implicita se deben de inicializarla.

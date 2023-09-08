@@ -72,3 +72,20 @@ Programa en el archivo `Program.cs` contiene un programa sencillo de calcular el
 ## Clase 8 - La palabra reservada var
 
 El tipo de variable "var" se utiliza para declarara de forma implicita variables, por lo cuál se deja que C# infiera el tipo de variable que se requiera. La variables de forma implicita se deben de inicializarla.
+
+## Clase 9 - Uso de constantes
+
+La inicialización de una variable tipo "var" y especificar si va a ser double o float se puede realizar con la letra d o f, ejemplo:
+
+```C#
+var variableDouble = 0d;
+var variableFloat = 0f;
+```
+
+La convención de una constantes en C# suele ser en PascalCase:
+
+```C#
+const double EstaVariablesEsConstanteTipoDouble = 0d;
+```
+
+Las variables de tipo constante, en programación, son valores que no pueden ser modificados después de haber sido asignados durante la ejecución del programa. Una vez que se les asigna un valor, ese valor no puede ser cambiado posteriormente. Esto significa que las variables de tipo constante son inmutables.

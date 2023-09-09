@@ -185,3 +185,37 @@ Primera fila y luego salto
 */
 
 ```
+
+## Clase 14 - Condicional IF
+
+La sentencia if en C# se utiliza para evaluar una expresión lógica y ejecutar un bloque de código si la expresión se evalúa como verdadera. La sintaxis básica de la sentencia if es la siguiente:
+
+```C#
+if (expresion) {
+    // bloque de código a ejecutar si la expresión es verdadera
+}
+```
+
+La condición puede ser cualquier expresión que evalúe a verdadero o falso, como una comparación de igualdad, una comparación de desigualdad, una comparación mayor o menor, etc.
+
+También se puede agregar un bloque else opcional para ejecutar un bloque de código si la expresión se evalúa como falsa:
+
+```C#
+if (expresion) {
+    // bloque de código a ejecutar si la expresión es verdadera
+} else {
+    // bloque de código a ejecutar si la expresión es falsa
+}
+```
+
+Ademas se puede utilizar la sentencia else if para evaluar varias condiciones
+
+```C#
+if (expresion1) {
+// bloque de código a ejecutar si la expresión1 es verdadera
+} else if (expresion2) {
+// bloque de código a ejecutar si la expresión1 es falsa y expresión2 es verdadera
+} else {
+// bloque de código a ejecutar si las expresiones son falsas
+}
+```

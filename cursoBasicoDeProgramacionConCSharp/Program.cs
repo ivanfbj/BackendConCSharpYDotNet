@@ -114,16 +114,45 @@
 #endregion
 
 #region Clase 13 - Strings en C#
-int altura = 168;
-int edad = 89;
-string nombre = "Ricardo Perez";
-string informacion = "Nació en Hidalgo, es estudiante de gastronomía y astronomía";
-var hobby = "deportista";
+//int altura = 168;
+//int edad = 89;
+//string nombre = "Ricardo Perez";
+//string informacion = "Nació en Hidalgo, es estudiante de gastronomía y astronomía";
+//var hobby = "deportista";
 
-// String interpolation:
-string tarjetaDeIndentificacion = $"La información de {nombre} " +
-    $"es la siguiente, su edad es {edad} años,\n su altura es de {altura} cms.\nInformación relevante {informacion}\n además su hobby es de: {hobby}";
+//// String interpolation:
+//string tarjetaDeIndentificacion = $"La información de {nombre} " +
+//    $"es la siguiente, su edad es {edad} años,\n su altura es de {altura} cms.\nInformación relevante {informacion}\n además su hobby es de: {hobby}";
 
-Console.WriteLine(tarjetaDeIndentificacion);
+//Console.WriteLine(tarjetaDeIndentificacion);
+
+#endregion
+
+#region Clase 14 - Condicional IF
+int totalJugador = 10;
+int totalDealer = 15;
+string message = string.Empty;
+
+//BIackjack, Juntar 21 pidiendo cartas o en caso de tener menos
+//de 21 igual tener mayor puntuación que el dealer
+
+if (totalJugador > totalDealer && totalJugador <= 21)
+{
+    message = "Venciste al dealer,felicidades";
+
+}
+else if (totalJugador >= 22)
+{
+    message = "Perdiste vs el dealer, te pasaste de 21";
+}
+else if (totalJugador <= totalDealer)
+{
+    message = "Perdiste vs el dealer, lo siento";
+}
+else
+{
+    message = "condición no válida.";
+}
+Console.WriteLine(message);
 
 #endregion

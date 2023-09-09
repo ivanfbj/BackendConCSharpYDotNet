@@ -58,22 +58,39 @@
 
 #region Clase 10 - Operadores aritméticos
 ////Programa que calcula el área de un rectángulo
-var ladoA = 0d; //Declaración de Variable
-var ladoB = 0d; //Declaración de Variable
-var resultado = 0d; //Declaración de Variable
+//var ladoA = 0d; //Declaración de Variable
+//var ladoB = 0d; //Declaración de Variable
+//var resultado = 0d; //Declaración de Variable
 
-Console.WriteLine("Clacula el área de un rectángulo!!");
-Console.WriteLine("Ingrese el valor del lado A");
-ladoA = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Clacula el área de un rectángulo!!");
+//Console.WriteLine("Ingrese el valor del lado A");
+//ladoA = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("Ingrese el valor del lado B");
-ladoB = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Ingrese el valor del lado B");
+//ladoB = Convert.ToDouble(Console.ReadLine());
 
-resultado = ladoA * ladoB; //El * es el operador de multiplicación
-Console.WriteLine("El resultado es: " + resultado);
+//resultado = ladoA * ladoB; //El * es el operador de multiplicación
+//Console.WriteLine("El resultado es: " + resultado);
 
-ladoA++; //El ++ es un operador de incremento, suma 1 a la variable.
-ladoA--; //El -- es un operador de decremento, resta 1 a la variable.
-double resultado2 = ladoA / ladoB; //El / es el operador de multiplicación
-double resultado3 = ladoA % ladoB; //El % es el operador de residuo, devuelve el restante de una división.
+//ladoA++; //El ++ es un operador de incremento, suma 1 a la variable.
+//ladoA--; //El -- es un operador de decremento, resta 1 a la variable.
+//double resultado2 = ladoA / ladoB; //El / es el operador de multiplicación
+//double resultado3 = ladoA % ladoB; //El % es el operador de residuo, devuelve el restante de una división.
+#endregion
+
+#region Clase 11 - Operadores lógicos
+
+bool a = true;
+bool b = false;
+bool c = (a && b); // c es false
+bool d = (a || b); // d es true
+bool e = !b; // e es true
+bool f = (a ^ b); // f es true
+
+//Console.WriteLine("El resultado a es: " + a);
+//Console.WriteLine("El resultado b es: " + b);
+//Console.WriteLine("El resultado c es: " + c);
+//Console.WriteLine("El resultado d es: " + d);
+//Console.WriteLine("El resultado e es: " + e);
+//Console.WriteLine("El resultado f es: " + f);
 #endregion

@@ -108,3 +108,22 @@ numero2--; //Resultado: 14
 El operador `*` permite multiplicar.  
 El operador `/` permite dividir.  
 El `%` es el operador de residuo, devuelve el restante de una división.  
+
+## Clase 11 - Operadores lógicos
+
+Los operadores lógicos en C# son utilizados para comparar y combinar valores booleanos. Los operadores lógicos disponibles en C# incluyen:
+
+`&&` (and): Devuelve verdadero si ambos operandos son verdaderos.
+`||` (or): Devuelve verdadero si al menos uno de los operandos es verdadero.
+`!` (not): Invierte el valor booleano del operando.
+`^` (xor): Devuelve verdadero los valores booleanos son diferentes. Compara si los valores son diferentes
+Ejemplo:
+
+```C#
+bool a = true;
+bool b = false;
+bool c = (a && b); // c es false
+bool d = (a || b); // d es true
+bool e = !b; // e es true
+bool f = (a ^ b); // f es true porque a y b son diferentes.
+```

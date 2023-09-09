@@ -149,3 +149,39 @@ bool d = (x < y); // d es true
 bool e = (x >= y); // e es false
 bool f = (x <= y); // f es true
 ```
+
+## Clase 13 - Strings en C\#
+
+Una cadena es un objeto de tipo `String` cuyo valor es texto. Internamente, el texto se almacena como una colección secuencial de solo lectura de objetos `Char`. No hay ningún carácter que finalice en NULL al final de una cadena de C#; por lo tanto, la cadena de C# puede contener cualquier número de caracteres nulos insertados ("\0"). La propiedad `Length` de una cadena representa el número de objetos Char que contiene, no el número de caracteres Unicode.
+
+El carácter `$` identifica un literal de cadena como una cadena interpolada. Una cadena interpolada es un literal de cadena que puede contener expresiones de interpolación. Cuando una cadena interpolada se resuelve en una cadena de resultado, los elementos con expresiones de interpolación se reemplazan por las representaciones de cadena de los resultados de la expresión.
+
+La interpolación de cadenas proporciona una sintaxis más legible y conveniente de dar formato a las cadenas. Es más fácil de leer que el formato compuesto de cadenas. En este ejemplo se usan ambas características para producir el mismo resultado:
+
+```C#
+var name = "Mark";
+var date = DateTime.Now;
+
+// Composite formatting:
+Console.WriteLine("Hello, {0}! Today is {1}, it's {2:HH:mm} now.", name, date.DayOfWeek, date);
+// String interpolation:
+Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} now.");
+// Both calls produce the same output that is similar to:
+// Hello, Mark! Today is Wednesday, it's 19:40 now.
+```
+
+La barra diagonal inversa `(\)` en una expresión regular que indica que el carácter que va detrás de ella es un carácter especial. Por ejemplo, `\b` es un delimitador que indica que una coincidencia de expresión regular debería comenzar en un límite de palabras, `\t` representa un carácter de tabulación, `\n` representa un salto de línea.
+
+Para más detalles del carácter de escape ingresar al enlace [Escapes de carácter en expresiones regulares](https://learn.microsoft.com/es-es/dotnet/standard/base-types/character-escapes-in-regular-expressions).
+
+```C#
+string escape = "Primera fila y luego salto \n segunda fila generada por el carácter de escape.";
+Console.WriteLine(escape);
+
+//Salida
+/*
+Primera fila y luego salto
+ segunda fila generada por el carácter de escape.
+*/
+
+```

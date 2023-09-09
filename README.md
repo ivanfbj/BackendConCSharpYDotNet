@@ -127,3 +127,25 @@ bool d = (a || b); // d es true
 bool e = !b; // e es true
 bool f = (a ^ b); // f es true porque a y b son diferentes.
 ```
+
+## Clase 12 - Operadores relacionales
+
+Los operadores relacionales en C# se utilizan para comparar valores y determinar si una relación es verdadera o falsa. Los operadores relacionales disponibles en C# incluyen:
+
+`==` (igual a): Devuelve verdadero si los operandos son iguales.
+`!=` (no igual a): Devuelve verdadero si los operandos son diferentes.
+`>` (mayor que): Devuelve verdadero si el operando de la izquierda es mayor que el de la derecha.
+`<` (menor que): Devuelve verdadero si el operando de la izquierda es menor que el de la derecha.
+`>=` (mayor o igual que): Devuelve verdadero si el operando de la izquierda es mayor o igual que el de la derecha.
+`<=` (menor o igual que): Devuelve verdadero si el operando de la izquierda es menor o igual que el de la derecha.
+
+```C#
+int x = 5;
+int y = 10;
+bool a = (x == y); // a es false
+bool b = (x != y); // b es true
+bool c = (x > y); // c es false
+bool d = (x < y); // d es true
+bool e = (x >= y); // e es false
+bool f = (x <= y); // f es true
+```

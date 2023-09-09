@@ -80,12 +80,12 @@
 
 #region Clase 11 - Operadores lógicos
 
-bool a = true;
-bool b = false;
-bool c = (a && b); // c es false
-bool d = (a || b); // d es true
-bool e = !b; // e es true
-bool f = (a ^ b); // f es true
+//bool a = true;
+//bool b = false;
+//bool c = (a && b); // c es false
+//bool d = (a || b); // d es true
+//bool e = !b; // e es true
+//bool f = (a ^ b); // f es true
 
 //Console.WriteLine("El resultado a es: " + a);
 //Console.WriteLine("El resultado b es: " + b);
@@ -93,4 +93,22 @@ bool f = (a ^ b); // f es true
 //Console.WriteLine("El resultado d es: " + d);
 //Console.WriteLine("El resultado e es: " + e);
 //Console.WriteLine("El resultado f es: " + f);
+#endregion
+
+#region Clase 12 - Operadores relacionales
+int x = 5;
+int y = 10;
+bool a = (x == y); // a es false
+bool b = (x != y); // b es true
+bool c = (x > y); // c es false
+bool d = (x < y); // d es true
+bool e = (x >= y); // e es false
+bool f = (x <= y); // f es true
+
+Console.WriteLine("El resultado a es: " + a);
+Console.WriteLine("El resultado b es: " + b);
+Console.WriteLine("El resultado c es: " + c);
+Console.WriteLine("El resultado d es: " + d);
+Console.WriteLine("El resultado e es: " + e);
+Console.WriteLine("El resultado f es: " + f);
 #endregion

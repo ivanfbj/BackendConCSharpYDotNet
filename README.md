@@ -252,3 +252,20 @@ void DisplayMeasurement(double measurement)
     }
 }
 ```
+
+## Clase 16 - Ciclos While y Do While
+
+La instrucción while ejecuta una instrucción o un bloque de instrucciones mientras que una expresión booleana especificada se evalúa como true. Como esa expresión se evalúa antes de cada ejecución del bucle, un bucle while se ejecuta cero o varias veces. La while instrucción difiere de un bucle do , que se ejecuta una o varias veces.
+
+En el ejemplo siguiente se muestra el uso de la instrucción while:
+
+```C#
+int n = 0;
+while (n < 5)
+{
+    Console.Write(n);
+    n++;
+}
+// Output:
+// 01234
+```

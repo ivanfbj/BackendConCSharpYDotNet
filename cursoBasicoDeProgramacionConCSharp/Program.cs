@@ -159,6 +159,8 @@
 
 #region Clase 15 - Condicional Switch
 
+using System.Threading.Channels;
+
 int valorMano = 23; // Este sería el valor de la mano del usuario en Blackjack
 
 switch (valorMano)
@@ -172,5 +174,68 @@ switch (valorMano)
     default:
         Console.WriteLine("No tienes Blackjack ni te pasaste de 21. Sigue jugando.");
         break;
+}
+#endregion
+
+#region Clase 16 - Ciclos While y Do While
+int totalJugador = 0;
+int totalDealer = 0;
+int num = 0;
+string message = string.Empty;
+string switchControl = "menu";
+
+//BIackjack, Juntar 21 pidiendo cartas o en caso de tener menos
+//de 21 igual tener mayor puntuación que el dealer
+
+while (true)
+{
+
+    switch (switchControl)
+    {
+        case "menu":
+            Console.WriteLine("Welcome al c a s i n o");
+            Console.WriteLine("Escriba '21' para jugar al 21");
+            switchControl = Console.ReadLine();
+            break;
+
+        case "21":
+
+            do
+            {
+                num = new Random().Next(1, 12);
+                totalJugador += num;
+                Console.WriteLine($"Toma tu primera carta, jugador, te salio:  {num}");
+                Console.WriteLine("¿Deseas otra carta?");
+            }
+            while (Console.ReadLine() == "Si" || Console.ReadLine() == "si" || Console.ReadLine() == "yes");
+
+            if (totalJugador > totalDealer && totalJugador <= 21)
+            {
+                message = "Venciste al dealer,felicidades";
+                switchControl = "menu";
+
+            }
+            else if (totalJugador >= 22)
+            {
+                message = "Perdiste vs el dealer, te pasaste de 21";
+                switchControl = "menu";
+            }
+            else if (totalJugador <= totalDealer)
+            {
+                message = "Perdiste vs el dealer, lo siento";
+                switchControl = "menu";
+            }
+            else
+            {
+                message = "condición no válida.";
+                switchControl = "menu";
+            }
+            Console.WriteLine(message);
+            break;
+        default:
+            Console.WriteLine("Valor ingresado no válido en el C A S I N O");
+            switchControl = "menu";
+            break;
+    }
 }
 #endregion

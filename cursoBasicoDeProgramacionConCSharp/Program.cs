@@ -129,30 +129,48 @@
 #endregion
 
 #region Clase 14 - Condicional IF
-int totalJugador = 10;
-int totalDealer = 15;
-string message = string.Empty;
+//int totalJugador = 10;
+//int totalDealer = 15;
+//string message = string.Empty;
 
-//BIackjack, Juntar 21 pidiendo cartas o en caso de tener menos
-//de 21 igual tener mayor puntuación que el dealer
+////BIackjack, Juntar 21 pidiendo cartas o en caso de tener menos
+////de 21 igual tener mayor puntuación que el dealer
 
-if (totalJugador > totalDealer && totalJugador <= 21)
-{
-    message = "Venciste al dealer,felicidades";
+//if (totalJugador > totalDealer && totalJugador <= 21)
+//{
+//    message = "Venciste al dealer,felicidades";
 
-}
-else if (totalJugador >= 22)
-{
-    message = "Perdiste vs el dealer, te pasaste de 21";
-}
-else if (totalJugador <= totalDealer)
-{
-    message = "Perdiste vs el dealer, lo siento";
-}
-else
-{
-    message = "condición no válida.";
-}
-Console.WriteLine(message);
+//}
+//else if (totalJugador >= 22)
+//{
+//    message = "Perdiste vs el dealer, te pasaste de 21";
+//}
+//else if (totalJugador <= totalDealer)
+//{
+//    message = "Perdiste vs el dealer, lo siento";
+//}
+//else
+//{
+//    message = "condición no válida.";
+//}
+//Console.WriteLine(message);
 
+#endregion
+
+#region Clase 15 - Condicional Switch
+
+int valorMano = 23; // Este sería el valor de la mano del usuario en Blackjack
+
+switch (valorMano)
+{
+    case 21:
+        Console.WriteLine("¡Blackjack! ¡Felicidades, ganaste!");
+        break;
+    case int n when n > 21:
+        Console.WriteLine("¡Te pasaste de 21! Perdiste.");
+        break;
+    default:
+        Console.WriteLine("No tienes Blackjack ni te pasaste de 21. Sigue jugando.");
+        break;
+}
 #endregion

@@ -54,16 +54,16 @@ En resumen, la compilación es el proceso de traducir el código fuente a un for
 
 ## Clase 6 - Tipos de datos primitivos
 
-| Tipo de dato | Espacio en memoria | Rango                    | Descripción                                              |
-|--------------|--------------------|--------------------------------|----------------------------------------------------|
-| int          | 4 bytes            | -2,147,483,648 a 2,147,483,647 | Representa números enteros de 32 bits              |
-| bool         | 1 bit             | 0 a 1                          | Representa un valor booleano (verdadero o falso)   |
-| float        | 4 bytes            | -3.402823e38 a 3.402823e38     | Representa números de punto flotante de precisión simple |
-| double       | 8 bytes            | -1.79769313486232e308 a 1.79769313486232e308 | Representa números de punto flotante de precisión doble |
-| char         | 2 bytes            | Un solo carácter       | Representa un solo carácter Unicode               |
-| string       | 2 bytes por carácter           | Variable                 | Representa una secuencia de caracteres            |
-| long         | 8 bytes            | -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 | Representa números enteros de 64 bits     |
-| uint         | 4 bytes            | 0 a 4,294,967,295        | Representa números enteros sin signo de 32 bits    |
+| Tipo de dato | Espacio en memoria   | Rango                                                  | Descripción                                              |
+| ------------ | -------------------- | ------------------------------------------------------ | -------------------------------------------------------- |
+| int          | 4 bytes              | -2,147,483,648 a 2,147,483,647                         | Representa números enteros de 32 bits                    |
+| bool         | 1 bit                | 0 a 1                                                  | Representa un valor booleano (verdadero o falso)         |
+| float        | 4 bytes              | -3.402823e38 a 3.402823e38                             | Representa números de punto flotante de precisión simple |
+| double       | 8 bytes              | -1.79769313486232e308 a 1.79769313486232e308           | Representa números de punto flotante de precisión doble  |
+| char         | 2 bytes              | Un solo carácter                                       | Representa un solo carácter Unicode                      |
+| string       | 2 bytes por carácter | Variable                                               | Representa una secuencia de caracteres                   |
+| long         | 8 bytes              | -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 | Representa números enteros de 64 bits                    |
+| uint         | 4 bytes              | 0 a 4,294,967,295                                      | Representa números enteros sin signo de 32 bits          |
 
 ## Clase 7 - Variables
 
@@ -93,7 +93,7 @@ Las variables de tipo constante, en programación, son valores que no pueden ser
 ## Clase 10 - Operadores aritméticos
 
 El operador `++` es equivalente a sumar 1 a la variable.  
-El operador `--` es equivalente a restar 1 a la variable.  
+El operador `--` es equivalente a restar 1 a la variable.
 
 Ejemplo:
 
@@ -107,7 +107,7 @@ numero2--; //Resultado: 14
 
 El operador `*` permite multiplicar.  
 El operador `/` permite dividir.  
-El `%` es el operador de residuo, devuelve el restante de una división.  
+El `%` es el operador de residuo, devuelve el restante de una división.
 
 ## Clase 11 - Operadores lógicos
 
@@ -217,5 +217,38 @@ if (expresion1) {
 // bloque de código a ejecutar si la expresión1 es falsa y expresión2 es verdadera
 } else {
 // bloque de código a ejecutar si las expresiones son falsas
+}
+```
+
+## Clase 15 - Condicional Switch
+
+La instrucción switch selecciona una lista de instrucciones para ejecutarla en función de la coincidencia de un patrón con una expresión de coincidencia, como se muestra en el ejemplo siguiente:
+
+```C#
+DisplayMeasurement(-4);  // Output: Measured value is -4; too low.
+DisplayMeasurement(5);  // Output: Measured value is 5.
+DisplayMeasurement(30);  // Output: Measured value is 30; too high.
+DisplayMeasurement(double.NaN);  // Output: Failed measurement.
+
+void DisplayMeasurement(double measurement)
+{
+    switch (measurement)
+    {
+        case < 0.0:
+            Console.WriteLine($"Measured value is {measurement}; too low.");
+            break;
+
+        case > 15.0:
+            Console.WriteLine($"Measured value is {measurement}; too high.");
+            break;
+
+        case double.NaN:
+            Console.WriteLine("Failed measurement.");
+            break;
+
+        default:
+            Console.WriteLine($"Measured value is {measurement}.");
+            break;
+    }
 }
 ```

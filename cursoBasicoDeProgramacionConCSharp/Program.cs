@@ -307,6 +307,86 @@
 
 #region Clase 18 - Ciclos For
 
+//int num = 0;
+//int numeroCreditos = 0;
+//string message = string.Empty;
+//string controlOtraCarta = string.Empty;
+//string switchControl = "menu";
+
+////BIackjack, Juntar 21 pidiendo cartas o en caso de tener menos
+////de 21 igual tener mayor puntuación que el dealer
+
+//Console.WriteLine("Welcome al c a s i n o");
+//Console.WriteLine("Cuántos créditos desea \n" +
+//    "Recuerda que necesitas una por ronda de juego");
+
+//numeroCreditos = int.Parse(Console.ReadLine());
+
+//while (true)
+//{
+//    for (int i = 0; i < numeroCreditos; i++)
+//    {
+
+//        int totalJugador = 0;
+//        int totalDealer;
+//        switch (switchControl)
+//        {
+//            case "menu":
+
+//                Console.WriteLine("Escriba '21' para jugar al 21");
+//                switchControl = Console.ReadLine();
+//                break;
+
+//            case "21":
+
+//                do
+//                {
+//                    num = new Random().Next(1, 12);
+//                    totalJugador += num;
+//                    Console.WriteLine($"Toma tu primera carta, jugador, te salio:  {num}");
+//                    Console.WriteLine("¿Deseas otra carta?");
+//                    controlOtraCarta = Console.ReadLine();
+//                }
+//                while (controlOtraCarta == "Si" ||
+//                        controlOtraCarta == "si" ||
+//                        controlOtraCarta == "yes");
+
+//                totalDealer = new Random().Next(14, 23);
+//                Console.WriteLine($"El dealer tiene {totalDealer}!");
+
+//                if (totalJugador > totalDealer && totalJugador <= 21)
+//                {
+//                    message = "Venciste al dealer,felicidades";
+//                    switchControl = "menu";
+
+//                }
+//                else if (totalJugador >= 22)
+//                {
+//                    message = "Perdiste vs el dealer, te pasaste de 21";
+//                    switchControl = "menu";
+//                }
+//                else if (totalJugador <= totalDealer)
+//                {
+//                    message = "Perdiste vs el dealer, lo siento";
+//                    switchControl = "menu";
+//                }
+//                else
+//                {
+//                    message = "condición no válida.";
+//                    switchControl = "menu";
+//                }
+//                Console.WriteLine(message);
+//                break;
+//            default:
+//                Console.WriteLine("Valor ingresado no válido en el C A S I N O");
+//                switchControl = "menu";
+//                break;
+//        }
+//    }
+//}
+#endregion
+
+#region Clase 19 - Reto: bug entre ciclos
 int num = 0;
 int numeroCreditos = 0;
 string message = string.Empty;
@@ -322,8 +402,8 @@ Console.WriteLine("Cuántos créditos desea \n" +
 
 numeroCreditos = int.Parse(Console.ReadLine());
 
-//while (true)
-//{
+while (true)
+{
     for (int i = 0; i < numeroCreditos; i++)
     {
 
@@ -335,6 +415,7 @@ numeroCreditos = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Escriba '21' para jugar al 21");
                 switchControl = Console.ReadLine();
+                i -= 1;
                 break;
 
             case "21":
@@ -383,5 +464,5 @@ numeroCreditos = int.Parse(Console.ReadLine());
                 break;
         }
     }
-//}
+}
 #endregion

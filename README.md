@@ -278,4 +278,8 @@ Complemento de funcionalidad en el código.
 
 Un ciclo `for` en programación es una estructura que te permite repetir un bloque de código un número específico de veces.
 
-El programa queda un un Bug ya que el menú se consume un ciclo del for.
+El programa queda un Bug ya que el menú se consume un ciclo del for.
+
+## Clase 19 - Reto: bug entre ciclos
+
+Se corrigen el Bug del programa.

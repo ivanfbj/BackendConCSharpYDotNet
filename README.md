@@ -1,13 +1,18 @@
-# Backend con C# y .NET
+# Curso de Programación Orientada a Objetos con C\#
 
-Cada rama tiene la información relacionada con un curso de la ruta de [Backend con C# y .NET](https://platzi.com/ruta/web-net/) de [Platzi](https://platzi.com).
+## Clase 1 - Fundamentos de Programación Orientada a Objetos con C\#
 
-El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalmente las descripciones de los commits contienen el título de la clase y pueden llegar a tener un descripción complementaria de dicha clase.
+Curso base para adquirir los conocimientos para desarrollar aplicaciones en C\# y .NET.  
 
-## Cursos finalizados
+Conceptos importantes del paradigma de POO:
 
-1. [Curso Básico de Programación con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoBasicoDeProgramacionConCSharp)
-
-4. [Curso de Principios SOLID en C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDePrincipiosSolidEnCSharpYDotNet)
-
-8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)
+1. **Clases y Objetos**
+    - Son los elementos base para programar en la porgramación orientas a objetos, las clases nos permiten definir propiedades y comportamientos como una plantilla que podemos reutilizar para poder crear nuestros objetos.
+2. **Encapsulamiento**
+    - Se refiere a ocultar los valores reales o el detalle de los valores que tienen las propiedades o las caracteristica de nuestras clases.
+3. **Herencia**
+    - Es la forma en que se puede reutilizar código en la programación orientada a objetos, nos permite pasar las propiedades y lo métodos que tenemos en una clase a otra.
+4. **Polimorfismo**
+    - Podemos definir diferentes comportamientos para el mismo método, aceptando los mismos valores, los mismo parámetros, retornando el mismo tipo de dato pero definiendo diferente comportamiento en diferentes clases.
+5. **Abstracción**
+    - Es un concepto que nos permite omitir los detalles de las implementaciónes que estamos haciendo en nuestra clase, de esta manera podemos crear elementos mucho más genericos que nos permiten reutilizar nuestro código para multiples escenarios.

@@ -16,3 +16,9 @@ Conceptos importantes del paradigma de POO:
     - Podemos definir diferentes comportamientos para el mismo método, aceptando los mismos valores, los mismo parámetros, retornando el mismo tipo de dato pero definiendo diferente comportamiento en diferentes clases.
 5. **Abstracción**
     - Es un concepto que nos permite omitir los detalles de las implementaciónes que estamos haciendo en nuestra clase, de esta manera podemos crear elementos mucho más genericos que nos permiten reutilizar nuestro código para multiples escenarios.
+
+## Clase 2 - Prerequisitos
+
+- Conocimientos de C# y .NET
+- .NET 7 0 superior.
+- Visual Studio Code o Visual Studio.

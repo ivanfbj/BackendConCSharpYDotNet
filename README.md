@@ -269,3 +269,7 @@ while (n < 5)
 // Output:
 // 01234
 ```
+
+## Clase 17 - Ciclos para el juego de Platzino
+
+Complemento de funcionalidad en el código.

@@ -273,3 +273,9 @@ while (n < 5)
 ## Clase 17 - Ciclos para el juego de Platzino
 
 Complemento de funcionalidad en el código.
+
+## Clase 18 - Ciclos For
+
+Un ciclo `for` en programación es una estructura que te permite repetir un bloque de código un número específico de veces.
+
+El programa queda un un Bug ya que el menú se consume un ciclo del for.

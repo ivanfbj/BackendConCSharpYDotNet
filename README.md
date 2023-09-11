@@ -119,3 +119,9 @@ Los métodos son funciones que existen en cualquier lenguaje de programación, c
 Los objetos son instancias de las clases, se llaman instancias ya que los objetos quedan haciendo referencia a la clase a partir de la que se crearon. Los objetos toman las propiedades y métodos de la clase pero los valores quedan siendo diferentes para cada objeto.
 
 Los objetos se usan para guardar datos o ejecutar acciones que define la clase.
+
+## Clase 6 - Creando clases y propiedades
+
+El objetivo de las clases es nombrarlas en forma singular ya que representa un objeto.
+
+Se crea la clase base "SuperHeroe" para seguir trabajando en los temas del curso.

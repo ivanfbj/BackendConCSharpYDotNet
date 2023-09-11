@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Curso de Programación Orientada a Objetos con C#");
 
+#region ## Clase 4 - Creando tu primera clase y objeto
 // Instanciar una clase nos permite crear un objeto con las propiedades de dicha clase, para esto se utiliza la propiedad "new".
 Computador ComputadorAcerNitro5 = new Computador();
 Computador ComputadorHpVictus = new Computador();
@@ -24,3 +25,4 @@ class Computador
     public string VelocidadProcesador;
 
 }
+#endregion

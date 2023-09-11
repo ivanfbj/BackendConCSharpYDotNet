@@ -48,3 +48,62 @@ El paradigma de la programación orientada a objetos suele ser uno de los más i
 - Basado en clases y objetos.
 
 Las clases serían las plantillas o estructuras que se van a reutilizar para poder crear los objetos.
+
+## Clase 4 - Creando tu primera clase y objeto
+
+Se crea un proyecto con Visual Studio, el proyecto es de tipo "Aplicación de consola" u se trabaja con el framework .NET 7.0.
+
+Las caracteristicas o variables que se agregan a una clase se les conocen como propiedades.
+
+Se crea un ejemplo diferente al del vídeo. Los temas tratados son:
+
+1. Crear una clase llamada "Computador".
+2. La clase contiene las propiedades que harán referencia a las caracteristicas de dicha clase.
+3. Las propiedades deben tener un modificador de acceso, en este ejemplo están de forma pública.
+4. Una vez creada la clase se puede instanciar con la propiedad "new" la cual permite crear un objeto de dicha clase.
+5. Al crear el objeto ya se podrá asignar valores a las propiedades.
+
+Ejemplo:
+
+```C#
+// Instanciar una clase nos permite crear un objeto con las propiedades de dicha clase, para esto se utiliza la propiedad "new".
+Computador ComputadorAcerNitro5 = new Computador();
+Computador ComputadorHpVictus = new Computador();
+
+ComputadorAcerNitro5.Marca = "Acer";
+ComputadorHpVictus.Marca = "HP";  
+class Computador
+{
+    public string Marca;
+}
+```
+
+____
+
+**Modificadores de acceso:**
+
+- **public:** Puede obtener acceso al tipo o miembro cualquier otro código del mismo ensamblado o de otro ensamblado que haga referencia a éste. El nivel de accesibilidad de los miembros públicos de un tipo se controla mediante el nivel de accesibilidad del propio tipo.
+
+- **private:** solamente el código de la misma class o struct puede acceder al tipo o miembro.
+
+- **protected:** solamente el código de la misma class, o bien de una class derivada de esa class, puede acceder al tipo o miembro.
+
+- **internal:** Puede obtener acceso al tipo o miembro cualquier código del mismo ensamblado, pero no de un ensamblado distinto. En otras palabras, se puede acceder a tipos o miembros internal desde el código que forma parte de la misma compilación.
+
+- **protected internal:**cualquier código del ensamblado en el que se ha declarado, o desde una class derivada de otro ensamblado, puede acceder al tipo o miembro.
+
+- **private protected:** se puede tener acceso al tipo o miembro mediante tipos derivados del objeto class que se declaran dentro de su ensamblado contenedor.
+
+**Recomendaciones:**
+
+- Si la propiedad tiene un modificador de acceso privado, el nombre de la propiedad debe ir en camelCase, en caso de que sea de acceso público, el nombre de la propiedad debe de ir en PascalCase.
+
+Ejemplo:
+
+```C#
+class Persona
+{
+    private string nombre;
+    public int Edad;
+}
+```

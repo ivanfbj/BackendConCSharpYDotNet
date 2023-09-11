@@ -107,3 +107,15 @@ class Persona
     public int Edad;
 }
 ```
+
+## Clase 5 - Concepto de clases y objetos
+
+- Elemento principal en POO.
+- Se basa en propiedades que representan las características del Objeto y métodos que definen el comportamiento.
+- Se pueden definir como la plantilla base para crear los objetos.
+
+Los métodos son funciones que existen en cualquier lenguaje de programación, cuando las funciones están dentro de las clases las llamamos métodos, la particularidad que tienen los métodos es que definen el comportamiento de la clase.
+
+Los objetos son instancias de las clases, se llaman instancias ya que los objetos quedan haciendo referencia a la clase a partir de la que se crearon. Los objetos toman las propiedades y métodos de la clase pero los valores quedan siendo diferentes para cada objeto.
+
+Los objetos se usan para guardar datos o ejecutar acciones que define la clase.

@@ -125,3 +125,9 @@ Los objetos se usan para guardar datos o ejecutar acciones que define la clase.
 El objetivo de las clases es nombrarlas en forma singular ya que representa un objeto.
 
 Se crea la clase base "SuperHeroe" para seguir trabajando en los temas del curso.
+
+## Clase 7 - Creando clases complejas
+
+Las enumeraciones en C\# nos permiten asignar valores especificos o crear una lista de valores especificos y forzar al desarrollador que va a utilizar la clase a asignar cualquier de los valores de las enumeraciones.
+
+En los usos de las clases es posible utilizar una clase para asignarla como TIPO a una porpiedad de otra clase, en el ejemplo tenemos la clase `SuperPoder` el cual se está utilizando en la propiedad "SuperPoderes" de la clase `SuperHeroe`, lo que nos permite crear una lista de superpoderes para cada objeto que se instancie de la clase `SuperHeroe`.

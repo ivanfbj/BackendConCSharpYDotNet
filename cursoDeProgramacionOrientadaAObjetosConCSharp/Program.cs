@@ -51,6 +51,61 @@ Console.WriteLine("Curso de Programación Orientada a Objetos con C#");
 
 #region Clase 7 - Creando clases complejas
 
+//SuperPoder poderVolar = new();
+//poderVolar.Nombre = "Volar";
+//poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
+//poderVolar.Nivel = NivelPoder.NivelDos;
+
+//SuperPoder superFuerza = new();
+//superFuerza.Nombre = "Super fuerza";
+//superFuerza.Nivel = NivelPoder.NivelTres;
+
+//SuperHeroe superman = new();
+
+//superman.Id = 1;
+//superman.Nombre = "Superman";
+//superman.IdentidadSecreta = "Clark Kent";
+//superman.Ciudad = "Metropolis";
+//superman.PuedeVolar = true;
+
+////Alternativa 1
+//List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+//poderesSuperman.Add(poderVolar);
+//poderesSuperman.Add(superFuerza);
+
+//superman.SuperPoderes = poderesSuperman;
+////Alternativa 2
+///*
+//List<SuperPoder> poderesSuperman = new List<SuperPoder> { poderVolar, superFuerza };
+//superman.SuperPoderes = poderesSuperman;
+// */
+
+//class SuperHeroe
+//{
+//    public int Id;
+//    public string Nombre;
+//    public string IdentidadSecreta;
+//    public String Ciudad;
+//    public List<SuperPoder> SuperPoderes;
+//    public bool PuedeVolar;
+//}
+
+//class SuperPoder
+//{
+//    public string Nombre;
+//    public string Descripcion;
+//    public NivelPoder Nivel;
+//}
+
+//enum NivelPoder
+//{
+//    NivelUno,
+//    NivelDos,
+//    NivelTres
+//}
+#endregion
+
+#region Clase 8 - Constructor y datos iniciales en una clase
 SuperPoder poderVolar = new();
 poderVolar.Nombre = "Volar";
 poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
@@ -88,6 +143,13 @@ class SuperHeroe
     public String Ciudad;
     public List<SuperPoder> SuperPoderes;
     public bool PuedeVolar;
+
+    public SuperHeroe()
+    {
+        Id = 1;
+        SuperPoderes = new List<SuperPoder>();
+        PuedeVolar = false;
+    }
 }
 
 class SuperPoder
@@ -95,6 +157,11 @@ class SuperPoder
     public string Nombre;
     public string Descripcion;
     public NivelPoder Nivel;
+
+    public SuperPoder()
+    {
+        Nivel = NivelPoder.NivelUno;
+    }
 }
 
 enum NivelPoder

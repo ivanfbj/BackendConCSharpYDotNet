@@ -131,3 +131,13 @@ Se crea la clase base "SuperHeroe" para seguir trabajando en los temas del curso
 Las enumeraciones en C\# nos permiten asignar valores especificos o crear una lista de valores especificos y forzar al desarrollador que va a utilizar la clase a asignar cualquier de los valores de las enumeraciones.
 
 En los usos de las clases es posible utilizar una clase para asignarla como TIPO a una porpiedad de otra clase, en el ejemplo tenemos la clase `SuperPoder` el cual se está utilizando en la propiedad "SuperPoderes" de la clase `SuperHeroe`, lo que nos permite crear una lista de superpoderes para cada objeto que se instancie de la clase `SuperHeroe`.
+
+## Clase 8 - Constructor y datos iniciales en una clase
+
+El constructor nos permite inicializar los valores de un objeto que es creado a partir de una clase.
+
+La idea de un constructor es crear una función que nos ayude a inicializar los valores o especificar datos por defecto al momentos de crear los objetos, esto ayuda a que al inicializar un objeto, venga con ciertos valores, para no tenerlos que asignar luego de crear el objeto, ayuda a minimizar el código.
+
+Para inicializar un constructor es necesario crear una función que no va a retornar ningún tipo de valor y se utiliza el mismo nombre de la clase. Dentro de esa función se puede inicializar las variblaes como se requiera o ejecutar rutinas según se requiera.
+
+Cuando se realiza la creación del objeto por medio de la clase, se creará con los valores definidos en el contructor.

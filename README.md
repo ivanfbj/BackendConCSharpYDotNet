@@ -141,3 +141,11 @@ La idea de un constructor es crear una función que nos ayude a inicializar los 
 Para inicializar un constructor es necesario crear una función que no va a retornar ningún tipo de valor y se utiliza el mismo nombre de la clase. Dentro de esa función se puede inicializar las variblaes como se requiera o ejecutar rutinas según se requiera.
 
 Cuando se realiza la creación del objeto por medio de la clase, se creará con los valores definidos en el contructor.
+
+## Clase 9 - Métodos dentro de una clase
+
+Los métodos personalizados nos ayudan a definir el comportamiento de los objetos.
+
+Un método es una función dentro de la clase para poder realizar alguna acción dentro de la clase.
+
+La línea `StringBuilder sb = new StringBuilder();` me permite concatenar varios string en una sola variable, para eso se complementa con `sb.AppendLine("stringAConcatener")` y `sb.ToString()` para retornar los datos.

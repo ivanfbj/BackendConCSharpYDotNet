@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Collections.Specialized;
-using System.Text;
+using cursoDeProgramacionOrientadaAObjetosConCSharp.Models;
 
 Console.WriteLine("Curso de Programación Orientada a Objetos con C#");
 Console.WriteLine("************************************************\n");
@@ -258,6 +257,106 @@ Console.WriteLine("************************************************\n");
 #endregion
 
 #region Clase 10 - Tipos registro y estructura
+//SuperPoder poderVolar = new();
+//poderVolar.Nombre = "Volar";
+//poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
+//poderVolar.Nivel = NivelPoder.NivelDos;
+
+//SuperPoder superFuerza = new();
+//superFuerza.Nombre = "Super fuerza";
+//superFuerza.Nivel = NivelPoder.NivelTres;
+
+//SuperHeroe superman = new();
+
+//superman.Id = 1;
+//superman.Nombre = "Superman";
+//superman.IdentidadSecreta = "Clark Kent";
+//superman.Ciudad = "Metropolis";
+//superman.PuedeVolar = true;
+
+//SuperHeroe superman2 = new();
+
+//superman2.Id = 1;
+//superman2.Nombre = "Superman";
+//superman2.IdentidadSecreta = "Clark Kent";
+//superman2.Ciudad = "Metropolis";
+//superman2.PuedeVolar = true;
+
+//Console.WriteLine(superman == superman2);
+
+//SuperHeroRecord superHeroRecord = new(1, "Superman", "Clark Kent");
+//SuperHeroRecord superHeroRecord2 = new(1, "Superman", "Clark Kent");
+
+//Console.WriteLine(superHeroRecord == superHeroRecord2);
+
+////Alternativa 1
+////List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+////poderesSuperman.Add(poderVolar);
+////poderesSuperman.Add(superFuerza);
+
+////superman.SuperPoderes = poderesSuperman;
+////string resultadoSuperPoderes = superman.UsarSuperPoderes();
+////Console.WriteLine(resultadoSuperPoderes);
+
+////Alternativa 2
+///*
+//List<SuperPoder> poderesSuperman = new List<SuperPoder> { poderVolar, superFuerza };
+//superman.SuperPoderes = poderesSuperman;
+// */
+
+//class SuperHeroe
+//{
+//    public int Id;
+//    public string Nombre;
+//    public string IdentidadSecreta;
+//    public String Ciudad;
+//    public List<SuperPoder> SuperPoderes;
+//    public bool PuedeVolar;
+
+//    public SuperHeroe()
+//    {
+//        Id = 1;
+//        SuperPoderes = new List<SuperPoder>();
+//        PuedeVolar = false;
+//    }
+
+//    public string UsarSuperPoderes()
+//    {
+//        StringBuilder sb = new StringBuilder();
+
+//        foreach (var item in SuperPoderes)
+//        {
+//            sb.AppendLine($"{Nombre} está usando el super poder {item.Nombre}!!");
+//        }
+
+//        return sb.ToString();
+//    }
+//}
+
+//class SuperPoder
+//{
+//    public string Nombre;
+//    public string Descripcion;
+//    public NivelPoder Nivel;
+
+//    public SuperPoder()
+//    {
+//        Nivel = NivelPoder.NivelUno;
+//    }
+//}
+
+//enum NivelPoder
+//{
+//    NivelUno,
+//    NivelDos,
+//    NivelTres
+//}
+
+//public record SuperHeroRecord(int Id, string Nombre, string IdentidadSecreta);
+
+#endregion
+
+#region Clase 11 - Modificadores de acceso
 SuperPoder poderVolar = new();
 poderVolar.Nombre = "Volar";
 poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
@@ -275,29 +374,14 @@ superman.IdentidadSecreta = "Clark Kent";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
 
-SuperHeroe superman2 = new();
-
-superman2.Id = 1;
-superman2.Nombre = "Superman";
-superman2.IdentidadSecreta = "Clark Kent";
-superman2.Ciudad = "Metropolis";
-superman2.PuedeVolar = true;
-
-Console.WriteLine(superman == superman2);
-
-SuperHeroRecord superHeroRecord = new(1, "Superman", "Clark Kent");
-SuperHeroRecord superHeroRecord2 = new(1, "Superman", "Clark Kent");
-
-Console.WriteLine(superHeroRecord == superHeroRecord2);
-
 //Alternativa 1
-//List<SuperPoder> poderesSuperman = new List<SuperPoder>();
-//poderesSuperman.Add(poderVolar);
-//poderesSuperman.Add(superFuerza);
+List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+poderesSuperman.Add(poderVolar);
+poderesSuperman.Add(superFuerza);
 
-//superman.SuperPoderes = poderesSuperman;
-//string resultadoSuperPoderes = superman.UsarSuperPoderes();
-//Console.WriteLine(resultadoSuperPoderes);
+superman.SuperPoderes = poderesSuperman;
+string resultadoSuperPoderes = superman.UsarSuperPoderes();
+Console.WriteLine(resultadoSuperPoderes);
 
 //Alternativa 2
 /*
@@ -305,54 +389,11 @@ List<SuperPoder> poderesSuperman = new List<SuperPoder> { poderVolar, superFuerz
 superman.SuperPoderes = poderesSuperman;
  */
 
-class SuperHeroe
-{
-    public int Id;
-    public string Nombre;
-    public string IdentidadSecreta;
-    public String Ciudad;
-    public List<SuperPoder> SuperPoderes;
-    public bool PuedeVolar;
-
-    public SuperHeroe()
-    {
-        Id = 1;
-        SuperPoderes = new List<SuperPoder>();
-        PuedeVolar = false;
-    }
-
-    public string UsarSuperPoderes()
-    {
-        StringBuilder sb = new StringBuilder();
-
-        foreach (var item in SuperPoderes)
-        {
-            sb.AppendLine($"{Nombre} está usando el super poder {item.Nombre}!!");
-        }
-
-        return sb.ToString();
-    }
-}
-
-class SuperPoder
-{
-    public string Nombre;
-    public string Descripcion;
-    public NivelPoder Nivel;
-
-    public SuperPoder()
-    {
-        Nivel = NivelPoder.NivelUno;
-    }
-}
-
 enum NivelPoder
 {
     NivelUno,
     NivelDos,
     NivelTres
 }
-
-public record SuperHeroRecord(int Id, string Nombre, string IdentidadSecreta);
 
 #endregion

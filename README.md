@@ -166,3 +166,29 @@ Las clases se puede utilizar en cualquier nivel de complejidad, ya sea un compon
 
 Las clases son enfocadas en valores y comportamientos, es decir, cuando se tienen que creear datos pero también muchos métodos o funciones dentro de la clase para poder manipular eso datos.
 
+## Clase 11 - Modificadores de acceso
+
+Quienes tienen accesos a las clases, propiedades y métodos.
+
+**Lista de modificadores**:
+
+- **public**: el acceso no está restringido. (Exponer a cualquiera que este por fuera del contexto de la clase, pueda utilizar ese método o propiedad a cualquiera que este creando objeto con la clase.)
+- **protected**: el acceso está limitado a la clase contendora o a los tipos derivados de la clase contenedora. (Las clases que heren de la clase principal podrán utilizar los métodos o propiedades de la clase.)
+- **internal**: el acceso está limitado al ensamblado actual. (Solo se utilice internamente dentro del proyecto del cual se está trabajando, no serán visibles para otros proyectos.)
+- **private**: El acceso está limitado al tipo contenedor. (Evitar que cualquiera que este por fuera del contexto de la clase, no pueda utilizar ese método o propiedad.)
+- **protected internal**: El acceso está limitado al ensamblado actual o a los tipos derivados de la clase contenedora.
+- **private protected**: El acceso está limitado a la clase contenedora o a los tipos derivados de la clase contenedora que hay en el ensamblado actual.
+
+______
+
+A nivel del código se procede a realizar un cambio el cual implica mover las clases `SuperHeroe` y `SuperPoder`, a sus propios archivos de clases `SuperHeroe.cs` y `SuperPoder.cs`, y para poder utilizar dichas clases desde la clase `Program.cs` es necesario realizar la importación del espacio de trabajo por medio de 
+
+```C#
+using proyecto.carpeta
+```
+
+lo que se convierte en este proyecto en:
+
+```C#
+using cursoDeProgramacionOrientadaAObjetosConCSharp.Models;
+```

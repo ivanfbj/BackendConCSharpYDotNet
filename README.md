@@ -149,3 +149,20 @@ Los métodos personalizados nos ayudan a definir el comportamiento de los objeto
 Un método es una función dentro de la clase para poder realizar alguna acción dentro de la clase.
 
 La línea `StringBuilder sb = new StringBuilder();` me permite concatenar varios string en una sola variable, para eso se complementa con `sb.AppendLine("stringAConcatener")` y `sb.ToString()` para retornar los datos.
+
+## Clase 10 - Tipos registro y estructura
+
+**Tabla comparativa**:
+
+| Clase                     | Estructura         | Registro                      |
+|---------------------------|--------------------|-------------------------------|
+| Referencia                | Valor              | Valor o referencia            |
+| Grandes                   | Pequeñas           | Pequeñas                      |
+| Valores y comportamientos | Enfocada a valores | Enfocada a valores inmutables |
+
+Una particularidad que tienen las clases es que la forma en la que se crean o comparan los elementos dentro del código es a travez de referencia, esto significa que cada vez que se cree un objeto con esa clase se va a apartar una posición de memoria para apartar los datos de ese objeto y se le va a asignar un identificar a esa posición de memoria. Esto significa que si creamos otro objeto con exactamente los mismo valores y datos, de toda manera va a ser un objeto diferente al primer objetos que creamos, ya que cada uno de estos va a tener una referencia diferente.
+
+Las clases se puede utilizar en cualquier nivel de complejidad, ya sea un componente pequeño, mediano o grande, podemos utilizar clases, lo que permite mayor versatilidad.
+
+Las clases son enfocadas en valores y comportamientos, es decir, cuando se tienen que creear datos pero también muchos métodos o funciones dentro de la clase para poder manipular eso datos.
+

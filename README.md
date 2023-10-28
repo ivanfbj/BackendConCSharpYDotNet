@@ -261,3 +261,26 @@ public string NombreEidentidadSecreta
     }
 }
 ```
+
+## Clase 13 - ¿Que es herencia?
+
+Lla herencia permite que una clase herede atributos y métodos de otra clase. Es una forma de reutilizar el código para así, establecer relaciones entre las clases.
+
+Ejemplo:
+
+clase Animal->(clase base)
+clase Perro ->( clase derivada de Animal)
+clase Gato->(Clase derivada de Animal)
+
+En este caso Perro y Gato heredan propiedades comunes de Animal como lo sería Nombre, Edad y pueden tener sus propiedades y métodos específicos como ladrar en Perro y Maullar en Gatos.
+
+Herencia en C#:
+
+- Se usan los dos puntos para especificar la clase padre luego del nombre de la clase hija:
+
+```C#
+public class ClaseHija : ClasePadre
+```
+
+**Nota:**
+En C# solo podemos heredar de una clase o no podemos heredar de múltiples clases.

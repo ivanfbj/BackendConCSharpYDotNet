@@ -181,7 +181,7 @@ Quienes tienen accesos a las clases, propiedades y métodos.
 
 ______
 
-A nivel del código se procede a realizar un cambio el cual implica mover las clases `SuperHeroe` y `SuperPoder`, a sus propios archivos de clases `SuperHeroe.cs` y `SuperPoder.cs`, y para poder utilizar dichas clases desde la clase `Program.cs` es necesario realizar la importación del espacio de trabajo por medio de 
+A nivel del código se procede a realizar un cambio el cual implica mover las clases `SuperHeroe` y `SuperPoder`, a sus propios archivos de clases `SuperHeroe.cs` y `SuperPoder.cs`, y para poder utilizar dichas clases desde la clase `Program.cs` es necesario realizar la importación del espacio de trabajo por medio de
 
 ```C#
 using proyecto.carpeta
@@ -191,4 +191,73 @@ lo que se convierte en este proyecto en:
 
 ```C#
 using cursoDeProgramacionOrientadaAObjetosConCSharp.Models;
+```
+
+## Clase 12 - Encapsulamiento
+
+Se refiere a la idea de ocultar los detalles internos de un objeto y proporcionar una interfaz pública bien definida para interactuar con él.
+
+El encapsulamiento permite controlar el acceso a los atributos y métodos de un objeto, lo que ayuda a mantener la integridad de los datos y facilita la gestión y el mantenimiento del código.
+
+En el encapsulamiento, los atributos de un objeto se declaran como privados, lo que significa que solo pueden accederse y modificarse desde dentro de la propia clase a la que pertenece el objeto.
+
+Para permitir que otros objetos interactúen con estos atributos, se proporcionan métodos públicos, también conocidos como métodos de acceso o getters y setters, que permiten obtener y establecer los valores de los atributos de manera controlada.
+
+Los beneficios del encapsulamiento son:
+
+1. Control de acceso: Se puede especificar quién tiene acceso a los datos y quién no. Esto ayuda a prevenir modificaciones no deseadas o inconsistentes en los datos.
+
+2. Ocultamiento de detalles internos: Los detalles de implementación de una clase se mantienen ocultos, lo que facilita el cambio de la implementación sin afectar a los objetos que la utilizan.  
+
+3. Facilita la mantenibilidad: Al tener una interfaz pública bien definida, es más fácil identificar y corregir problemas en el código, ya que se sabe dónde se realizan las interacciones con el objeto.
+
+En C# el encapsulamiento se logra utilizando modificadores de acceso como "**private**", "**public**" y "**protected**" para controlar el acceso a los atributos y métodos de una clase.
+
+En el código se del archivo `Program.cs` el nombre del superHeroe contiene espacios, por lo cual se va a realizar un encapsulamiento del atributo `Nombre` para poder limpiar el nombre:
+
+Ejemplo:
+
+```C#
+SuperHeroe superman = new();
+
+superman.Id = 1;
+superman.Nombre = "        Superman            ";
+```
+
+Para el encapsulamiento lo que se realiza es que en la clase `SuperHeroe.cs` se van a crear 2 atributos para guardar el "Nombre", un atributo privado y otro público, el atributo privado contendra la información ya depurada y sin errores o espacios adicionales y al atributo público tendrá el GET y el SET que será el encapsulamiento del atributo "Nombre", el cual en el SET se encargará de limpiar de los espacios al inicio y al final antes de guardar el datos en el atributo privado:
+
+Ejemplo:
+
+```C#
+private string _Nombre;
+
+public string Nombre
+{
+    get
+    {
+        return _Nombre;
+    }
+
+    set
+    {
+        _Nombre = value.Trim();
+    }
+}
+
+```
+
+Al encapsular la propiedad, en el momento de guardar el dato se limpian los espacios al inicio y al final.
+
+Otro tipo de encapsulamiento es reutilizar otras propiedades que ya tiene la clase para encapsularlas y crear una nueva propiedad que encapsula un comportamiento en particular:
+
+Ejemplo:
+
+```C#
+public string NombreEidentidadSecreta
+{
+    get
+    {
+        return $"{_Nombre} ({IdentidadSecreta})";
+    }
+}
 ```

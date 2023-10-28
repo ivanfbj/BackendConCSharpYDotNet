@@ -357,6 +357,48 @@ Console.WriteLine("************************************************\n");
 #endregion
 
 #region Clase 11 - Modificadores de acceso
+//SuperPoder poderVolar = new();
+//poderVolar.Nombre = "Volar";
+//poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
+//poderVolar.Nivel = NivelPoder.NivelDos;
+
+//SuperPoder superFuerza = new();
+//superFuerza.Nombre = "Super fuerza";
+//superFuerza.Nivel = NivelPoder.NivelTres;
+
+//SuperHeroe superman = new();
+
+//superman.Id = 1;
+//superman.Nombre = "Superman";
+//superman.IdentidadSecreta = "Clark Kent";
+//superman.Ciudad = "Metropolis";
+//superman.PuedeVolar = true;
+
+////Alternativa 1
+//List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+//poderesSuperman.Add(poderVolar);
+//poderesSuperman.Add(superFuerza);
+
+//superman.SuperPoderes = poderesSuperman;
+//string resultadoSuperPoderes = superman.UsarSuperPoderes();
+//Console.WriteLine(resultadoSuperPoderes);
+
+////Alternativa 2
+///*
+//List<SuperPoder> poderesSuperman = new List<SuperPoder> { poderVolar, superFuerza };
+//superman.SuperPoderes = poderesSuperman;
+// */
+
+//enum NivelPoder
+//{
+//    NivelUno,
+//    NivelDos,
+//    NivelTres
+//}
+
+#endregion
+
+#region Clase 12 - Encapsulamiento
 SuperPoder poderVolar = new();
 poderVolar.Nombre = "Volar";
 poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
@@ -369,12 +411,11 @@ superFuerza.Nivel = NivelPoder.NivelTres;
 SuperHeroe superman = new();
 
 superman.Id = 1;
-superman.Nombre = "Superman";
+superman.Nombre = "        Superman            ";
 superman.IdentidadSecreta = "Clark Kent";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
 
-//Alternativa 1
 List<SuperPoder> poderesSuperman = new List<SuperPoder>();
 poderesSuperman.Add(poderVolar);
 poderesSuperman.Add(superFuerza);
@@ -383,17 +424,10 @@ superman.SuperPoderes = poderesSuperman;
 string resultadoSuperPoderes = superman.UsarSuperPoderes();
 Console.WriteLine(resultadoSuperPoderes);
 
-//Alternativa 2
-/*
-List<SuperPoder> poderesSuperman = new List<SuperPoder> { poderVolar, superFuerza };
-superman.SuperPoderes = poderesSuperman;
- */
-
 enum NivelPoder
 {
     NivelUno,
     NivelDos,
     NivelTres
 }
-
 #endregion

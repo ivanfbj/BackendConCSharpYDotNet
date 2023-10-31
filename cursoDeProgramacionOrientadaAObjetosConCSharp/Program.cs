@@ -399,6 +399,40 @@ Console.WriteLine("************************************************\n");
 #endregion
 
 #region Clase 12 - Encapsulamiento
+//SuperPoder poderVolar = new();
+//poderVolar.Nombre = "Volar";
+//poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
+//poderVolar.Nivel = NivelPoder.NivelDos;
+
+//SuperPoder superFuerza = new();
+//superFuerza.Nombre = "Super fuerza";
+//superFuerza.Nivel = NivelPoder.NivelTres;
+
+//SuperHeroe superman = new();
+
+//superman.Id = 1;
+//superman.Nombre = "        Superman            ";
+//superman.IdentidadSecreta = "Clark Kent";
+//superman.Ciudad = "Metropolis";
+//superman.PuedeVolar = true;
+
+//List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+//poderesSuperman.Add(poderVolar);
+//poderesSuperman.Add(superFuerza);
+
+//superman.SuperPoderes = poderesSuperman;
+//string resultadoSuperPoderes = superman.UsarSuperPoderes();
+//Console.WriteLine(resultadoSuperPoderes);
+
+//enum NivelPoder
+//{
+//    NivelUno,
+//    NivelDos,
+//    NivelTres
+//}
+#endregion
+
+#region Clase 14 - Usando herencia en C#
 SuperPoder poderVolar = new();
 poderVolar.Nombre = "Volar";
 poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
@@ -407,6 +441,10 @@ poderVolar.Nivel = NivelPoder.NivelDos;
 SuperPoder superFuerza = new();
 superFuerza.Nombre = "Super fuerza";
 superFuerza.Nivel = NivelPoder.NivelTres;
+
+SuperPoder regeneracion = new();
+regeneracion.Nombre = "Regeneración";
+regeneracion.Nivel = NivelPoder.NivelTres;
 
 SuperHeroe superman = new();
 
@@ -423,6 +461,27 @@ poderesSuperman.Add(superFuerza);
 superman.SuperPoderes = poderesSuperman;
 string resultadoSuperPoderes = superman.UsarSuperPoderes();
 Console.WriteLine(resultadoSuperPoderes);
+
+AntiHeroe wolverine = new()
+{
+    Id = 5,
+    Nombre = "Wolverine",
+    IdentidadSecreta = "Logan",
+    PuedeVolar = false
+};
+
+List<SuperPoder> poderesWolverine = new()
+{
+    superFuerza,
+    regeneracion
+};
+
+wolverine.SuperPoderes = poderesWolverine;
+string resultadoSuperPoderesWolverine = wolverine.UsarSuperPoderes();
+Console.WriteLine(resultadoSuperPoderesWolverine);
+
+string accionAntiheroe = wolverine.RealizarAccionDeAntiheroe("Atacar la policia");
+Console.WriteLine(accionAntiheroe);
 
 enum NivelPoder
 {

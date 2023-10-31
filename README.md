@@ -284,3 +284,23 @@ public class ClaseHija : ClasePadre
 
 **Nota:**
 En C# solo podemos heredar de una clase o no podemos heredar de múltiples clases.
+
+## Clase 15 - Abstracción
+
+Se busca crear componente más genericos que no contengan un detalle o definición y esto va a permitir en muchos escenarios poder reautilar más el código y utilizar conceptos avanzados como los patrones de diseño.
+
+Las clases abstractas obligan a las clases que la heredan a implementar sus métodos abstractos:
+
+- Si una clase contiene un método abstracto la clase tambien debe ser abstracta.
+
+- Cuando en una clase abstracta se crean submétodos, estos no pueden contener un cuerpo de dicho método.
+
+- Cuando se hereda de una clase abstracta que contiene métodos o propiedades abstractas por obligación la clase que lo hereda tiene que implementarla con la palabra reservada override y crear el cuerpo de los métodos.
+
+A nivel de código se crear una nueva clase llamada `Heroe.cs` dicha clase se crea abstracta y con un método de tipo abstracto, este método solamente es el nombre y no contiene ningúna lógica interna.
+
+Al poner la clase `SuperHeroe.cs` como hija de la clase `Heroe.cs` el sistema nos indica que es neceserio implementar el método abstracto de la clase `Heroe.cs` en forma de **override**.
+
+Al implementar **abstract** ya sea en una propiedad o método obliga a la clase hija a que tenga que relizar el **override**.
+
+La clase abstracta puede contener métodos que no sean abstractos, con base en esto no es obligatorio para la clase hija que tenga que utilizar dicho método con override. En caso de que el objeto creado desde la clase hija requiera utilizar dicho método, lo puede hacer sin ningún tipo de error.

@@ -304,3 +304,22 @@ Al poner la clase `SuperHeroe.cs` como hija de la clase `Heroe.cs` el sistema no
 Al implementar **abstract** ya sea en una propiedad o método obliga a la clase hija a que tenga que relizar el **override**.
 
 La clase abstracta puede contener métodos que no sean abstractos, con base en esto no es obligatorio para la clase hija que tenga que utilizar dicho método con override. En caso de que el objeto creado desde la clase hija requiera utilizar dicho método, lo puede hacer sin ningún tipo de error.
+
+## Clase 16 - Polimorfismo
+
+Permite que la clase padra e hija tengan el mismo método pero en cada una de las clases se comporta o funciona de una forma diferente.
+
+Para indicar que un método va a ser de tipo **Polimorfismo**, al método se le agrega la palabra clave **virtual** en la clase padre, el método sigue siendo opcional su implementación en la clase hija.
+
+Si se va a implmenetar en la clase hija, se debe utilizar la palabra clave **override** para especificar que se va a sobreescribir el método.
+
+Con la clausula "base." se puede dejar el mismo comportamiento del método que proviene desde el método padre o en caso se ser necesario se cambiar la lógica.
+
+Método en la clase hija:
+
+```C#
+  public override string SalvarLaTierra()
+  {
+      return base.SalvarLaTierra();
+  }
+```

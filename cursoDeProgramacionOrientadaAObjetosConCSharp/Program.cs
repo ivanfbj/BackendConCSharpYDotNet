@@ -491,7 +491,7 @@ Console.WriteLine("************************************************\n");
 //}
 #endregion
 
-#region Clase 15 - Abtracción
+#region Clase 15 - Abstracción
 SuperPoder poderVolar = new();
 poderVolar.Nombre = "Volar";
 poderVolar.Descripcion = "Capacidad para volar y planear en el aire";

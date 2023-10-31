@@ -323,3 +323,25 @@ Método en la clase hija:
       return base.SalvarLaTierra();
   }
 ```
+
+## Clase 17 - ¿Qué es una interfaz?
+
+- Un contrato para garantizar la estructura de una clase.
+- Permite elementos abstractos e implementaciones por defecto.
+- Ayudan a desacoplar el código.
+- C# soporta implementación de múltiples interfaces.
+
+**Características:**
+
+- Normalmente se declaran con **I**Nombre
+- Se utilizan en casi todos los patrones de diseño para .NET
+- Podemos implementar generics para utilizar la misma interfaz en diferentes escenarios. Ejemplo: **IList\<T>**
+
+Las diferencias principales entre las interfaces y las clases son:
+
+- Las interfaces no pueden tener instancias. Una interfaz solo puede ser implementada por un tipo de datos.
+
+- Las interfaces solo pueden definir métodos, propiedades y eventos. Las clases pueden definir datos de instancia, métodos, propiedades y eventos.
+
+- Las interfaces se utilizan para especificar el comportamiento. Las clases se utilizan para definir tipos de datos.
+

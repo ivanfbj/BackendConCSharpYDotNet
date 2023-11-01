@@ -15,4 +15,40 @@ El reto será modificar el código para que cumpla con los mejores estandares de
 - Visual Code o Visual Studio
 - .NET 6 0 superior
 
+## Clase 3 - Terminología: Buenas prácticas, refactoring, código limpio, deuda técnica
 
+**Buenas Prácticas o Best practices:**
+
+- Estándares comprobados y verificados.
+- Resuelven desafíos de escenarios comunes.
+- Brindan guías fáciles de aprender y comprender.
+- Permiten tener una estructura similar para múltiples proyectos.
+
+**Código Limpio o Clean Code:**
+
+- Un código que sigue las buenas prácticas.
+- Código fácil de entender y analizar.
+- Código fácil de mantener.
+- Código fácil de actualizar.
+- Código fácil de escalar.
+<br>
+
+    **Cómo logramos código limpio**
+    - Mantener bajo acoplamiento.
+    - Utilizar sintaxis simple y moderna.
+    - Evitar incorporar muchas librerías de terceros.
+    - Distribución de responsabilidades.
+    - Creación de componentes pequeños.
+
+**Deuda técnica o technical debt:**
+
+- Se refiere a los problemas técnicos que puede tener un software que son adquiridos durante la fase de desarrollo y que deben ser solucionados en el futuro.
+- Puede estar presente en cualquier aspecto de una aplicación como: Seguridad, rendimiento, escalabilidad, etc...
+- A veces puede resultar más costosa que el mismo desarrollo.
+
+**Refactoring:**
+
+- Proceso de cambios sobre un código para el mejoramiento en cualquier aspecto (rendimiento, seguridad, legibilidad, soporte, etc...)
+- Lo más importante es hacer los cambios manteniendo la lógica de negocio sin afectaciones.
+- Debe ser recurrente. (Por lo menos cada 6 meses, revisar versiones de libreria, mejorar las prácticas del código)
+- Disminuye la deuda técnica a futuro.

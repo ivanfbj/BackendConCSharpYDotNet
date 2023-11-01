@@ -364,4 +364,15 @@ var imprimirInfo = new ImprimirInfo();
 imprimirInfo.ImprimirSuperHeroe(superman);
 ```
 
-**Nota: Reforzar el temas de las interfaces**
+**Nota: Reforzar el temas de las interfaces.**
+
+## Clase 19 - Interfaces vs Clases abstractas
+
+**Comparativa:**
+
+| Clase abstracta | Interfaz |
+|-----------------|----------|
+|Solo permite una herencia|Permite múltiples implementaciones|
+|Permite tener implementaciones|No es posible implementar (se puede desde C# 8.0)|
+|Recomendada para reutilizar código y lógica|Recomendada para implementar patrones de diseño y la inyección de dependencias|
+|Menos usada| Altamente usada|

@@ -345,3 +345,23 @@ Las diferencias principales entre las interfaces y las clases son:
 
 - Las interfaces se utilizan para especificar el comportamiento. Las clases se utilizan para definir tipos de datos.
 
+## Clase 18 - Usando interfaces
+
+Al interfaces se utilizan de la misma forma que la herencia, al frente del nombre de la clase se colocan dos puntos y luego el nombre de la interfaz, en caso de que haya una clase padre entonces se coloca la coma y nombre de la interfaz:
+
+Ejemplo:
+
+```C#
+class SuperHeroe : Heroe, ISuperHeroe
+```
+
+A nivel de código se crea la interfaz con sus respectivos atributos, luego se le asigna la interfaz a la clase `SuperHeroe.cs`, a la cual es necesario implementar el GET y SET a los atributos que se utilizan en la interfaz.
+
+Se crea la clase `ImprimirInfo.cs` que tiene un método que recibe la interfaz `ISuperHeroe.cs`, de esta manera se puede crear un objeto de la interfaz y pasarle un objeto creado de la clase `SuperHeroe.cs`.
+
+```C#
+var imprimirInfo = new ImprimirInfo();
+imprimirInfo.ImprimirSuperHeroe(superman);
+```
+
+**Nota: Reforzar el temas de las interfaces**

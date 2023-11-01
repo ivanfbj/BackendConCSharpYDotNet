@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using cursoDeProgramacionOrientadaAObjetosConCSharp;
 using cursoDeProgramacionOrientadaAObjetosConCSharp.Models;
 
 Console.WriteLine("Curso de Programación Orientada a Objetos con C#");
@@ -492,6 +493,72 @@ Console.WriteLine("************************************************\n");
 #endregion
 
 #region Clase 15 - Abstracción
+//SuperPoder poderVolar = new();
+//poderVolar.Nombre = "Volar";
+//poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
+//poderVolar.Nivel = NivelPoder.NivelDos;
+
+//SuperPoder superFuerza = new();
+//superFuerza.Nombre = "Super fuerza";
+//superFuerza.Nivel = NivelPoder.NivelTres;
+
+//SuperPoder regeneracion = new();
+//regeneracion.Nombre = "Regeneración";
+//regeneracion.Nivel = NivelPoder.NivelTres;
+
+//SuperHeroe superman = new();
+
+//superman.Id = 1;
+//superman.Nombre = "        Superman            ";
+//superman.IdentidadSecreta = "Clark Kent";
+//superman.Ciudad = "Metropolis";
+//superman.PuedeVolar = true;
+
+//List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+//poderesSuperman.Add(poderVolar);
+//poderesSuperman.Add(superFuerza);
+
+//superman.SuperPoderes = poderesSuperman;
+//string resultadoSuperPoderes = superman.UsarSuperPoderes();
+//Console.WriteLine(resultadoSuperPoderes);
+//string resultadoSalvarMundo = superman.SalvarElMundo();
+//Console.WriteLine(resultadoSalvarMundo);
+
+//string resultadoSalvarTierra = superman.SalvarLaTierra();
+//Console.WriteLine(resultadoSalvarTierra);
+
+//AntiHeroe wolverine = new()
+//{
+//Id = 5,
+//Nombre = "Wolverine",
+//IdentidadSecreta = "Logan",
+//PuedeVolar = false
+//};
+
+//List<SuperPoder> poderesWolverine = new()
+//{
+//    superFuerza,
+//    regeneracion
+//};
+
+//wolverine.SuperPoderes = poderesWolverine;
+//string resultadoSuperPoderesWolverine = wolverine.UsarSuperPoderes();
+//Console.WriteLine(resultadoSuperPoderesWolverine);
+
+//string accionAntiheroe = wolverine.RealizarAccionDeAntiheroe("Atacar la policia");
+//Console.WriteLine(accionAntiheroe);
+
+//enum NivelPoder
+//{
+//    NivelUno,
+//    NivelDos,
+//    NivelTres
+//}
+#endregion
+
+#region Clase 18 - Usando interfaces
+var imprimirInfo = new ImprimirInfo();
+
 SuperPoder poderVolar = new();
 poderVolar.Nombre = "Volar";
 poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
@@ -513,6 +580,8 @@ superman.IdentidadSecreta = "Clark Kent";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
 
+imprimirInfo.ImprimirSuperHeroe(superman);
+
 List<SuperPoder> poderesSuperman = new List<SuperPoder>();
 poderesSuperman.Add(poderVolar);
 poderesSuperman.Add(superFuerza);
@@ -533,6 +602,8 @@ Nombre = "Wolverine",
 IdentidadSecreta = "Logan",
 PuedeVolar = false
 };
+
+imprimirInfo.ImprimirSuperHeroe(wolverine);
 
 List<SuperPoder> poderesWolverine = new()
 {

@@ -52,3 +52,12 @@ El reto será modificar el código para que cumpla con los mejores estandares de
 - Lo más importante es hacer los cambios manteniendo la lógica de negocio sin afectaciones.
 - Debe ser recurrente. (Por lo menos cada 6 meses, revisar versiones de libreria, mejorar las prácticas del código)
 - Disminuye la deuda técnica a futuro.
+
+## Clase 4 - Descarga y análisis del proyecto a trabajar
+
+El código de ejemplo se encuentra en Github [curso-codigo-limpio-csharp](https://github.com/platzi/curso-codigo-limpio-csharp/tree/master) el código se puede clonar o descargar el .ZIP o también está en el archivo `Program.cs`.
+
+En caso de trabajar con Visual Studio Code para compilar y ejecutar el código se requieren los siguientes comandos en la terminal:
+
+Compilar: `dotnet build`
+Ejecutar: `dotnet run`

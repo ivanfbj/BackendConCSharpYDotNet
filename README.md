@@ -1,15 +1,9 @@
-# Backend con C# y .NET
+# Curso de Buenas Prácticas y Código Limpio en C\#
 
-Cada rama tiene la información relacionada con un curso de la ruta de [Backend con C# y .NET](https://platzi.com/ruta/web-net/) de [Platzi](https://platzi.com).
+## Clase 1 - Presentación
 
-El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalmente las descripciones de los commits contienen el título de la clase y pueden llegar a tener un descripción complementaria de dicha clase.
+Se aprenderá como mejorar el código, cómo escribir un mejor código en C# y seguir los mejores estandares que hay en la industria del software.
 
-## Cursos finalizados
+Se tomará de base un código existente y funcional pero que no tiene las mejores practicas dentro del código.
 
-1. [Curso Básico de Programación con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoBasicoDeProgramacionConCSharp)
-
-2. [Curso de Programación Orientada a Objetos con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeProgramacionOrientadaAObjetosConCSharp)
-
-4. [Curso de Principios SOLID en C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDePrincipiosSolidEnCSharpYDotNet)
-
-8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)
+El reto será modificar el código para que cumpla con los mejores estandares de buenas practicas pero sin afectar la funcionalidad de la aplicación.

@@ -61,3 +61,42 @@ En caso de trabajar con Visual Studio Code para compilar y ejecutar el código s
 
 Compilar: `dotnet build`
 Ejecutar: `dotnet run`
+
+## Clase 5 - Nombramiento
+
+**Variables**: El nombre de la variable debe ser lo más descriptivo posible.
+
+```C#
+//Mal:
+int b;
+
+//Bien:
+int daySinceModification;
+```
+
+**Método**: El nombre de los métodos debe ser lo más descriptivo posible, debe ser en forma de **PascalCase**
+
+Tampoco se debe incluir números en el nombramiento del método.
+
+```C#
+//Mal:
+public List<Users> getUsers();
+
+//Bien:
+public List<Users> GetActiveUsers();
+```
+
+**Clases**: El nombre de las clases debe ser lo más descriptivo posible. Se debe omitir la "Notación húngara" que consiste indicar el tipo de variable en el nombre en este caso "Class.." para indicar que es una clase.
+
+Tampoco se debe incluir números en el nombramiento de la clase.
+
+```C#
+//Mal:
+public class ClassUser2;
+
+//Bien:
+public class User;
+```
+
+A nivel de código se cambian los nombre de algunas variasbles y métodos para poder hacer el código un poco más legible.
+

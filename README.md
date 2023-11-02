@@ -100,3 +100,36 @@ public class User;
 
 A nivel de código se cambian los nombre de algunas variasbles y métodos para poder hacer el código un poco más legible.
 
+## Clase 6 - Code Smells
+
+Transmite la sensación de que algo en el código está mal.
+
+Al realizar el análisis sobre código y algo que notamos nos está transmitiendo la sensación de que algo está mal, de que algo no está correcto, de que algo no está bien hecho o de que algo se puede mejorar.
+
+A nivel de código para poder quitar los "Números mágicos" existen 2 posibles soluciones, una es utilizar constantes y colocarles un nombre descriptivo sobre que representa o para que se utiliza, la otra solucón es utilizar las enumeraciones como se visualiza en el código.
+
+**Comentarios:**
+
+Sensación de que algo va mal con el código al percibir algunos indicadores de posibles errores. A veces estos errores pueden ser indicaciones de mala calidad del código, pero, esto que a simple vista se ve como “mal, feo, o raro”, en muchas ocasiones puede ser causante de problemas más profundos de funcionamiento en el código del programa o aplicación, lo que conllevaría una refactorización o incluso una reescritura del código para lograr un código limpio y su mejor funcionamiento.
+
+**Algunos ejemplos de code smell:**
+
+- Variables, métodos o clases con nombres poco descriptivos.
+
+- Métodos y clases de muchísimas líneas que se vuelven difíciles o tediosos de entender. Esto es un indicativo de que las funcionalidades que contienen se pueden separar en pequeñas partes y así poder dividir las responsabilidades en clases y metodos mas pequeños y entendibles.
+
+- Métodos o funciones que reciben demasiados parámetros, lo que indica que hay mucha lógica dentro de esa función.
+
+- Utilización de “Números mágicos” o “quemados”, esto se refiere a números fijos que utilizamos dentro de la lógica de nuestro código y que puede causar que a primera vista no se entienda cuál es su función dentro del mismo y se requiera de más tiempo para comprender lo que hacen.
+
+**Tipos de code smell:**
+
+Para considerar los diferentes code smells, hay que distinguir entre los niveles de abstracción del código:
+
+1. Code smells de forma general.
+2. Code smells a nivel de función.
+3. Code smells a nivel de clase.
+4. Code smells a nivel de la aplicación
+
+Para complementar la información sobre los tipos de code smell les recomiendo la lectura de este artículo: [Code smell explicado de forma sencilla](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/code-smell)
+

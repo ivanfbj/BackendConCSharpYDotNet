@@ -133,3 +133,34 @@ Para considerar los diferentes code smells, hay que distinguir entre los niveles
 
 Para complementar la información sobre los tipos de code smell les recomiendo la lectura de este artículo: [Code smell explicado de forma sencilla](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/code-smell)
 
+## Clase 7 - Principio DRY
+
+Significa: **"Don't Repeat Yourself"**
+
+Invita que no estemos escribiendo las mismas pociones de código todo el tiempo en diferentes parte, la idea es poder reutilizar las rutinas de código y máximizar la forma de distribuir el código.
+
+Copiar y pegar código no está mal, es algo común, solamente que lo importan es entender el funcionamiento de ese código y estructurarlo para que encaje en nuestro proyecto y se pueda reutilizar en diferentes partes o se pueda combinar con el código existente.
+
+Hay 2 formas en las que normalmente se repite el código:
+
+1. El código se repite exactamente igual: la solución es crear una función con dicho código.
+
+2. Se repiten pequeñas rutinas de código: Se busca la manera de poder crear una función o un método en común que podamos definir diferentes comportamientos utilizando parámetros.
+
+A nivel del código se encuentra que el código que muestra la lista de tareas se repite 2 veces, por lo cual es posible migrarlo a un método y cambiar los pedazos de código por dicho método.
+
+**Comentarios:**
+
+Principio DRY
+
+DRY: Don’t Repeat Yourself (No te repitas) .
+
+El objetivo de este principio es evitar la duplicación de partes de código en nuestro código. Andy Hunt y Dave Thomas formularon en su libro «The Pragmatic Programmer: From Journeyman to Master» el siguiente principio:
+
+> «Every piece of knowledge must have a single, unambiguous, authoritative representation within a system»
+
+Que en español se traduciría como:
+
+> «Cada pieza de conocimiento debe tener una única representación autorizada, sin ambigüedades, dentro de un sistema».
+
+El código duplicado no siempre es fácil de reconocer o para poder eliminarlo puede que resulte más compleja la solución. una regla de oro en el refactoring es la Regla de tres: repetir una vez el mismo código puede ser aceptable, pero la tercera vez que utilizamos el mismo código, es señal inequívoca de que hay que refactorizar y solucionar la duplicación.

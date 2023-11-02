@@ -164,3 +164,40 @@ Que en español se traduciría como:
 > «Cada pieza de conocimiento debe tener una única representación autorizada, sin ambigüedades, dentro de un sistema».
 
 El código duplicado no siempre es fácil de reconocer o para poder eliminarlo puede que resulte más compleja la solución. una regla de oro en el refactoring es la Regla de tres: repetir una vez el mismo código puede ser aceptable, pero la tercera vez que utilizamos el mismo código, es señal inequívoca de que hay que refactorizar y solucionar la duplicación.
+
+## Clase 8 - Principio KISS
+
+Significa: **Keep It Simple Stupid**
+**Keep It Short and Simple**(forma elegante).
+
+Se debe en lo posible simplificar el código que se está realizando, sin crear demasiados elementos, demasiados componentes, sin desglozar demasiado el código cuando esto no es necesario.
+
+La sobre arquitectura es cuando diseñamos la aplicación demasiado grande o demasiado compleja para dar solución a algo que es demasiado simple.
+
+A nivel de código se modifica un **if** anidados y se deja un solo **if** para simplificar el código.
+
+El **for** que se encarga de mostrar los datos se puede simplificar con el método ForEach de la lista y una expresión lambda.
+
+```C#
+int indexTask = 1;
+taskList.ForEach(element => Console.WriteLine((indexTask++) + ". " + element));
+```
+
+**Comentarios:**
+
+KISS: es un acrónimo de Keep It Simple Stupid o Keep It Short and Simple y a rasgos generales se puede traducir como Mantenlo simple!.
+
+Este principio establece que la mayoría de sistemas funcionan mejor si se mantienen simples o sencillos a diferencia de aquellos que se hacen complejos de manera innecesaria. Es decir, que desde el incio del proyecto la sencillez tiene que ser una meta en el desarrollo y que la complejidad innecesaria debe ser eliminada cada vez que sea detectada. Muchas veces esta complejidad ocurre cuando se diseñan grandes soluciones para objetivos simples.
+
+> Tratemos de utilizar la mejor solución dependiendo de la complejidad de lo que estemos trabajando. Cuando algo es muy complejo o muy grande, es recomendable buscar soluciones más complejas o avanzadas que se ajusten, pero si algo es más simple, pequeño o sencillo, lo ideal es darle una solución acorde a sus características.
+
+Es bueno tener presente que:
+
+> Si ya no comprendes tu propio código después de un breve período de tiempo, las campanas de alarma deberían sonar. Porque cuanto más complicado es o se presenta, más difícil es para todos los involucrados trabajar con él.
+
+Algunos ejemplos de complejidad innecesaria son:
+
+- Incluir bibliotecas enormes en el proyecto cuando solo se necesitan un par de funciones de ellas.
+- Abstracción excesiva en el código.
+- Funciones que resultan enormes por por la lógica que contienen.
+- Anidación de condicionales que solo cumplen una función.

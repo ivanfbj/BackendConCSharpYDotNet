@@ -397,14 +397,11 @@ namespace cursoDeBuenasPracticasYCodigoLimpioEnCSharp
                 string indexTaskOfList = Console.ReadLine();
                 // Remove one position
                 int indexToRemove = Convert.ToInt32(indexTaskOfList) - 1;
-                if (indexToRemove > -1)
+                if (indexToRemove > -1 && TaskList.Count > 0)
                 {
-                    if (TaskList.Count > 0)
-                    {
-                        string task = TaskList[indexToRemove];
-                        TaskList.RemoveAt(indexToRemove);
-                        Console.WriteLine("Tarea " + task + " eliminada");
-                    }
+                    string task = TaskList[indexToRemove];
+                    TaskList.RemoveAt(indexToRemove);
+                    Console.WriteLine("Tarea " + task + " eliminada");
                 }
             }
             catch (Exception)
@@ -441,10 +438,9 @@ namespace cursoDeBuenasPracticasYCodigoLimpioEnCSharp
         public static void ShowTaskList(List<string> taskList)
         {
             Console.WriteLine("----------------------------------------");
-            for (int i = 0; i < taskList.Count; i++)
-            {
-                Console.WriteLine((i + 1) + ". " + taskList[i]);
-            }
+            int indexTask = 1;
+            taskList.ForEach(element => Console.WriteLine((indexTask++) + ". " + element));
+            
             Console.WriteLine("----------------------------------------");
         }
     }

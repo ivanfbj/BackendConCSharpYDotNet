@@ -201,3 +201,16 @@ Algunos ejemplos de complejidad innecesaria son:
 - Abstracción excesiva en el código.
 - Funciones que resultan enormes por por la lógica que contienen.
 - Anidación de condicionales que solo cumplen una función.
+
+## Clase 9 - Usando try catch
+
+Try catch es para excepciones.
+
+- Son escenarios excepcionales o inusuales en el código.
+- Se implementa donde se desee devolver un valor específico después de realizar el control.
+- El rendimiento se ve afectado al capturar la excepción.
+
+A nivel de código se implementa un "Console.WriteLine" en el catch del método "ShowMenuRemove()", ya que si se elimina una tarea por fuera del rango de la lista se generaría un error.
+
+Adicionalmente lo que se hace es implementar una condición para controlar el error antes de que suceda, esto con el objetivo de que el try catch se encargue de los errores que son realmente inesperados en el código.
+

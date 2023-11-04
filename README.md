@@ -10,6 +10,8 @@ El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalm
 
 2. [Curso de Programación Orientada a Objetos con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeProgramacionOrientadaAObjetosConCSharp)
 
+3. [Curso de Buenas Prácticas y Código Limpio en C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeBuenasPracticasYCodigoLimpioEnCSharp)
+
 4. [Curso de Principios SOLID en C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDePrincipiosSolidEnCSharpYDotNet)
 
 8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)

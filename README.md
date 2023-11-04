@@ -23,3 +23,7 @@ Los contenidos de esta rama serán los mismos del video:
 - 31:27 Inyección de dependencia
 - 33:11 Creación de base de datos en ejecución
 - 37:00 Accediendo a base de datos desde controlador
+
+## Introducción
+
+Se abordarán lo temas mínimos que debe conocer y manejar un desarrollador backend independientemente del lenguaje de programación que use, ya que los conceptos aplican para todos. Para los ejemplos se utilizará código C# en .NET.

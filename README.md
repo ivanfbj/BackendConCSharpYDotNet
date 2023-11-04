@@ -27,3 +27,10 @@ Los contenidos de esta rama serán los mismos del video:
 ## Introducción
 
 Se abordarán lo temas mínimos que debe conocer y manejar un desarrollador backend independientemente del lenguaje de programación que use, ya que los conceptos aplican para todos. Para los ejemplos se utilizará código C# en .NET.
+
+## Creación del proyecto
+
+Se creará un proyecto desde visual studio con la plantilla `ASP.NET Core Web API`, luego de colocar el nombre del proyecto se debe seleccionar la opción `Usar controladores (desactivar para usar API mínimas)` para luego explicar otros conceptos, para estos temas se trabajará con el Framework `.NET 7.0`.
+
+El proyecto que se crea ya tiene una base, se borra la clase y el controlador llamados `WeatherForecast.cs` y `WeatherForecastController.cs` ya que no se requieren.
+

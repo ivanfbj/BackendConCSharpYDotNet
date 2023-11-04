@@ -358,3 +358,12 @@ Enlaces de interes:
 
 A nivel de código se implementan algunas de las mejoras vistas en la Clase 10.
 
+## Clase 12 - Implementando minimalismo
+
+Se modifica el archivo `cursoDeBuenasPracticasYCodigoLimpioEnCSharp.csproj` para realizar una actualización de la versión de .NET que se está utilizando, en el video de cambio la versión del Framework de `netcoreapp3.1` a `net6.0` y se agregó la configuración de los using implicitos `<ImplicitUsings>enable</ImplicitUsings>`.
+
+Implementando estas actualizaciones el sistema en el archivo `Progrma.cs` nos permite eliminar los `using` del sistema y el namespace se puede eliminar y quitar las llaves que encierran el resto de código.
+
+Adicionalmente se puede eliminar la clase `internal class Program` incluyendo la llave de apertura y cierre, también se puede eliminar el método `static void Main(string[] args)`.
+
+De los métodos creados se puede quitar el `public static`.

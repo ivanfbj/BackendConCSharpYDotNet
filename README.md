@@ -65,3 +65,14 @@ Lo métodos que se crean pueden retornar un tipo de datos nativo y adicionalment
 
 HttpGet es un tipo de verbo para las solicitudes HTTP, los más utilizados son HttpGet, HttpPost, HttpPut y HttpDelete.
 
+## Modelos
+
+Los controladores tienes la responsabilidad de recibir las solicitudes, procesarlas y retornar algo.
+
+Los modelos son la parte que moldea la información con la cual se va a trabajar.
+
+Se crea la carpeta `Models` y dentro la clase `Beer.cs` con sus respectivas propiedades.
+
+En el controlador se crea un nuevo método y en las rutas se puede personalizar las rutas, el primer método es la ruta por defecto, el segundo método ingresa por la ruta especificada en el código.
+
+

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using BackendApp.Models;
 
 namespace BackendApp.Controllers
 {
@@ -13,5 +14,16 @@ namespace BackendApp.Controllers
             return "Hola mundo";
         }
 
+        [HttpGet("GetBeer")]
+        public Beer GetBeer()
+        {
+            var beer = new Beer()
+            {
+                BeerId = 1,
+                Name = "Erdinger",
+            };
+
+            return beer;
+        }
     }
 }

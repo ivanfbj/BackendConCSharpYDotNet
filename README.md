@@ -397,3 +397,13 @@ En general no se deberia de comentar malos código sino que se deberia de reescr
 - No dejes código comentado.
 
 A nivel de código se mejoran los comentarios.
+
+## Clase 14 - Resumen y cierre del curso
+
+**Recomendaciones finales**:
+
+- Lee sobre buenas prácticas. (Sobre el lenguaje, tecnología o servicios que estes trabajando)
+- Realiza code review entre colegas, así como entre compañeros y compañeras de trabajo.
+- Realiza refactoring luego de implementar tu código.
+- Utiliza herramientas que te ayuden a limpiar tu código.
+- Implementa estándares y prácticas comunes en tu empresa o proyecto.

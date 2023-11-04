@@ -214,3 +214,142 @@ A nivel de código se implementa un "Console.WriteLine" en el catch del método 
 
 Adicionalmente lo que se hace es implementar una condición para controlar el error antes de que suceda, esto con el objetivo de que el try catch se encargue de los errores que son realmente inesperados en el código.
 
+## Clase 10 - Evolución de C\#
+
+Desde el 2017 C# a ido evolucionando con mayor rápidez, en la que apróximadamente cada año saca una versión nueva incluyendo una versión nueva de .NET.
+
+**C# 6 - Auto Property Initializer:**
+
+Esta mejora permite asignar un valor por defecto a una propiedad dentro de una clase
+
+```C#
+public string MyVar { get; set; } = "Hello World" ;
+```
+
+**C# 6 - String Interpolation:**
+
+Permite utilizar el signo pesos y las llaves para concatenar una variable dentro de un string de una forma más ordenada y sencilla.
+
+```C#
+string MyVar = "Hello World";
+Console.WriteLine($"The message is: {MyVar}");
+```
+
+**C# 6 - Expression - Bodied Function:**
+
+Se pueden crear funciones de una forma más rápida utilizando el operador flecha, cuando la función tiene una acción simple.
+
+```C#
+public int Sum2Numbers( int x, int y) => (x + y);
+```
+
+**C# 6 - null conditional operator**
+
+El operador null para condicionales nos permite verificar, si una porpiedad es nula o no al momento de realizar una evaluación.
+
+Esto nos ahorraría un **IF**
+
+```C#
+DateTime? datetime = new DateTime( ) ;
+
+// using ? asking i f the value is null
+var Year0fDate = datetime?.Year;
+
+Console.WriteLine(Year0fDate) ;
+
+var Year0fDateConditional = datetime?.Year ?? @ •
+```
+
+**C# 7 - Local functions:**
+
+Es una mejora que permite crear funciones dentro de métodos, para estructurar un poco mejor el código.
+
+```C#
+static void Main(string[] args)
+{
+    int Sum(int x, int y)
+    {
+        return x + y;
+    }
+    Console.WreiteLine(Sum(10,20));
+    Console.ReadKey();
+}
+```
+
+**C# 7 - Digital separator:**
+
+Nos permite utilizar el guión bajo para separar los caracteres de un número y pueda facilitar la visualización.
+
+```C#
+public const long BillionsAndBillions = 100_000_000_000;
+```
+
+**C# 7 - Tuples:**
+
+La tuplas permite retornar una combinación de diferentes valores y de diferentes tipos al momento que se requiera
+
+```C#
+var named = (first: "one", second: "two" ) ;
+
+//method returning a tuple
+(bool bresult, double dcalculation) = Tuples.CalculationTuple() ;
+```
+
+**C# 8 - Switch as expression:**
+
+Es una forma más sencilla y compacta de poder utilizar la expresión del Switch, permitiendo recibir y devolver el resultado cuando es un solo valor.
+
+```C#
+//switch as expression
+int intValueForSwitch = 0;
+var state = (intValueForSwitch) switch
+{
+    (0) => "Zero" ,
+    (1) => "One" ,
+    (2) => "Two" ,
+    _ => "NO valid number"
+};
+```
+
+**C# 9 - Top - level statement:**
+
+Nos permite eliminar la estructura generica que se manejaba en C\#, donde se requieria un namespace y una clase para poder ejecutar el código.
+
+Ahora solamente se requiere el using System y comenzar a usar el código directamente
+
+```C#
+
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+        }
+    }
+}
+
+//Ahora con C# 9 queda de la siguiente manera
+
+using System;
+
+Console.WriteLine("Hello World");
+
+```
+
+**C# 10 - Global using:**
+
+Noa ayuda a minimizar el código ya que se detectan automaticamente los using que hacen parte del Core de .NET, el código detecta automaticamente que estamos utilizando la consola y no se requiere el `using System;`
+
+```C#
+Console.WriteLine("Hello World");
+```
+
+Enlaces de interes:
+
+[Novedades de C# 12](https://learn.microsoft.com/es-es/dotnet/csharp/whats-new/csharp-12)
+[Novedades de C# 11](https://learn.microsoft.com/es-es/dotnet/csharp/whats-new/csharp-11)
+[Novedades de C# 11](https://learn.microsoft.com/es-es/dotnet/csharp/whats-new/csharp-10)

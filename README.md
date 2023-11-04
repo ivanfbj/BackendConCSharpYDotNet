@@ -1,17 +1,25 @@
-# Backend con C# y .NET
+# [LO QUE TIENES QUE SABER como Programador Backend (OBLIGATORIO)](https://www.youtube.com/watch?v=2TY_TkjRUp0)
 
-Cada rama tiene la información relacionada con un curso de la ruta de [Backend con C# y .NET](https://platzi.com/ruta/web-net/) de [Platzi](https://platzi.com).
+Esta rama es independiente de las otras, las otras ramas están enfocadas en una ruta de aprendizaje de [Platzi](https://platzi.com).
 
-El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalmente las descripciones de los commits contienen el título de la clase y pueden llegar a tener un descripción complementaria de dicha clase.
+Esta rama está enfocada en el vídeo [LO QUE TIENES QUE SABER como Programador Backend (OBLIGATORIO)](https://www.youtube.com/watch?v=2TY_TkjRUp0) del canal de [Youtube de hdeleon.net](https://www.youtube.com/@hdeleonnet).
 
-## Cursos finalizados
+La idea de esta rama es complementar los conocimientos que tengan que ver y esten relacionados con el mundo de Backend en C# y .NET.
 
-1. [Curso Básico de Programación con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoBasicoDeProgramacionConCSharp)
+Los contenidos de esta rama serán los mismos del video:
 
-2. [Curso de Programación Orientada a Objetos con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeProgramacionOrientadaAObjetosConCSharp)
-
-3. [Curso de Buenas Prácticas y Código Limpio en C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeBuenasPracticasYCodigoLimpioEnCSharp)
-
-4. [Curso de Principios SOLID en C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDePrincipiosSolidEnCSharpYDotNet)
-
-8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)
+- 00:00 Introducción
+- 03:00 Creación del proyecto
+- 04:57 Patrón de Arquitectura MVC
+- 05:30 Controladores
+- 07:00 Rutas
+- 09:40 Modelos
+- 13:00 Swagger
+- 15:10 Respuestas HTTP
+- 21:00 Creación de bibliotecas de clases
+- 22:15 Entity Framework
+- 27:00 Referencias Bibliotecas de clases
+- 28:30 Creación de Base de Datos
+- 31:27 Inyección de dependencia
+- 33:11 Creación de base de datos en ejecución
+- 37:00 Accediendo a base de datos desde controlador

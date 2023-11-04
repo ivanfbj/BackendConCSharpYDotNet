@@ -367,3 +367,33 @@ Implementando estas actualizaciones el sistema en el archivo `Progrma.cs` nos pe
 Adicionalmente se puede eliminar la clase `internal class Program` incluyendo la llave de apertura y cierre, también se puede eliminar el método `static void Main(string[] args)`.
 
 De los métodos creados se puede quitar el `public static`.
+
+## Clase 13 - Uso de comentarios
+
+Un mal comentario sería que indique los mismo que ya dice la clase, por ejemplo:
+
+```C#
+// The User class
+public class User{
+    //......
+}
+```
+
+Esto hace que el comentario aumente la cantidad de lineas de código y ensucie la lectura del código, además de ser redundante.
+
+En general un código siempre debe ser muy fácil de entender, cada nombre que se utilice para las clases, métodos, variables y componentes del sistema debe ser lo suficientemente descriptivo para que no sea necesario agregar comentarios.
+
+En general no se deberia de comentar malos código sino que se deberia de reescribir.
+
+> Don't comment bad code - Rewrite it. - Brian Kernighan
+
+**Recomendaciones para comentar**:
+
+- No abuses de los comentarios.
+- Si los comentarios son obvios, no los pongas.
+- Escribe código fácil de entender como filosofía.
+- No comentes la trazabilidad de cambios. (Git se encarga de la trazabilidad)
+- Mantén los comentarios cortos y claros.
+- No dejes código comentado.
+
+A nivel de código se mejoran los comentarios.

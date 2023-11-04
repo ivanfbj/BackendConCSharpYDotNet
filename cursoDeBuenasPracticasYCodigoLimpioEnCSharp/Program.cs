@@ -456,15 +456,139 @@ using System.Diagnostics;
 #endregion
 
 #region Clase 9 - Usando try catch
+//namespace cursoDeBuenasPracticasYCodigoLimpioEnCSharp
+//{
+//    internal class Program
+//    {
+//        public static List<string> TaskList { get; set; }
+
+//        static void Main(string[] args)
+//        {
+//            TaskList = new List<string>();
+//            int menuSelected = 0;
+//            do
+//            {
+//                menuSelected = ShowMainMenu();
+//                if ((Menu)menuSelected == Menu.Add)
+//                {
+//                    ShowMenuAdd();
+//                }
+//                else if ((Menu)menuSelected == Menu.Remove)
+//                {
+//                    ShowMenuRemove();
+//                }
+//                else if ((Menu)menuSelected == Menu.List)
+//                {
+//                    ShowTaskList(TaskList);
+//                }
+//            } while ((Menu)menuSelected != Menu.Exit);
+//        }
+//        /// <summary>
+//        /// Show the main menu 
+//        /// </summary>
+//        /// <returns>Returns option indicated by user</returns>
+//        public static int ShowMainMenu()
+//        {
+//            Console.WriteLine("----------------------------------------");
+//            Console.WriteLine("Ingrese la opción a realizar: ");
+//            Console.WriteLine("1. Nueva tarea");
+//            Console.WriteLine("2. Remover tarea");
+//            Console.WriteLine("3. Tareas pendientes");
+//            Console.WriteLine("4. Salir");
+
+//            // Read line
+//            string numberMenuSelected = Console.ReadLine();
+//            return Convert.ToInt32(numberMenuSelected);
+//        }
+
+//        public static void ShowMenuRemove()
+//        {
+//            try
+//            {
+//                Console.WriteLine("Ingrese el número de la tarea a remover: ");
+//                // Show current taks
+//                ShowTaskList(TaskList);
+
+//                string indexTaskOfList = Console.ReadLine();
+//                // Remove one position
+//                int indexToRemove = Convert.ToInt32(indexTaskOfList) - 1;
+
+//                if (indexToRemove > (TaskList.Count - 1) || indexToRemove < 0)
+//                {
+//                    Console.WriteLine("Número de tarea seleccionado no es valido");
+//                }
+//                else
+//                {
+//                    if (indexToRemove > -1 && TaskList.Count > 0)
+//                    {
+//                        string task = TaskList[indexToRemove];
+//                        TaskList.RemoveAt(indexToRemove);
+//                        Console.WriteLine("Tarea " + task + " eliminada");
+//                    }
+//                }
+//            }
+//            catch (Exception)
+//            {
+//                Console.WriteLine("Ha ocurrido un error al eliminar la tarea");
+//            }
+//        }
+
+//        public static void ShowMenuAdd()
+//        {
+//            try
+//            {
+//                Console.WriteLine("Ingrese el nombre de la tarea: ");
+//                string descriptionTask = Console.ReadLine();
+//                TaskList.Add(descriptionTask);
+//                Console.WriteLine("Tarea registrada");
+//            }
+//            catch (Exception)
+//            {
+//                Console.WriteLine("Ha ocurrido un error al registrar la tarea");
+//            }
+//        }
+
+//        public static void ShowMenuTaskList()
+//        {
+//            if (TaskList == null || TaskList.Count == 0)
+//            {
+//                Console.WriteLine("No hay tareas por realizar");
+//            }
+//            else
+//            {
+//                ShowTaskList(TaskList);
+//            }
+//        }
+
+//        public static void ShowTaskList(List<string> taskList)
+//        {
+//            Console.WriteLine("----------------------------------------");
+//            int indexTask = 1;
+//            taskList.ForEach(element => Console.WriteLine((indexTask++) + ". " + element));
+
+//            Console.WriteLine("----------------------------------------");
+//        }
+//    }
+
+//    public enum Menu
+//    {
+//        Add = 1,
+//        Remove = 2,
+//        List = 3,
+//        Exit = 4
+//    }
+//}
+#endregion
+
+#region Clase 11 - Interpolación de cadenas, inicializador de propiedades y operador condicional null
 namespace cursoDeBuenasPracticasYCodigoLimpioEnCSharp
 {
     internal class Program
     {
-        public static List<string> TaskList { get; set; }
+        public static List<string> TaskList { get; set; } = new List<string>();
 
         static void Main(string[] args)
         {
-            TaskList = new List<string>();
             int menuSelected = 0;
             do
             {
@@ -479,7 +603,7 @@ namespace cursoDeBuenasPracticasYCodigoLimpioEnCSharp
                 }
                 else if ((Menu)menuSelected == Menu.List)
                 {
-                    ShowTaskList(TaskList);
+                    ShowMenuTaskList();
                 }
             } while ((Menu)menuSelected != Menu.Exit);
         }
@@ -523,7 +647,7 @@ namespace cursoDeBuenasPracticasYCodigoLimpioEnCSharp
                     {
                         string task = TaskList[indexToRemove];
                         TaskList.RemoveAt(indexToRemove);
-                        Console.WriteLine("Tarea " + task + " eliminada");
+                        Console.WriteLine($"Tarea {task} eliminada");
                     }
                 }
             }
@@ -550,13 +674,13 @@ namespace cursoDeBuenasPracticasYCodigoLimpioEnCSharp
 
         public static void ShowMenuTaskList()
         {
-            if (TaskList == null || TaskList.Count == 0)
+            if (TaskList.Count > 0)
             {
-                Console.WriteLine("No hay tareas por realizar");
+                ShowTaskList(TaskList);
             }
             else
             {
-                ShowTaskList(TaskList);
+                Console.WriteLine("No hay tareas por realizar");
             }
         }
 
@@ -564,7 +688,7 @@ namespace cursoDeBuenasPracticasYCodigoLimpioEnCSharp
         {
             Console.WriteLine("----------------------------------------");
             int indexTask = 1;
-            taskList.ForEach(element => Console.WriteLine((indexTask++) + ". " + element));
+            taskList.ForEach(element => Console.WriteLine($"{indexTask++}. {element}"));
 
             Console.WriteLine("----------------------------------------");
         }

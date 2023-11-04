@@ -40,3 +40,15 @@ Los controladores son un concepto de capa.
 
 MVC (Modelo-Vista-Controlador) es un patrón arquitectonico que nace en los años 70's, representa una forma anstracta, una forma de capas de responsabilidades; en este caso el controlador va a recibir lo que se requiere hacer en el programa y el controlador es el que va a responder, en este caso al ser Backend, se responderá con un JSON.
 
+## Controladores
+
+En caso de estar trabajando con desarrollos web de MVC completos la vista va a responder con un HTML.
+
+Hay 2 tipos de controlador en ASP.NET: 
+
+1. El controlade MVC que regresa una vista.
+2. El controlador de API.
+
+Para este ejemplo que es solamente Backend se da clic derecho sobre la carpeta `Controllers`-> Agregar -> Controlador -> API -> `Controlador de API: en blanco`, se crea con el nombre `BeerController.cs`.
+
+El concepto de Controller se utiliza en otros tipos de tecnología.

@@ -25,5 +25,16 @@ namespace BackendApp.Controllers
 
             return beer;
         }
+
+        [HttpPost]
+        public IActionResult Add(Beer beer)
+        {
+            if (beer.Name.Equals(""))
+            {
+                return BadRequest("No se envio la información");
+            }
+
+            return Ok(beer);
+        }
     }
 }

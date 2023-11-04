@@ -83,4 +83,27 @@ Al momentos de ejecutar el proyecto se inicializa la venta de Swagger con cada u
 
 También genera una estructura en JSON de toda la información, los modelos creados, tipos de peticiones, resultado, entre otros.
 
+## Respuestas HTTP
 
+Cuando se está utilizando un controlador que tenga un `IActionResult` es porque se puede retornar diferentes tipos de respuestas, y sobre todo tipo de respuesta de estados de HTTP.
+
+Cuando se retorna un `Ok`, se está retornando un tipo de HTTP con código 200, el 200 es un tipo de respuesta HTTP.
+
+Además del `Ok` también está el `BadRequest` que retorna un tipo de HTTP con código 400.
+
+Hay diferentes rangos de códigos que están documentados y que se pueden utilizar en el código para retornar diferentes estados.
+
+Estos código se usan para indicarle al Frontend que tipo de respuesta se le está entregando desde el Backend y se pueda controlar en el Front.
+
+```C#
+public IActionResult Add(Beer beer)
+{
+    if (beer.Name.Equals(""))
+    {
+        return BadRequest("No se envio la información");
+    }
+
+    return Ok(beer);
+}
+```
+A nivel de código se crea un método que va a recibir un JSON y válida si el nombre está vacio gebera el `BadRequest` de lo contrario retorna el objeto que recibio.

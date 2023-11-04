@@ -75,4 +75,12 @@ Se crea la carpeta `Models` y dentro la clase `Beer.cs` con sus respectivas prop
 
 En el controlador se crea un nuevo método y en las rutas se puede personalizar las rutas, el primer método es la ruta por defecto, el segundo método ingresa por la ruta especificada en el código.
 
+## Swagger
+
+Swagger nos permite documentar cada uno de los puntos de acceso que se crean en el controlador, Swagger se encuentra incluido en .NET.
+
+Al momentos de ejecutar el proyecto se inicializa la venta de Swagger con cada uno de los accesos que existen.
+
+También genera una estructura en JSON de toda la información, los modelos creados, tipos de peticiones, resultado, entre otros.
+
 

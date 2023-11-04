@@ -34,3 +34,9 @@ Se creará un proyecto desde visual studio con la plantilla `ASP.NET Core Web AP
 
 El proyecto que se crea ya tiene una base, se borra la clase y el controlador llamados `WeatherForecast.cs` y `WeatherForecastController.cs` ya que no se requieren.
 
+## Patrón de Arquitectura MVC
+
+Los controladores son un concepto de capa.
+
+MVC (Modelo-Vista-Controlador) es un patrón arquitectonico que nace en los años 70's, representa una forma anstracta, una forma de capas de responsabilidades; en este caso el controlador va a recibir lo que se requiere hacer en el programa y el controlador es el que va a responder, en este caso al ser Backend, se responderá con un JSON.
+

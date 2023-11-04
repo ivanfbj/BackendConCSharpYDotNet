@@ -7,5 +7,11 @@ namespace BackendApp.Controllers
     [ApiController]
     public class BeerController : ControllerBase
     {
+        [HttpGet]
+        public string Get()
+        {
+            return "Hola mundo";
+        }
+
     }
 }

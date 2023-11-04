@@ -52,3 +52,16 @@ Hay 2 tipos de controlador en ASP.NET:
 Para este ejemplo que es solamente Backend se da clic derecho sobre la carpeta `Controllers`-> Agregar -> Controlador -> API -> `Controlador de API: en blanco`, se crea con el nombre `BeerController.cs`.
 
 El concepto de Controller se utiliza en otros tipos de tecnología.
+
+## Rutas
+
+Parte de las rutas es el dominio o localHost, un puerto que se asigna automáticamente, luego incluye la ruta que se crea en el controlador
+
+```C#
+[Route("api/[controller]")]
+```
+
+Lo métodos que se crean pueden retornar un tipo de datos nativo y adicionalmente se le incluye un tipo de petición de HTTP en este caso `[HttpGet]`
+
+HttpGet es un tipo de verbo para las solicitudes HTTP, los más utilizados son HttpGet, HttpPost, HttpPut y HttpDelete.
+

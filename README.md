@@ -351,8 +351,10 @@ Console.WriteLine("Hello World");
 Enlaces de interes:
 
 [Novedades de C# 12](https://learn.microsoft.com/es-es/dotnet/csharp/whats-new/csharp-12)
+
 [Novedades de C# 11](https://learn.microsoft.com/es-es/dotnet/csharp/whats-new/csharp-11)
-[Novedades de C# 11](https://learn.microsoft.com/es-es/dotnet/csharp/whats-new/csharp-10)
+
+[Novedades de C# 10](https://learn.microsoft.com/es-es/dotnet/csharp/whats-new/csharp-10)
 
 ## Clase 11 - Interpolación de cadenas, inicializador de propiedades y operador condicional null
 

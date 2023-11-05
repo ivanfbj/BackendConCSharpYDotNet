@@ -244,3 +244,9 @@ Se creará la base de datos.
 
 Esto funciona muy bien en ambientes de desarrollo ya que esta ejecución borrar y vuelve a crear la base de datos en cada ejecución, por lo cual no se conservan los datos.
 
+## Accediendo a base de datos desde controlador
+
+Retomamos nuevamente la clase `BeerController.cs` para crear los puntos de acceso.
+
+Desde esta clase se requiere accerder a la base de datos para poder hacer consultas a la base de datos, para eso se requiere crear un contexto como parte del constructor de la clase.
+

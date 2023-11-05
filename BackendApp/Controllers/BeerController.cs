@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DB;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BackendApp.Controllers
 {
@@ -6,6 +7,14 @@ namespace BackendApp.Controllers
     [ApiController]
     public class BeerController : ControllerBase
     {
+        private BackendBarContext _context;
 
+        public BeerController(BackendBarContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public IEnumerable<Beer> Get()=> _context.Beers.ToList();
     }
 }

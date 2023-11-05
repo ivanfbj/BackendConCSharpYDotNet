@@ -1,17 +1,9 @@
-# Backend con C# y .NET
+# Curso de Manejo de Datos en C# con LINQ
 
-Cada rama tiene la información relacionada con un curso de la ruta de [Backend con C# y .NET](https://platzi.com/ruta/web-net/) de [Platzi](https://platzi.com).
+## Clase 1 - Bienvenida al curso
 
-El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalmente las descripciones de los commits contienen el título de la clase y pueden llegar a tener un descripción complementaria de dicha clase.
+Se realizará el análisis de cada uno de los operadores y las clausulas que tiene LINQ para la manípulación de colecciones.
 
-## Cursos finalizados
+LINQ es una de las librerías más populares que hay en .NET, facilita la manipulación de datos en diferentes colecciones, minimizando la cantidad de código que se debe de escribir para poder lograr hacer una tranformación de datos o para poder filtrar los datos de una colección o para compara dos colecciones.
 
-1. [Curso Básico de Programación con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoBasicoDeProgramacionConCSharp)
-
-2. [Curso de Programación Orientada a Objetos con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeProgramacionOrientadaAObjetosConCSharp)
-
-3. [Curso de Buenas Prácticas y Código Limpio en C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeBuenasPracticasYCodigoLimpioEnCSharp)
-
-4. [Curso de Principios SOLID en C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDePrincipiosSolidEnCSharpYDotNet)
-
-8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)
+LINQ permite desarrollar un mejor código y seguir las mejores prácticas que hay en .NET, es fundamentas para hacer Querys y desarrollar Backend con Entity Framework (permite que a través de clases conectarnos a una base de datos y manipular las colecciones con código C#).

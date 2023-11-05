@@ -152,3 +152,14 @@ public DbSet<Beer> Beers { get; set; }
 ```
 
 Code First: Se comienza escribiendo clases de entidades en código C#. Estas clases representan las entidades que serán almacenadas en la base de datos. Luego, a través de convenciones y configuraciones específicas, Entity Framework puede generar automáticamente la base de datos y las tablas correspondientes a partir de esas clases.
+
+## Referencias Bibliotecas de clases
+
+Luego de realizar la configuración de la Biblioteca de clases es necesario ir al primer proyecto `BackendApp`, ir a dependencia y dar clic derecho -> agregar referencia del proyecto y seleccionar el proyecto `DB`, se selecciona y luego aceptar.
+
+De esta manera se puede trabajar con la biblioteca de clases en el primer proyecto.
+
+En el primer poyecto en las dependencias se debe instalar `Microsoft.EntityFrameworkCore.Tools` para poder utilizar las herramientas de Entity Framewor, luego ir a la solución y clic derecho Compilar.
+
+Con la biblioteca de clase te permite tener varios proyectos que vayan a la misma base de datos y de esta manera no tener que repetir el código.
+

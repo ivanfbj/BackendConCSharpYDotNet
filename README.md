@@ -182,3 +182,21 @@ En SQL Server se crea una nueva base de datos llamada `BackendBar`, luego en el 
   }
 }
 ```
+
+## Inyección de dependencia
+
+En el archivo `Program.cs` se procede a inyectar el contexto para ser usado en todos los controladores.
+
+La inyección de dependencias te permite que tus objetos los puedas obtener por medio del constructor o en los métodos para que la responsabilidad de la creación este por fuera de dicho constructor o método; esto se debe a que en caso de que se llegue a requierir realizar un cambio sea solamente en `Program.cs`.
+
+```C#
+builder.Services.AddDbContext<BackendBarContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BackendBar"));
+});
+```
+
+De esta manera ya .NET sabe que la configuración que se realizó en GetConnectionString(`"BackendBar"`) va a ir en el contexto de base de datos.
+
+El contexto en Entity Framwork viene a ser la representación de la base de datos, de esta manera ya se podra obtener Entity Framework en todos los controladores.
+

@@ -200,3 +200,47 @@ De esta manera ya .NET sabe que la configuración que se realizó en GetConnecti
 
 El contexto en Entity Framwork viene a ser la representación de la base de datos, de esta manera ya se podra obtener Entity Framework en todos los controladores.
 
+## Creación de base de datos en ejecución
+
+Para hacer que el sistema cree la base de datos desde la ejecución del programa se debe de configurar en el archivo `Program.cs`
+
+debajo de la linea:
+
+```C#
+var app = builder.Build();
+```
+
+Se debe colocar:
+
+```C#
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<BackendBarContext>();
+    context.Database.Migrate();
+};
+```
+
+Se crea el "scope" que te da acceso al contexto, cuando se tiene acceso al contexto, se puede realizar tareas que normalmente se hacen por consola, en este caso se requiere ejecutar la creación de la base de datos.
+
+Un requisito para este proceso es que se debe crear una **Migración** (representación del versionamiento de la base de datos), para esto se debe de ir a "Herramientas -> Administrador de paquetes NuGet -> Consola del Administrador de paquetes", en la opción que se llama "Proyecto predeterminado" se debe seleccionad "DB" y se procede a escribir el siguiente comando:
+
+```Bash
+Add-Migration InitDB
+```
+
+Al dar enter se creará una **Migración**, se crea una carpeta en DB, que se llama "Migrations", con eso se prodrá tener un versionamiento de la base de datos.
+
+Cuando se ejecute el proyecto y llegue hasta las líneas de código del `Program.cs`
+
+```C#
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<BackendBarContext>();
+    context.Database.Migrate();
+};
+```
+
+Se creará la base de datos.
+
+Esto funciona muy bien en ambientes de desarrollo ya que esta ejecución borrar y vuelve a crear la base de datos en cada ejecución, por lo cual no se conservan los datos.
+

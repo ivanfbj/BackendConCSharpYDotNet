@@ -17,6 +17,14 @@ builder.Services.AddDbContext<BackendBarContext>(options =>
 
 var app = builder.Build();
 
+//Este bloque de código se puede comentar para que no este generando
+//  la base de datps en cada ejecución.
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<BackendBarContext>();
+    context.Database.Migrate();
+};
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using BackendApp.Models;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace BackendApp.Controllers
 {
@@ -8,33 +6,6 @@ namespace BackendApp.Controllers
     [ApiController]
     public class BeerController : ControllerBase
     {
-        [HttpGet]
-        public string Get()
-        {
-            return "Hola mundo";
-        }
 
-        [HttpGet("GetBeer")]
-        public Beer GetBeer()
-        {
-            var beer = new Beer()
-            {
-                BeerId = 1,
-                Name = "Erdinger",
-            };
-
-            return beer;
-        }
-
-        [HttpPost]
-        public IActionResult Add(Beer beer)
-        {
-            if (beer.Name.Equals(""))
-            {
-                return BadRequest("No se envio la información");
-            }
-
-            return Ok(beer);
-        }
     }
 }

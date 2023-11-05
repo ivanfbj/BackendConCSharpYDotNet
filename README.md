@@ -106,4 +106,12 @@ public IActionResult Add(Beer beer)
     return Ok(beer);
 }
 ```
+
 A nivel de código se crea un método que va a recibir un JSON y válida si el nombre está vacio gebera el `BadRequest` de lo contrario retorna el objeto que recibio.
+
+## Creación de bibliotecas de clases
+
+Directamente en la solución del proyecto se da clic derecho -> Agregar -> Nuevo proyecto y en las plantilla de proyecto se busca y se selecciona `Biblioteca de clases`, una vez creado el nuevo proyecto se modifica el nombre de la clase por defecto que se crea, `BackendBarContext`
+
+Las bibliotecas de clases son una herramienta poderosa para promover la reutilización de código, la modularidad y la organización en proyectos de .NET. Pueden ser utilizadas para encapsular funcionalidades específicas y proporcionar una interfaz clara para interactuar con ellas desde otros proyectos.
+

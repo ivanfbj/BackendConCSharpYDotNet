@@ -14,3 +14,31 @@ LINQ permite desarrollar un mejor código y seguir las mejores prácticas que ha
 - Conocimientos de .NET
 - NET SDK 6 0 superior
 - Visual Studio Code
+
+## Clase 3 - ¿Qué es LINQ?
+
+- Aparece en el año 2007.
+- Language-lntegrated Query (LINQ). (Lenguaje integrado que permite realizar consultas sobre colecciones)
+- Query Expression.
+- Métodos de extensión.
+- System.Linq
+
+**¿Qué no es LINQ?**
+
+- No es un lenguaje de programación.
+- No es un componente de SQL.
+- No es un componente de base de datos.
+- No es una librería de terceros.
+
+**Ejemplo:**
+
+```C#
+//LINQ que usa Query Expression.
+var unTomate = from t in ArraydeStrings 
+                where t == "Tomate"
+                    select t;
+
+//LINQ que usa los Métodos de extensión.
+ArraydeStrings.Where(t=> t == "Tomate" )
+```
+

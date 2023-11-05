@@ -115,3 +115,40 @@ Directamente en la solución del proyecto se da clic derecho -> Agregar -> Nuevo
 
 Las bibliotecas de clases son una herramienta poderosa para promover la reutilización de código, la modularidad y la organización en proyectos de .NET. Pueden ser utilizadas para encapsular funcionalidades específicas y proporcionar una interfaz clara para interactuar con ellas desde otros proyectos.
 
+## Entity Framework
+
+Un ORM es mapeador de base de datos el cual te permite trabajar con una base de datos como si fueran objetos de programación orientada a objetos.
+
+Para trabajar con un ORM se tiene la opción Entity Framework en .NET.
+
+En el proyecto `DB` se da clic derecho en `Dependencias` -> Administrar paquetes NuGet, en la nueva pestaña que se habilita se da en la opción de "Examinar" se busca "entity framework" y se selecciona para instalar los paquetes que se llaman `Microsoft.EntityFrameworkCore.SqlServer` y `Microsoft.EntityFrameworkCore.Tools`.
+
+Una vez instalado estos dos paquete se puede utilizar "Entity Framework" en la biblioteca de clases. Est
+
+En la clase `BackendBarContext` se debe poner a hereda de la clase `DbContext` que se importa desde `using Microsoft.EntityFrameworkCore;`, adicionalmente se crea un constructor de la clase ejemplo:
+
+```C#
+using Microsoft.EntityFrameworkCore;
+
+namespace DB
+{
+    public class BackendBarContext : DbContext
+    {
+        public BackendBarContext(DbContextOptions<BackendBarContext> options) : 
+            base(options)
+        {
+
+        }
+    }
+}
+```
+
+Luego se crea la clase `Beer.cs` que tendrá la clase con los atributos que se creará en la base de datos, al primer atributo se le especifica que será Primary Key y será un Identity.
+
+Luego regresamos a `BackendBarContext` para especificar que la base de datos tendrá objetos de tipo `Beer.cs`, para lo cual se crea un:
+
+```C#
+public DbSet<Beer> Beers { get; set; }
+```
+
+Code First: Se comienza escribiendo clases de entidades en código C#. Estas clases representan las entidades que serán almacenadas en la base de datos. Luego, a través de convenciones y configuraciones específicas, Entity Framework puede generar automáticamente la base de datos y las tablas correspondientes a partir de esas clases.

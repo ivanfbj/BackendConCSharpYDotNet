@@ -44,7 +44,7 @@ MVC (Modelo-Vista-Controlador) es un patrón arquitectonico que nace en los año
 
 En caso de estar trabajando con desarrollos web de MVC completos la vista va a responder con un HTML.
 
-Hay 2 tipos de controlador en ASP.NET: 
+Hay 2 tipos de controlador en ASP.NET:
 
 1. El controlade MVC que regresa una vista.
 2. El controlador de API.
@@ -163,3 +163,22 @@ En el primer poyecto en las dependencias se debe instalar `Microsoft.EntityFrame
 
 Con la biblioteca de clase te permite tener varios proyectos que vayan a la misma base de datos y de esta manera no tener que repetir el código.
 
+## Creación de Base de Datos
+
+En SQL Server se crea una nueva base de datos llamada `BackendBar`, luego en el archivo `appsetings.json` del proyecto `BackendApp` se crea la cadena de conexión a la base de datos:
+
+```JSON
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+      //Conexión de Windows
+      "BackendBar": "Server=localhost\\sqlexpress; Database=BackendBar; Trusted_Connection=True; Trust Server Certificate= True"
+  }
+}
+```

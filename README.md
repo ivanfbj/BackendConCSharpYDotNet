@@ -57,6 +57,8 @@ La programación imperativa se centra en los pasos detallados para lograr un res
 |Contraposición a la programación imperativa.|Contraposición a la programación declarativa.|
 |Fiable y simple.|Código más extenso pero fácil de interpretar.|
 
+Ejemplo Javascript:
+
 ```Javascript
 // Declarativo
 const array1 = [1, 2, 3, 4, 5];
@@ -68,6 +70,8 @@ for (let i = 0; i < array1.length; i++){
     console.log(array1[i]);
 }
 ```
+
+Ejemplo C#:
 
 ```C#
 // Declarativo
@@ -104,5 +108,17 @@ class Program {
    //Console.WriteLine ("Hello mundo");
   }
 }
+```
+
+## Clase 6 - Creando el proyecto base
+
+A nivel de código se crea un nuevo proyecto de consola para poder trabajar las clases de LINQ, luego se debe agregar el archivo de recursos `books.json` que contiene la colección de libros que se utilizará como material de clase.
+
+Se de realizar la configuración en el archivo `cursoDeManejoDeDatosEnCSharpConLINQ.csproj` para agregar el archivo `books.json` como parte de los recursos del contenido del proyecto como tal, de esta manera se puede leer internamente como un archivo más que contiene el proyecto, para esto se crea un las siguiente lineas de código:
+
+```C#
+<ItemGroup>
+	<Content Include="books.json" />
+</ItemGroup>
 ```
 

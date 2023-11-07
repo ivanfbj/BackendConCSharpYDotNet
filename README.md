@@ -42,3 +42,44 @@ var unTomate = from t in ArraydeStrings
 ArraydeStrings.Where(t=> t == "Tomate" )
 ```
 
+## Clase 4 - Programación declarativa vs. imperativa
+
+Son 2 estilos programación usados en el desarrollo de software, ambos estilos son altamente usados.
+
+La programación imperativa se centra en los pasos detallados para lograr un resultado, mientras que la programación declarativa se centra en definir el resultado deseado sin preocuparse por los detalles de implementación. Cada enfoque tiene sus ventajas y desventajas, y a menudo se utilizan en combinación para abordar diferentes aspectos de un problema de programación.
+
+**_Comparativa_**:
+
+|Programación declarativa | Programación imperativa |
+|-------------------------|-------------------------|
+|Paradigma de la programación.|Paradigma de la programación.|
+|Instrucciones donde especifico lo que quiero y no como lo quiero.|Secuencia paso a paso de instrucciones.|
+|Contraposición a la programación imperativa.|Contraposición a la programación declarativa.|
+|Fiable y simple.|Código más extenso pero fácil de interpretar.|
+
+```Javascript
+// Declarativo
+const array1 = [1, 2, 3, 4, 5];
+array1.forEach(element => console.log(element));
+
+// Imperativo
+const array1 = [1, 2, 3, 4, 5];
+for (let i = 0; i < array1.length; i++){
+    console.log(array1[i]);
+}
+```
+
+```C#
+// Declarativo
+var listOfNumbers = new int[] {1,2,3,4,5};
+var iteml = listOfNumbers.FirstOrDefault(p=> p==l);
+Console.WriteLine(item1);
+
+// Imperativo
+var listOfNumbers = new int[] {1,2,3,4,5};
+for (int i = 0; i < listOfNumbers.Length; i++){
+    if(listOfNumbers[i] == 1)
+        Console.WriteLine(listOfNumbers[i] );
+}
+```
+

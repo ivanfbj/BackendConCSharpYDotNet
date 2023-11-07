@@ -83,3 +83,26 @@ for (int i = 0; i < listOfNumbers.Length; i++){
 }
 ```
 
+## Clase 5 - Utilizando LINQ por primera vez
+
+Para esta clase se utilizará un compilador Online [replit.com]( https://replit.com/languages/csharp)
+
+```C#
+using System;
+using System.Linq;
+
+class Program {
+  public static void Main (string[] args) {
+    var frutas = new string[] {"Sandia","Fresa", "Mango", "Mango de azucar", "Mango Tommy"};
+
+  string frutaABuscar = "Mango";
+    
+    var MangoList = frutas.Where(element=> element.StartsWith(frutaABuscar)).ToList();
+    
+  MangoList.ForEach(element => Console.WriteLine(element));
+    
+   //Console.WriteLine ("Hello mundo");
+  }
+}
+```
+

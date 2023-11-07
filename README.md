@@ -122,3 +122,11 @@ Se de realizar la configuración en el archivo `cursoDeManejoDeDatosEnCSharpConL
 </ItemGroup>
 ```
 
+## Clase 7 - Configurando clases
+
+En esta clase se agregará las clases base que se van a necesitar para poder leer el archivo JSON y poder convertirlo a una clase de .NET que podamos manipular utilizando la libreria LINQ.
+
+Se crea la clase `Book.cs` con cada una de las propiedas que contiene el JSON.
+
+Se crea la clase `LinqQueries.cs` donde se estarán escribiendo los querys de LINQ.
+

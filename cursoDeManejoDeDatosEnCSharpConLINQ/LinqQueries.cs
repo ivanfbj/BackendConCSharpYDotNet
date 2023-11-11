@@ -547,12 +547,7 @@ public class LinqQueries
         //return librosCollection.Where(p => p.PageCount >= 200 && p.PageCount <= 500).Count();
 
         //Una mejor práctica es hacer el filtro directamente con el Count:
-        //return librosCollection.Count(p => p.PageCount >= 200 && p.PageCount <= 500);
-
-        return librosCollection.Count();
-
+        return librosCollection.Count(p => p.PageCount >= 200 && p.PageCount <= 500);
     }
-
-
 }
 #endregion

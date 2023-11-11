@@ -278,3 +278,17 @@ Nos permite encontrar un valor máximo o mínimo de la colección pero en vez de
 
 > Retorna el libro con la fecha de publicación más reciente.
 
+## Clase 20 - Operadores Sum y Aggregate
+
+**Reto opeador Sum**:
+
+> Retorna la suma de la cantidad de páginas, de todos los libros que tengan entre 0 y 500.
+
+El operador _Aggregate_ lo que hace es ir concatenando o va sumando, creando un total de manera personalizada y retornar ese valor al final.
+
+Necesita una semilla del valor que se vaya a utilizar (puede ser un entero, double, string) y una variable que va a ir tomando el valor de cada uno de los libros de la colección.
+
+**Reto operador Aggregate**:
+
+> Retorna el título de los libros que tienen fecha de publicación posterior a 2015.
+

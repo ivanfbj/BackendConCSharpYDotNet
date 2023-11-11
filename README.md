@@ -266,3 +266,15 @@ Nos permite encontrar un valor máximo y un valor mínimo.
 
 > Utilizando el operador Max, retorna la cantidad de páginas del libro con mayor número de páginas en la colección.
 
+## Clase 19 - Operadores MinBy y MaxBy
+
+Nos permite encontrar un valor máximo o mínimo de la colección pero en vez de retornar el dato, retorna el objeto completo con todos sus atributos.
+
+**Reto operador MinBy**:
+
+> Retorna el libro que tenga la menor cantidad de páginas mayor a 0.
+
+**Reto operador MaxBy**:
+
+> Retorna el libro con la fecha de publicación más reciente.
+

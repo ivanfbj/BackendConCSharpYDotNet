@@ -408,6 +408,44 @@
 #endregion
 
 #region Clase 18 - Operadores Min y Max
+//using cursoDeManejoDeDatosEnCSharpConLINQ;
+
+//Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
+//Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine();
+
+//LinqQueries queries = new LinqQueries();
+
+////Toda la colección
+//Console.WriteLine("Toda la colección");
+//ImprimirValores(queries.TodaLaColeccion());
+//Console.WriteLine("*****************************");
+
+//// Fecha de publicación menor de todos los libros
+//Console.WriteLine("Fecha de publicación menor de todos los libros\n");
+//Console.WriteLine($"Fecha de publicación menor: {queries.FechaDePublicacionMenor().ToShortDateString()}");
+//Console.WriteLine("*****************************");
+
+//// Número de páginas del libro con mayor Número de páginas
+//Console.WriteLine("Número de páginas del libro con mayor Número de páginas\n");
+//Console.WriteLine($"El libro con mayor número de páginas tiene: {queries.NumeroDePagsLibroMayor()} páginas");
+//Console.WriteLine("*****************************");
+
+//void ImprimirValores(IEnumerable<Book> listaDeLibros)
+//{
+//    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
+
+//    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
+
+//    foreach (var item in listaDeLibros)
+//    {
+//        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+//    }
+//}
+#endregion
+
+#region Clase 19 - Operadores MinBy y MaxBy
 using cursoDeManejoDeDatosEnCSharpConLINQ;
 
 Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
@@ -422,15 +460,18 @@ Console.WriteLine("Toda la colección");
 ImprimirValores(queries.TodaLaColeccion());
 Console.WriteLine("*****************************");
 
-// Fecha de publicación menor de todos los libros
-Console.WriteLine("Fecha de publicación menor de todos los libros\n");
-Console.WriteLine($"Fecha de publicación menor: {queries.FechaDePublicacionMenor().ToShortDateString()}");
+// Libro con menor número de páginas
+Console.WriteLine("Libro con menor número de páginas");
+Book libroMenorPag = queries.LibroConMenorNumeroDePaginas();
+Console.WriteLine($"{libroMenorPag.Title} - {libroMenorPag.PageCount}");
 Console.WriteLine("*****************************");
 
-// Número de páginas del libro con mayor Número de páginas
-Console.WriteLine("Número de páginas del libro con mayor Número de páginas\n");
-Console.WriteLine($"El libro con mayor número de páginas tiene: {queries.NumeroDePagsLibroMayor()} páginas");
+// Libro con fecha de publicación más reciente
+Console.WriteLine("Libro con fecha de publicación más reciente");
+Book libroFechaPubReciente = queries.LibroConFechaPublicacionMasReciente();
+Console.WriteLine($"{libroFechaPubReciente.Title} - {libroFechaPubReciente.PublishedDate.ToShortDateString()}");
 Console.WriteLine("*****************************");
+
 
 void ImprimirValores(IEnumerable<Book> listaDeLibros)
 {

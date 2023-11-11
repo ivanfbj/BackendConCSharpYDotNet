@@ -218,3 +218,19 @@ Permite realizar ordenamiento en la colección ya sea de forma ascendente o desc
 
 > Retorna los elementos de la colección animal ordenados por nombre.
 
+## Clase 15 - Operadores Take y Skip
+
+Son utiles para seleccionar una cantidad especifica de elementos en una lista:
+
+_Take_: Definir la cantidad de elementos que queremos tomar, teniendo en cuenta una lista o una colección; nos permite tomar la N cantidad de primeros registros
+
+_Skip_: Nos permite omitir cierta cantidad de registros y luego seleccionar de ahí en adelante todos los demás registros que continuen dentro de la colección.
+
+**Reto operador Take**:
+
+> Utilizando el operador Take selecciona los primeros 3 libros con fecha de publicación más reciente que estén categorizados en Java.
+
+**Reto operador Skip**:
+
+> Utilizando el operador Skip selecciona el tercer y cuarto libro de los que tengan más de 400 páginas.
+

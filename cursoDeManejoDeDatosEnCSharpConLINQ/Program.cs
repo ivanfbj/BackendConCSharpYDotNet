@@ -271,32 +271,70 @@
 #endregion
 
 #region Clase 14 - Ejercicio operador OrderBy
-using System;
-using System.Collections.Generic;
-using System.Linq;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
 
-List<Animal> animales = new List<Animal>();
-animales.Add(new Animal() { Nombre = "Hormiga", Color = "Rojo" });
-animales.Add(new Animal() { Nombre = "Lobo", Color = "Gris" });
-animales.Add(new Animal() { Nombre = "Elefante", Color = "Gris" });
-animales.Add(new Animal() { Nombre = "Pantegra", Color = "Negro" });
-animales.Add(new Animal() { Nombre = "Gato", Color = "Negro" });
-animales.Add(new Animal() { Nombre = "Iguana", Color = "Verde" });
-animales.Add(new Animal() { Nombre = "Sapo", Color = "Verde" });
-animales.Add(new Animal() { Nombre = "Camaleon", Color = "Verde" });
-animales.Add(new Animal() { Nombre = "Gallina", Color = "Blanco" });
+//List<Animal> animales = new List<Animal>();
+//animales.Add(new Animal() { Nombre = "Hormiga", Color = "Rojo" });
+//animales.Add(new Animal() { Nombre = "Lobo", Color = "Gris" });
+//animales.Add(new Animal() { Nombre = "Elefante", Color = "Gris" });
+//animales.Add(new Animal() { Nombre = "Pantegra", Color = "Negro" });
+//animales.Add(new Animal() { Nombre = "Gato", Color = "Negro" });
+//animales.Add(new Animal() { Nombre = "Iguana", Color = "Verde" });
+//animales.Add(new Animal() { Nombre = "Sapo", Color = "Verde" });
+//animales.Add(new Animal() { Nombre = "Camaleon", Color = "Verde" });
+//animales.Add(new Animal() { Nombre = "Gallina", Color = "Blanco" });
 
-// Escribe tu código aquí
-// Retorna los elementos de la colleción animal ordenados por nombre
-foreach (Animal animal in animales.OrderBy(p => p.Nombre))
+//// Escribe tu código aquí
+//// Retorna los elementos de la colleción animal ordenados por nombre
+//foreach (Animal animal in animales.OrderBy(p => p.Nombre))
+//{
+//    Console.WriteLine(animal.Nombre);
+//}
+
+//public class Animal
+//{
+//    public string Nombre { get; set; }
+//    public string Color { get; set; }
+//}
+#endregion
+
+#region Clase 15 - Operadores Take y Skip
+using cursoDeManejoDeDatosEnCSharpConLINQ;
+
+Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
+Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
+Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+Console.WriteLine();
+
+LinqQueries queries = new LinqQueries();
+
+//Toda la colección
+Console.WriteLine("Toda la colección");
+ImprimirValores(queries.TodaLaColeccion());
+Console.WriteLine("*****************************");
+
+// Los 3 libros de Java publicados recientemente
+Console.WriteLine("Los 3 libros de Java publicados recientemente");
+ImprimirValores(queries.TresPrimerosLibrosJavaOrdenadosPorFecha());
+Console.WriteLine("*****************************");
+
+// Tercer y cuarto libro con más de 400 páginas
+Console.WriteLine("Tercer y cuarto libro con más de 400 páginas");
+ImprimirValores(queries.TerceryCuartoLibroDeMas400Pags());
+Console.WriteLine("*****************************");
+
+
+void ImprimirValores(IEnumerable<Book> listaDeLibros)
 {
-    Console.WriteLine(animal.Nombre);
-}
+    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
 
-public class Animal
-{
-    public string Nombre { get; set; }
-    public string Color { get; set; }
-}
+    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
 
+    foreach (var item in listaDeLibros)
+    {
+        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+    }
+}
 #endregion

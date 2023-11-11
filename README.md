@@ -176,3 +176,7 @@ return from l in librosCollection where l.PageCount > 250 && l.Title.Contains("i
 
 ```
 
+## Clase 10 - Ejercicio para aplicacr el operador Where
+
+Filtra todos los animales que sean de color verde que su nombre inicie con una vocal.
+

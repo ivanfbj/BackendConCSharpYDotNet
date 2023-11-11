@@ -196,7 +196,7 @@
 //}
 #endregion
 
-# region Clase 13 - Operadores OrderBy y OrderByDescending
+#region Clase 13 - Operadores OrderBy y OrderByDescending
 //using System.Text.Json;
 
 //namespace cursoDeManejoDeDatosEnCSharpConLINQ;
@@ -269,6 +269,94 @@
 #endregion
 
 #region Clase 15 - Operadores Take y Skip
+//using System.Text.Json;
+
+//namespace cursoDeManejoDeDatosEnCSharpConLINQ;
+//public class LinqQueries
+//{
+//    private List<Book> librosCollection = new();
+
+//    public LinqQueries()
+//    {
+//        // el StreamReader permite leer el archivo.
+//        using (StreamReader reader = new StreamReader("books.json"))
+//        {
+//            string json = reader.ReadToEnd();
+//            this.librosCollection = JsonSerializer.Deserialize<List<Book>>(json, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+//        };
+
+//    }
+
+//    public IEnumerable<Book> TodaLaColeccion()
+//    {
+//        return librosCollection;
+//    }
+
+//    public IEnumerable<Book> LibrosDespuesDel2000()
+//    {
+//        //extension method
+//        //return librosColletion.Where(p=> p.PublishedDate.Year > 2000);
+
+//        //query expresion
+//        return from l in librosCollection where l.PublishedDate.Year > 2000 select l;
+//    }
+
+//    public IEnumerable<Book> LibrosMasDeCantidadPagsYPalabraClave(int cantidadPaginas, string palabraClave)
+//    {
+//        //extension method
+//        //return librosCollection.Where(p => p.PageCount > cantidadPaginas && p.Title.Contains(palabraClave));
+
+//        //query expresion
+//        return from l in librosCollection
+//               where l.PageCount > cantidadPaginas && l.Title.Contains(palabraClave)
+//               select l;
+//    }
+
+//    public bool TodosLosLibrosTienenStatus()
+//    {
+//        return librosCollection.All(p => p.Status != string.Empty);
+//    }
+
+//    public bool SiAlgunLibroPublicadoEn2005()
+//    {
+//        return librosCollection.Any(p => p.PublishedDate.Year == 2005);
+//    }
+
+//    public IEnumerable<Book> LibrosDePython()
+//    {
+//        return librosCollection.Where(p => p.Categories.Contains("Python"));
+//    }
+
+//    public IEnumerable<Book> LibrosDeJavaPorNombreAscendente()
+//    {
+//        return librosCollection.Where(p => p.Categories.Contains("Java")).OrderBy(p => p.Title);
+//    }
+
+//    public IEnumerable<Book> LibrosMasDe450PagsOrdenadosPorNumPagDescendente()
+//    {
+//        return librosCollection.Where(p => p.PageCount > 450).OrderByDescending(p => p.PageCount);
+//    }
+
+//    public IEnumerable<Book> TresPrimerosLibrosJavaOrdenadosPorFecha()
+//    {
+//        return librosCollection
+//            .Where(p => p.Categories.Contains("Java"))
+//            .OrderByDescending(p => p.PublishedDate)
+//            .Take(3);
+//    }
+
+//    public IEnumerable<Book> TerceryCuartoLibroDeMas400Pags()
+//    {
+//        return librosCollection
+//            .Where(p=> p.PageCount > 400)
+//            .Take(4)
+//            .Skip(2);
+//    }
+
+//}
+#endregion
+
+#region Clase 16 - Selección dinámica de datos
 using System.Text.Json;
 
 namespace cursoDeManejoDeDatosEnCSharpConLINQ;
@@ -336,7 +424,7 @@ public class LinqQueries
     {
         return librosCollection.Where(p => p.PageCount > 450).OrderByDescending(p => p.PageCount);
     }
-    
+
     public IEnumerable<Book> TresPrimerosLibrosJavaOrdenadosPorFecha()
     {
         return librosCollection
@@ -348,10 +436,15 @@ public class LinqQueries
     public IEnumerable<Book> TerceryCuartoLibroDeMas400Pags()
     {
         return librosCollection
-            .Where(p=> p.PageCount > 400)
+            .Where(p => p.PageCount > 400)
             .Take(4)
             .Skip(2);
     }
 
+    public IEnumerable<Book> TresPrimerosLibrosDeLaColeccion()
+    {
+        return librosCollection.Take(3)
+            .Select(p => new Book() { Title = p.Title, PageCount = p.PageCount });
+    }
 }
 #endregion

@@ -234,3 +234,11 @@ _Skip_: Nos permite omitir cierta cantidad de registros y luego seleccionar de a
 
 > Utilizando el operador Skip selecciona el tercer y cuarto libro de los que tengan más de 400 páginas.
 
+## Clase 16 - Selección dinámica de datos
+
+El operador **Select** nos permite especificar cuales son las columnas que queremops retornar, esto ayuda mucho en el rendimiento ya que solo se retornan los datos que se requieran.
+
+**Reto operador selección dinámica**:
+
+> Utilizando el operador Select selecciona el título y el número de páginas de los primeros 3 libros de la colección.
+

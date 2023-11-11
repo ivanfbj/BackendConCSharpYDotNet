@@ -214,3 +214,5 @@ Permite realizar ordenamiento en la colección ya sea de forma ascendente o desc
 
 > Utilizando el operador OrderByDescending retorna los libros que tengan más de 450 páginas, ordenados por número de páginas en forma descendente.
 
+## Clase 14 - Ejercicio operador OrderBy
+

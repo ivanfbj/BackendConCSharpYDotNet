@@ -216,3 +216,5 @@ Permite realizar ordenamiento en la colección ya sea de forma ascendente o desc
 
 ## Clase 14 - Ejercicio operador OrderBy
 
+> Retorna los elementos de la colección animal ordenados por nombre.
+

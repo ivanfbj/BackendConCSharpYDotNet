@@ -288,9 +288,7 @@ animales.Add(new Animal() { Nombre = "Gallina", Color = "Blanco" });
 
 // Escribe tu código aquí
 // Retorna los elementos de la colleción animal ordenados por nombre
-IEnumerable<Animal> animalesOrdenados = animales.OrderBy(p => p.Nombre);
-
-foreach(Animal animal in animalesOrdenados)
+foreach (Animal animal in animales.OrderBy(p => p.Nombre))
 {
     Console.WriteLine(animal.Nombre);
 }

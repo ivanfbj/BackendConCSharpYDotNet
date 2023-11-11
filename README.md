@@ -202,3 +202,15 @@ Este operador se puede utilizar tanto para tipo complejos como para tipos primit
 
 > Utilizando el operador Contains retorna los elementos que pertenezcan a la categoría de Python.
 
+## Clase 13 - Operadores OrderBy y OrderByDescending
+
+Permite realizar ordenamiento en la colección ya sea de forma ascendente o descendente.
+
+**Reto operador OrderBy**:
+
+> Utilizando el operador OrderBy retorna todos los elementos que sean de la categoría de Java ordenados por nombre.
+
+**Reto operador OrderByDescending**:
+
+> Utilizando el operador OrderByDescending retorna los libros que tengan más de 450 páginas, ordenados por número de páginas en forma descendente.
+

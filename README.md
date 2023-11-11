@@ -130,3 +130,11 @@ Se crea la clase `Book.cs` con cada una de las propiedas que contiene el JSON.
 
 Se crea la clase `LinqQueries.cs` donde se estarán escribiendo los querys de LINQ.
 
+## Clase 8 - Importando datos
+
+Ya con el proeycto base configurado y las clases para comunicar C# con el archivo JSON, sigue la importanción de los datos a una colección.
+
+A nivel de código lo que se hizo fue crear el contructor en la clase `LinqQueries.cs`, el constructor se encarga de leer el archivo `books.json` y llevar la información a una variable de la clase `Book` y luego crear otro método que se encargue de retorna el valor de dicha variable.
+
+Luego en la clase `Programs.cs` se realiza la manipulación requerida por medio de las clases para consultar, almacenar e imprimir los datos del JSON.
+

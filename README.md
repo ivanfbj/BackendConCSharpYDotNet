@@ -180,3 +180,14 @@ return from l in librosCollection where l.PageCount > 250 && l.Title.Contains("i
 
 Filtra todos los animales que sean de color verde que su nombre inicie con una vocal.
 
+## Clase 11 - Operadores All y Any
+
+_All_: Verifica que una o más condiciones se cumplan en ttodos los elementos de la colección.
+
+_Any_: Verifica que una o más condiciones se cumplan en al menos en uno de los elementos que se encuentran dentro de la colección.
+
+**Reto operador All**:
+> Utilizando el operador All verifica que todos los elementos de la colección tenga un valor en el campo Status.
+
+**Reto operador Any**:
+> Utilizando el operador Any verifica si alguno de los libros fue publicado en 2005.

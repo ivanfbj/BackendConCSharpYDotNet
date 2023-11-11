@@ -340,6 +340,40 @@
 #endregion
 
 #region Clase 16 - Selección dinámica de datos
+//using cursoDeManejoDeDatosEnCSharpConLINQ;
+
+//Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
+//Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine();
+
+//LinqQueries queries = new LinqQueries();
+
+////Toda la colección
+//Console.WriteLine("Toda la colección");
+//ImprimirValores(queries.TodaLaColeccion());
+//Console.WriteLine("*****************************");
+
+//// Tres primeros libros filtrados con Select
+//Console.WriteLine("Tres primeros libros filtrados con Select");
+//ImprimirValores(queries.TresPrimerosLibrosDeLaColeccion());
+//Console.WriteLine("*****************************");
+
+
+//void ImprimirValores(IEnumerable<Book> listaDeLibros)
+//{
+//    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
+
+//    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
+
+//    foreach (var item in listaDeLibros)
+//    {
+//        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+//    }
+//}
+#endregion
+
+#region Clase 17 - Operadores LongCount y Count
 using cursoDeManejoDeDatosEnCSharpConLINQ;
 
 Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
@@ -354,9 +388,9 @@ Console.WriteLine("Toda la colección");
 ImprimirValores(queries.TodaLaColeccion());
 Console.WriteLine("*****************************");
 
-// Tres primeros libros filtrados con Select
-Console.WriteLine("Tres primeros libros filtrados con Select");
-ImprimirValores(queries.TresPrimerosLibrosDeLaColeccion());
+// Cantidad de libros que tienen entre 200 y 500 páginas
+Console.WriteLine("Cantidad de libros que tienen entre 200 y 500 páginas\n");
+Console.WriteLine($"Cantidad de libros entre 200 y 500 páginas: {queries.CantidadDeLibrosEntre200y500Pags()}");
 Console.WriteLine("*****************************");
 
 

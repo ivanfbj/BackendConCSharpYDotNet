@@ -242,3 +242,15 @@ El operador **Select** nos permite especificar cuales son las columnas que quere
 
 > Utilizando el operador Select selecciona el título y el número de páginas de los primeros 3 libros de la colección.
 
+## Clase 17 - Operadores LongCount y Count
+
+Los operadores de agregación de LINQ, nos permite realizar un cálculo sobre toda la colección y devolver un dato en especifico.
+
+La diferencia entre los operadores _LongCount_ y _Count_ es que _Count_ soporta 32 Bits y _LongCount_ soporta 64 Bits.
+
+El objetivo de ambos es realizar la cuenta de los elementos dentro de la colección, devuelve cuantos elementos hay.
+
+**Reto operador Count**:
+
+> Utilizando el operador Count, retorna el número de libros que tengan entre 200 y 500 páginas.
+

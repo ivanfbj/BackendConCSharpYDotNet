@@ -138,3 +138,41 @@ A nivel de código lo que se hizo fue crear el contructor en la clase `LinqQueri
 
 Luego en la clase `Programs.cs` se realiza la manipulación requerida por medio de las clases para consultar, almacenar e imprimir los datos del JSON.
 
+## Clase 9 - Usando el operador Where
+
+**Clasificación de los operadores**:
+
+- _Operadores básicos_: los que filtran o hacen alguna modificación especifica sobre la colección.
+
+- _Operadores de agregación_: Hacen operaciones sobre todos los datos de la colección.
+
+- _Operadores de agrupamientos_: Permite agrupar los datos de acuerdo a algunos criterios dentro de lacolección.
+
+El operador **Where** recibe una condición o una serie de condiciones y por medio de estas condiciones filtra la colección. Funciona igual a como funciona el where en SQL.
+
+**Reto operador Where 1**:
+
+> Utilizando el operador Where retorna los libros que fueron publicados después del año 200
+
+```C#
+//extension method
+return librosColletion.Where(p=> p.PublishedDate.Year > 2000);
+
+//query expresion
+return from l in librosCollection where l.PublishedDate.Year > 2000 select l;
+```
+
+**Reto operador Where 2**:
+
+> Utilizando el operador Where retorna los libros que tengan más de 250 páginas y el título contenga las palabras in Action.
+
+```C#
+//extension method
+return librosCollection.Where(p => p.PageCount > 250 && p.Title.Contains("in Action"));
+
+//query expresion
+return from l in librosCollection where l.PageCount > 250 && l.Title.Contains("in Action")
+        select l;
+
+```
+

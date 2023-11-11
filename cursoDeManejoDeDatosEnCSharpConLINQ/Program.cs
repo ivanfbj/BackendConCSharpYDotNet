@@ -487,6 +487,44 @@
 #endregion
 
 #region Clase 20 - Operadores Sum y Aggregate
+//using cursoDeManejoDeDatosEnCSharpConLINQ;
+
+//Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
+//Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine();
+
+//LinqQueries queries = new LinqQueries();
+
+////Toda la colección
+//Console.WriteLine("Toda la colección");
+//ImprimirValores(queries.TodaLaColeccion());
+//Console.WriteLine("*****************************");
+
+////Suma de paginas de libros entre 0 y 500
+//Console.WriteLine("Suma de paginas de libros entre 0 y 500");
+//Console.WriteLine($"Suma total de páginas {queries.SumaDeTodasLasPaginasLibrosEntre0y500()}");
+//Console.WriteLine("*****************************");
+
+//// Libros publicado despues del 2015
+//Console.WriteLine("Libros publicado despues del 2015");
+//Console.WriteLine($"{queries.TitulosLibrosDespuesDel2015Concatenados()}");
+//Console.WriteLine("*****************************");
+
+//void ImprimirValores(IEnumerable<Book> listaDeLibros)
+//{
+//    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
+
+//    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
+
+//    foreach (var item in listaDeLibros)
+//    {
+//        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+//    }
+//}
+#endregion
+
+#region Clase 21 - Operador Average
 using cursoDeManejoDeDatosEnCSharpConLINQ;
 
 Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
@@ -501,15 +539,11 @@ Console.WriteLine("Toda la colección");
 ImprimirValores(queries.TodaLaColeccion());
 Console.WriteLine("*****************************");
 
-//Suma de paginas de libros entre 0 y 500
-Console.WriteLine("Suma de paginas de libros entre 0 y 500");
-Console.WriteLine($"Suma total de páginas {queries.SumaDeTodasLasPaginasLibrosEntre0y500()}");
+//El promedio de caracters de los titulos de los libros
+Console.WriteLine("El promedio de caracters de los titulos de los libros");
+Console.WriteLine($"Promedio caracteres de los titulos: {queries.PromedioCaracteresTitulo()}");
 Console.WriteLine("*****************************");
 
-// Libros publicado despues del 2015
-Console.WriteLine("Libros publicado despues del 2015");
-Console.WriteLine($"{queries.TitulosLibrosDespuesDel2015Concatenados()}");
-Console.WriteLine("*****************************");
 
 void ImprimirValores(IEnumerable<Book> listaDeLibros)
 {

@@ -292,3 +292,11 @@ Necesita una semilla del valor que se vaya a utilizar (puede ser un entero, doub
 
 > Retorna el título de los libros que tienen fecha de publicación posterior a 2015.
 
+## Clase 21 - Operador Average
+
+Permite sacar un promedio de algúna propiedad númerica que tengamos dentro de la colección.
+
+**Reto operador Average**:
+
+Utilizando el operador Average, retorna el promedio de caracteres que tienen los títulos de la colección.
+

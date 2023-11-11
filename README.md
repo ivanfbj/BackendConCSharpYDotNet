@@ -254,3 +254,15 @@ El objetivo de ambos es realizar la cuenta de los elementos dentro de la colecci
 
 > Utilizando el operador Count, retorna el número de libros que tengan entre 200 y 500 páginas.
 
+## Clase 18 - Operadores Min y Max
+
+Nos permite encontrar un valor máximo y un valor mínimo.
+
+**Reto operador Min**:
+
+> Utilizando el operador Min, retorna la menor fecha de publicaciön de la lista de libros.
+
+**Reto operador Max**:
+
+> Utilizando el operador Max, retorna la cantidad de páginas del libro con mayor número de páginas en la colección.
+

@@ -191,3 +191,14 @@ _Any_: Verifica que una o más condiciones se cumplan en al menos en uno de los 
 
 **Reto operador Any**:
 > Utilizando el operador Any verifica si alguno de los libros fue publicado en 2005.
+
+## Clase 12 - Operador Contains
+
+Ayuda a verificar si existe o no un elemento en especifico en la colección.
+
+Este operador se puede utilizar tanto para tipo complejos como para tipos primitivos como string o int.
+
+**Reto operador Contains**:
+
+> Utilizando el operador Contains retorna los elementos que pertenezcan a la categoría de Python.
+

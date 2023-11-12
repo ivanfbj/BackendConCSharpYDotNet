@@ -322,3 +322,12 @@ Permite realizar agrupamiento pero en forma de diccionario, de está manera se p
 
 > Retorna un diccionario usando Lookup que permita consultar los libros de acuerdo a la letra con la que inicia el título del libro.
 
+## Clase 25 - Cláusula Join
+
+Permité interceptar 2 colecciones y devolver los elementos que se encuentran en ambas colecciones.
+
+**Reto operador Join**:
+
+> Obtén una colección que tenga todos los libros con más de 500 páginas y otra que contenga los libros publicados después del 2005.
+Utilizando la cláusula Join, retorna los libros que estén en ambas colecciones.
+

@@ -643,6 +643,67 @@
 #endregion
 
 #region Clase 24 - Cláusula Lookup
+//using cursoDeManejoDeDatosEnCSharpConLINQ;
+
+//Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
+//Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine();
+
+//LinqQueries queries = new LinqQueries();
+
+////Toda la colección
+//Console.WriteLine("Toda la colección");
+//ImprimirValores(queries.TodaLaColeccion());
+//Console.WriteLine("*****************************");
+
+//// Diccionario de libros agrupados por primera letra del titulo.
+//Console.WriteLine("Diccionario de libros agrupados por primera letra del titulo");
+//var diccionarioLookup = queries.DiccionariosDeLibrosPorLetra();
+//ImprimirDiccionario(diccionarioLookup,'E');
+//Console.WriteLine("*****************************");
+
+//void ImprimirValores(IEnumerable<Book> listaDeLibros)
+//{
+//    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
+
+//    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
+
+//    foreach (var item in listaDeLibros)
+//    {
+//        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+//    }
+//}
+
+//void ImprimirGroupo(IEnumerable<IGrouping<int, Book>> ListadeLibros)
+//{
+//    string estructuraTexto = "{0,-60} {1,15} {2,15}";
+
+//    foreach (var grupo in ListadeLibros)
+//    {
+//        Console.WriteLine("-------------------------------------------------------------------------------------------------------------------------");
+//        Console.WriteLine($"Grupo: {grupo.Key}");
+//        Console.WriteLine($"{estructuraTexto}", "Titulo", "N. Paginas", "Fecha publicación");
+//        foreach (var item in grupo)
+//        {
+//            Console.WriteLine($"{estructuraTexto}", item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
+//        }
+//    }
+//}
+
+//void ImprimirDiccionario(ILookup<char, Book> ListadeLibros, char letra)
+//{
+//    string formatoTexto = "{0,-60} {1,15} {2,15}";
+//    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicación");
+
+//    foreach (var item in ListadeLibros[letra])
+//    {
+//        Console.WriteLine(formatoTexto, item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
+//    }
+//}
+#endregion
+
+#region Clase 25 - Cláusula Join
 using cursoDeManejoDeDatosEnCSharpConLINQ;
 
 Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
@@ -657,10 +718,9 @@ Console.WriteLine("Toda la colección");
 ImprimirValores(queries.TodaLaColeccion());
 Console.WriteLine("*****************************");
 
-// Diccionario de libros agrupados por primera letra del titulo.
-Console.WriteLine("Diccionario de libros agrupados por primera letra del titulo");
-var diccionarioLookup = queries.DiccionariosDeLibrosPorLetra();
-ImprimirDiccionario(diccionarioLookup,'E');
+// Libros filtrados con la cláusula join
+Console.WriteLine("Libros filtrados con la cláusula join");
+ImprimirValores(queries.LibrosDespuesDel2005ConMasDe500Pags());
 Console.WriteLine("*****************************");
 
 void ImprimirValores(IEnumerable<Book> listaDeLibros)

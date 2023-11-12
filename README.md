@@ -134,3 +134,25 @@ EL CLR ayuda a agilizar la ejecuión del código compilado, esto permite que .NE
 
 Es una nueva versión del CLR que se creó con .NET Core.
 
+## Clase 8 - Compilador Roslyn
+
+Los lenguajes deben de pasar por un proceso de transformación y debe de haber un agente que se encargue de hacer dicha transformación en ese caso el compilador Roslyn.
+
+- Conocido como .NET Compiler Platform.
+- Soporta C# y Visual Basic.
+- Analiza estilo y calidad de código usando niveles de severidad.
+- Rápido y ágil.
+
+Fue desarrollado junto con la nueva versión de .NET para agilizar el proceso de compilación, es decir el proceso de transformación que tienen los lenguajes de programación de alto nivel a un lenguaje de bajo nivel que pueda ser ejecutado por el CLR.
+
+Roslyn soporta 2 lenguajes de programación que son C# y Visual Basic, ambos lenguajes son análizados y convertido a este lenguaje de bajo nivel por el mismo compilador.
+
+Roslyn permite análizar el estilo y la calidad de código. Ha venido mejorando para mejorar la expeiencia de desarrollo con .NET
+
+Ejemplo:
+Roslyn genera las advertencia de las directiva que se están utilizando y muestra sugerencias del código que acaba de analizar.
+
+![Ejemplo de Roslyn](images/ejmplo_Roslyn.png)
+
+Roslyn viene integrado por defecto en Visual Studio y al dotnet CLI.
+

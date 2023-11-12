@@ -128,7 +128,7 @@ El CLR se utiliza en tiempo de ejecución, mientras se este programando o compil
 
 EL CLR ayuda a agilizar la ejecuión del código compilado, esto permite que .NET sea una plataforma rápida con gran rendimiento.
 
-![Imágen del Funcionamiento del CLR](images\Funcionamiento_del_CLR.png)
+![Imágen del Funcionamiento del CLR](images/Funcionamiento_del_CLR.png)
 
 **CoreCLR para .NET Core**:
 

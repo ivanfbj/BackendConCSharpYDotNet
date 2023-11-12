@@ -310,3 +310,7 @@ Operador de agrupamiento.
 
 A nivel de código se implementó un método nuevo llamado `ImprimirGroupo` esto se debe a que el operador de agrupamiento `GroupBy` además del `IEnumerable` también retorna un `IGrouping` por lo cuál la manipulación de los datos para imprimirlos cambia un poco en la lógica.
 
+## Clase 23 - Ejercicio cláusula GroupBy
+
+> Retorna los datos de la colleción Animales agrupada por color.
+

@@ -559,51 +559,86 @@
 #endregion
 
 #region Clase 22 - Cláusula GroupBy
-using cursoDeManejoDeDatosEnCSharpConLINQ;
+//using cursoDeManejoDeDatosEnCSharpConLINQ;
 
-Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
-Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
-Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
-Console.WriteLine();
+//Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
+//Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine();
 
-LinqQueries queries = new LinqQueries();
+//LinqQueries queries = new LinqQueries();
 
-//Toda la colección
-Console.WriteLine("Toda la colección");
-ImprimirValores(queries.TodaLaColeccion());
-Console.WriteLine("*****************************");
+////Toda la colección
+//Console.WriteLine("Toda la colección");
+//ImprimirValores(queries.TodaLaColeccion());
+//Console.WriteLine("*****************************");
 
-// Libros publicados despues a partir del 2000 agrupados por año.
-Console.WriteLine("Libros publicados despues a partir del 2000 agrupados por año.");
-ImprimirGroupo(queries.LibrosDespuesDel2000AgrupadosPorAno());
+//// Libros publicados despues a partir del 2000 agrupados por año.
+//Console.WriteLine("Libros publicados despues a partir del 2000 agrupados por año.");
+//ImprimirGroupo(queries.LibrosDespuesDel2000AgrupadosPorAno());
 
-Console.WriteLine("*****************************");
+//Console.WriteLine("*****************************");
 
-void ImprimirValores(IEnumerable<Book> listaDeLibros)
+//void ImprimirValores(IEnumerable<Book> listaDeLibros)
+//{
+//    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
+
+//    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
+
+//    foreach (var item in listaDeLibros)
+//    {
+//        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+//    }
+//}
+
+//void ImprimirGroupo(IEnumerable<IGrouping<int, Book>> ListadeLibros)
+//{
+//    string estructuraTexto = "{0,-60} {1,15} {2,15}";
+
+//    foreach (var grupo in ListadeLibros)
+//    {
+//        Console.WriteLine("-------------------------------------------------------------------------------------------------------------------------");
+//        Console.WriteLine($"Grupo: {grupo.Key}");
+//        Console.WriteLine($"{estructuraTexto}", "Titulo", "N. Paginas", "Fecha publicación");
+//        foreach (var item in grupo)
+//        {
+//            Console.WriteLine($"{estructuraTexto}", item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
+//        }
+//    }
+//}
+#endregion
+
+#region Clase 23 - Ejercicio cláusula GroupBy
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+List<Animal> animales = new List<Animal>();
+animales.Add(new Animal() { Nombre = "Hormiga", Color = "Rojo" });
+animales.Add(new Animal() { Nombre = "Lobo", Color = "Gris" });
+animales.Add(new Animal() { Nombre = "Elefante", Color = "Gris" });
+animales.Add(new Animal() { Nombre = "Pantegra", Color = "Negro" });
+animales.Add(new Animal() { Nombre = "Gato", Color = "Negro" });
+animales.Add(new Animal() { Nombre = "Iguana", Color = "Verde" });
+animales.Add(new Animal() { Nombre = "Sapo", Color = "Verde" });
+animales.Add(new Animal() { Nombre = "Camaleon", Color = "Verde" });
+animales.Add(new Animal() { Nombre = "Gallina", Color = "Blanco" });
+
+// Escribe tu código aquí
+// Retorna los datos de la colleción Animales agrupada por color 
+foreach(var grupo in animales.GroupBy(a => a.Color))
 {
-    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
-
-    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
-
-    foreach (var item in listaDeLibros)
-    {
-        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
-    }
-}
-
-void ImprimirGroupo(IEnumerable<IGrouping<int, Book>> ListadeLibros)
-{
-    string estructuraTexto = "{0,-60} {1,15} {2,15}";
+    Console.WriteLine("------------------------------"); ;
+    Console.WriteLine($"Grupo Color: {grupo.Key}");
     
-    foreach (var grupo in ListadeLibros)
-    {
-        Console.WriteLine("-------------------------------------------------------------------------------------------------------------------------");
-        Console.WriteLine($"Grupo: {grupo.Key}");
-        Console.WriteLine($"{estructuraTexto}", "Titulo", "N. Paginas", "Fecha publicación");
-        foreach (var item in grupo)
-        {
-            Console.WriteLine($"{estructuraTexto}", item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
-        }
-    }
+    Console.WriteLine("");
+    grupo.ToList().ForEach(a => Console.WriteLine(a.Nombre));
 }
+
+public class Animal
+{
+    public string Nombre { get; set; }
+    public string Color { get; set; }
+}
+
 #endregion

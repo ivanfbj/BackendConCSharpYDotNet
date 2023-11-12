@@ -314,3 +314,11 @@ A nivel de código se implementó un método nuevo llamado `ImprimirGroupo` esto
 
 > Retorna los datos de la colleción Animales agrupada por color.
 
+## Clase 24 - Cláusula Lookup
+
+Permite realizar agrupamiento pero en forma de diccionario, de está manera se puede consultar la lista de elementos de una manera más simple.
+
+**Reto operador Lookup**:
+
+> Retorna un diccionario usando Lookup que permita consultar los libros de acuerdo a la letra con la que inicia el título del libro.
+

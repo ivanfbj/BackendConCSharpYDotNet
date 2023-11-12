@@ -609,36 +609,96 @@
 #endregion
 
 #region Clase 23 - Ejercicio cláusula GroupBy
-using System;
-using System.Collections.Generic;
-using System.Linq;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
 
-List<Animal> animales = new List<Animal>();
-animales.Add(new Animal() { Nombre = "Hormiga", Color = "Rojo" });
-animales.Add(new Animal() { Nombre = "Lobo", Color = "Gris" });
-animales.Add(new Animal() { Nombre = "Elefante", Color = "Gris" });
-animales.Add(new Animal() { Nombre = "Pantegra", Color = "Negro" });
-animales.Add(new Animal() { Nombre = "Gato", Color = "Negro" });
-animales.Add(new Animal() { Nombre = "Iguana", Color = "Verde" });
-animales.Add(new Animal() { Nombre = "Sapo", Color = "Verde" });
-animales.Add(new Animal() { Nombre = "Camaleon", Color = "Verde" });
-animales.Add(new Animal() { Nombre = "Gallina", Color = "Blanco" });
+//List<Animal> animales = new List<Animal>();
+//animales.Add(new Animal() { Nombre = "Hormiga", Color = "Rojo" });
+//animales.Add(new Animal() { Nombre = "Lobo", Color = "Gris" });
+//animales.Add(new Animal() { Nombre = "Elefante", Color = "Gris" });
+//animales.Add(new Animal() { Nombre = "Pantegra", Color = "Negro" });
+//animales.Add(new Animal() { Nombre = "Gato", Color = "Negro" });
+//animales.Add(new Animal() { Nombre = "Iguana", Color = "Verde" });
+//animales.Add(new Animal() { Nombre = "Sapo", Color = "Verde" });
+//animales.Add(new Animal() { Nombre = "Camaleon", Color = "Verde" });
+//animales.Add(new Animal() { Nombre = "Gallina", Color = "Blanco" });
 
-// Escribe tu código aquí
-// Retorna los datos de la colleción Animales agrupada por color 
-foreach(var grupo in animales.GroupBy(a => a.Color))
+//// Escribe tu código aquí
+//// Retorna los datos de la colleción Animales agrupada por color 
+//foreach(var grupo in animales.GroupBy(a => a.Color))
+//{
+//    Console.WriteLine("------------------------------"); ;
+//    Console.WriteLine($"Grupo Color: {grupo.Key}");
+
+//    Console.WriteLine("");
+//    grupo.ToList().ForEach(a => Console.WriteLine(a.Nombre));
+//}
+
+//public class Animal
+//{
+//    public string Nombre { get; set; }
+//    public string Color { get; set; }
+//}
+#endregion
+
+#region Clase 24 - Cláusula Lookup
+using cursoDeManejoDeDatosEnCSharpConLINQ;
+
+Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
+Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
+Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+Console.WriteLine();
+
+LinqQueries queries = new LinqQueries();
+
+//Toda la colección
+Console.WriteLine("Toda la colección");
+ImprimirValores(queries.TodaLaColeccion());
+Console.WriteLine("*****************************");
+
+// Diccionario de libros agrupados por primera letra del titulo.
+Console.WriteLine("Diccionario de libros agrupados por primera letra del titulo");
+var diccionarioLookup = queries.DiccionariosDeLibrosPorLetra();
+ImprimirDiccionario(diccionarioLookup,'E');
+Console.WriteLine("*****************************");
+
+void ImprimirValores(IEnumerable<Book> listaDeLibros)
 {
-    Console.WriteLine("------------------------------"); ;
-    Console.WriteLine($"Grupo Color: {grupo.Key}");
-    
-    Console.WriteLine("");
-    grupo.ToList().ForEach(a => Console.WriteLine(a.Nombre));
+    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
+
+    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
+
+    foreach (var item in listaDeLibros)
+    {
+        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+    }
 }
 
-public class Animal
+void ImprimirGroupo(IEnumerable<IGrouping<int, Book>> ListadeLibros)
 {
-    public string Nombre { get; set; }
-    public string Color { get; set; }
+    string estructuraTexto = "{0,-60} {1,15} {2,15}";
+
+    foreach (var grupo in ListadeLibros)
+    {
+        Console.WriteLine("-------------------------------------------------------------------------------------------------------------------------");
+        Console.WriteLine($"Grupo: {grupo.Key}");
+        Console.WriteLine($"{estructuraTexto}", "Titulo", "N. Paginas", "Fecha publicación");
+        foreach (var item in grupo)
+        {
+            Console.WriteLine($"{estructuraTexto}", item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
+        }
+    }
 }
 
+void ImprimirDiccionario(ILookup<char, Book> ListadeLibros, char letra)
+{
+    string formatoTexto = "{0,-60} {1,15} {2,15}";
+    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicación");
+
+    foreach (var item in ListadeLibros[letra])
+    {
+        Console.WriteLine(formatoTexto, item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
+    }
+}
 #endregion

@@ -174,3 +174,21 @@ El CLS es una serie de reglas que deben seguir todos los lenguajes para poder se
 
 ![Ejemplo de CLS](images/ejemplo_de_CLS.png)
 
+## Clase 10 - Common Type System
+
+Define los diferentes grupos de tipos de datos que debe tener un lenguaje de programación que sea compatible con .NET.
+
+**Características**:
+
+- Define los tipos generales que se usan dentro del lenguaje.
+- Provee la librería base para los tipos primitivos (byte, char, int).
+- Provee un modelo de tipos orientado a objetos.
+
+**Categorias del CTS**:
+
+- Clases
+- Estructuras
+- Enumeraciones
+- Interfaces
+- Delegados
+

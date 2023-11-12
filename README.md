@@ -33,3 +33,41 @@ Enlaces:
 
 [.NET documentation | Microsoft Docs](https://docs.microsoft.com/dotnet/)
 [GitHub - dotnet/core: Home repository for .NET Core](https://github.com/dotnet/core)
+
+## Clase 4 - .NET Framework vs .NET Core
+
+.NET Framework fue la primera versión que se liberó de .NET y .NET Core es la versión moderna, es la evolución como tal de este Framework.
+
+**.NET Framework**:
+
+- Primera versión del framework en 2001.
+- Compatible solo Windows.
+- Plataforma de ejecución intermedia.
+- Compatible con VB .NET, F#, Visual C++.
+- Diseñado para apps corporativas con arquitectura tradicional.
+- Soporte extendido por al menos 10 años.
+
+**Tabla de diferencias**:
+
+|.NET Framework | .NET Core |
+|---------------|-----------|
+|Compatible con Windows.|Multiplataforma (Windows,Linux, MacOS).|
+|C#, Visual Basic .NET, F#, Visual C++.|C#, F#, Visual Basic.|
+|Orientado a aplicaciones monolíticas y corporativas.|Orientado al alto rendimiento y arquitecturas orientadas a la nube.|
+|Dependencia de Visual Studio.|Sin dependencias de IDE o editor de texto.|
+
+**.NET Core = .NET**:
+
+Microsoft quiere evitar el uso del nombre como tal de **.NET Core**, sino que en su estandar, documentación entre otros, el objetivo es que se mencione solamente como **.NET**
+
+**<p style="text-align:center;">En resumen</p>**
+
+- **.NET**:
+  - Es la abreviatura de .NET Core, versión actual de .NET.
+
+- **.NET Core**:
+  - Es la evolución .NET y sucesor de .NET Framework.
+
+- **.NET Framework**:
+  - Primera versión del framework con soporte extendido.
+

@@ -60,7 +60,7 @@ Enlaces:
 
 Microsoft quiere evitar el uso del nombre como tal de **.NET Core**, sino que en su estandar, documentación entre otros, el objetivo es que se mencione solamente como **.NET**
 
-**<p style="text-align:center;">En resumen</p>**
+**En resumen**:
 
 - **.NET**:
   - Es la abreviatura de .NET Core, versión actual de .NET.
@@ -70,4 +70,25 @@ Microsoft quiere evitar el uso del nombre como tal de **.NET Core**, sino que en
 
 - **.NET Framework**:
   - Primera versión del framework con soporte extendido.
+
+## Clase 5 - Ventajas y usos de .NET
+
+**Podemos usar .NET para crear:**
+
+- Aplicaciones de consola y librerías.
+- Aplicaciones para Windows usando WinForms, WPF, UWP, WinUI 3.
+- Aplicaciones web y web APIs usando ASP .NET.
+- Aplicaciones móviles usando Xamarin y NET MAUI.
+- Aplicaciones Web usando Web assembly con Blazor.
+
+**Ventajas:**
+
+- Multiplataforma.
+- Compatible con múltiples lenguajes de programación.
+- Muchas herramientas y librerías gratuitas.
+- Evolución y mejoras.
+- Apoyo de la comunidad y documentación.
+- Soporte continuo.
+- Integración con servicios Microsoft.
+- Retrocompatibilidad.
 

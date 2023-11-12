@@ -12,3 +12,24 @@
 - Conocimientos generales de C#.
 - Visual Studio Code.
 
+## Clase 3 - ¿Qué es .NET?
+
+Plataforma de desarrollo de aplicaciones creada por Microsoft.
+
+Cuando se habla de .NET es un conjunto de librerias que permiten desarrollar aplicaciones para diferentes plataformas.
+
+.NET fue creada por Microsoft para ofrecerle a los desarrolladores la oportunidad de crear fácilmente aplicaciones de todo tipo utilizando un solo SDK (kit de desarrollo de software), unico conjunto de librerias base para todas las posibles plataformas y tipos de posibles aplicaciones que hay en el mercado.
+
+**Datos sobre .NET**:
+
+- Creada en 2016.
+- De código abierto y gratuito.
+- Multiplataforma.
+- Programado en y C++.
+- Orientado a alto rendimiento y la nube.
+
+___
+Enlaces:
+
+[.NET documentation | Microsoft Docs](https://docs.microsoft.com/dotnet/)
+[GitHub - dotnet/core: Home repository for .NET Core](https://github.com/dotnet/core)

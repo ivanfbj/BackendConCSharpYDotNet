@@ -156,3 +156,21 @@ Roslyn genera las advertencia de las directiva que se están utilizando y muestr
 
 Roslyn viene integrado por defecto en Visual Studio y al dotnet CLI.
 
+## Clase 9 - Common Language Specification
+
+Es una regla de metricas que deben seguir los lenguajes para que puedan ser compilados todos a un mismo lenguaje de bajo nivel para luego ser ejecutados y leídos por .NET.
+
+> Permite compilar los lenguajes de alto nivel en un lenguaje común Common Intermediate Language (CIL)
+
+El CLS es una serie de reglas que deben seguir todos los lenguajes para poder ser compilados a un único lenguaje que sería el Common Intermediate Language (CIL), en caso de .NET el **CLS** traduce a un código conocido como "Assembly" y este código es el mismo para cualquer lenguaje de programación (C#, F#, Visual Basic).
+
+**Características**:
+
+- Diseñado para lenguajes compilados.
+- Soporta C#, Visual Basic, F#.
+- Permite comunicación entre componentes de diferentes de lenguaje.
+
+**Ejemplo de CLS:**
+
+![Ejemplo de CLS](images/ejemplo_de_CLS.png)
+

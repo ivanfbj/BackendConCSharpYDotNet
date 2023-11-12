@@ -111,3 +111,26 @@ Microsoft quiere evitar el uso del nombre como tal de **.NET Core**, sino que en
   - 2022 - **.NET 7**
   - 2023 - **.NET 8 (LTS)**
   - 2024 - **.NET 9**
+
+## Clase 7 - Common Language Runtime (CLR)
+
+Es la base con la que se ejecutan las aplicaciones de .NET, ya sea en la máquina local o aplicaciones en producción.
+
+**Características**:
+
+- Transforma de Common Intermediate Language (CIL) o MSIL a Código nativo.
+- Compilador en tiempo de ejecución.
+- Agiliza la ejecución del código compilado.
+
+Todos los lenguajes que trabajan con .NET son lenguajes compilados, así que son lenguajes que pasan de una sintaxis de alto nivel a una sintaxis de bajos nivel. Luego de que se realiza está transformación, entra un componente a ejecutar ese lenguaje de bajo nivel en este caso el **CLR**.
+
+El CLR se utiliza en tiempo de ejecución, mientras se este programando o compilando el CLR no hace nada.
+
+EL CLR ayuda a agilizar la ejecuión del código compilado, esto permite que .NET sea una plataforma rápida con gran rendimiento.
+
+![Imágen del Funcionamiento del CLR](images\Funcionamiento_del_CLR.png)
+
+**CoreCLR para .NET Core**:
+
+Es una nueva versión del CLR que se creó con .NET Core.
+

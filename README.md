@@ -92,3 +92,22 @@ Microsoft quiere evitar el uso del nombre como tal de **.NET Core**, sino que en
 - Integración con servicios Microsoft.
 - Retrocompatibilidad.
 
+## Clase 6 - Línea de tiempo de .NET y C\#
+
+- **Primera línea de tiempo**:
+
+  - 2002 - **.Net Framework 1.0**
+  - 2005 - **.Net Framework 2.0**
+  - 2010 - **.Net Framework 4.0**
+  - 2012 - **.Net Framework 4.5**
+  - 2016 - **.Net Framework 4.6.1** - **.NET Core 1.0**
+
+- **Línea de tiempo .NET**:
+  - 2016 - **.NET Core 1.0**
+  - 2017 - **.NET Core 2.0 (LTS)**
+  - 2019 - **.NET Core 3.0 (LTS)**
+  - 2020 - **.NET Core 5**
+  - 2021 - **.NET 6 (LTS)**
+  - 2022 - **.NET 7**
+  - 2023 - **.NET 8 (LTS)**
+  - 2024 - **.NET 9**

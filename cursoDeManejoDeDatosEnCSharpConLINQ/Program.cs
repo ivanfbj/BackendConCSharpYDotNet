@@ -525,6 +525,40 @@
 #endregion
 
 #region Clase 21 - Operador Average
+//using cursoDeManejoDeDatosEnCSharpConLINQ;
+
+//Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine("Curso de Manejo de Datos en C# con LINQ");
+//Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+//Console.WriteLine();
+
+//LinqQueries queries = new LinqQueries();
+
+////Toda la colección
+//Console.WriteLine("Toda la colección");
+//ImprimirValores(queries.TodaLaColeccion());
+//Console.WriteLine("*****************************");
+
+////El promedio de caracters de los titulos de los libros
+//Console.WriteLine("El promedio de caracters de los titulos de los libros");
+//Console.WriteLine($"Promedio caracteres de los titulos: {queries.PromedioCaracteresTitulo()}");
+//Console.WriteLine("*****************************");
+
+
+//void ImprimirValores(IEnumerable<Book> listaDeLibros)
+//{
+//    string formatoTexto = "\t{0,-60} {1,15} {2, 15}";
+
+//    Console.WriteLine($"{formatoTexto}\n", "Titulo", "N. Paginas", "Fecha publicacion");
+
+//    foreach (var item in listaDeLibros)
+//    {
+//        Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+//    }
+//}
+#endregion
+
+#region Clase 22 - Cláusula GroupBy
 using cursoDeManejoDeDatosEnCSharpConLINQ;
 
 Console.WriteLine("\n---------------------------------------------------------------------------------------------------------------");
@@ -539,11 +573,11 @@ Console.WriteLine("Toda la colección");
 ImprimirValores(queries.TodaLaColeccion());
 Console.WriteLine("*****************************");
 
-//El promedio de caracters de los titulos de los libros
-Console.WriteLine("El promedio de caracters de los titulos de los libros");
-Console.WriteLine($"Promedio caracteres de los titulos: {queries.PromedioCaracteresTitulo()}");
-Console.WriteLine("*****************************");
+// Libros publicados despues a partir del 2000 agrupados por año.
+Console.WriteLine("Libros publicados despues a partir del 2000 agrupados por año.");
+ImprimirGroupo(queries.LibrosDespuesDel2000AgrupadosPorAno());
 
+Console.WriteLine("*****************************");
 
 void ImprimirValores(IEnumerable<Book> listaDeLibros)
 {
@@ -554,6 +588,22 @@ void ImprimirValores(IEnumerable<Book> listaDeLibros)
     foreach (var item in listaDeLibros)
     {
         Console.WriteLine($"{formatoTexto}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+    }
+}
+
+void ImprimirGroupo(IEnumerable<IGrouping<int, Book>> ListadeLibros)
+{
+    string estructuraTexto = "{0,-60} {1,15} {2,15}";
+    
+    foreach (var grupo in ListadeLibros)
+    {
+        Console.WriteLine("-------------------------------------------------------------------------------------------------------------------------");
+        Console.WriteLine($"Grupo: {grupo.Key}");
+        Console.WriteLine($"{estructuraTexto}", "Titulo", "N. Paginas", "Fecha publicación");
+        foreach (var item in grupo)
+        {
+            Console.WriteLine($"{estructuraTexto}", item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
+        }
     }
 }
 #endregion

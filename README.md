@@ -300,3 +300,13 @@ Permite sacar un promedio de algúna propiedad númerica que tengamos dentro de 
 
 Utilizando el operador Average, retorna el promedio de caracteres que tienen los títulos de la colección.
 
+## Clase 22 - Cláusula GroupBy
+
+Operador de agrupamiento.
+
+**Reto operador GroupBy**:
+
+> Retorna todos los libros que fueron publicados a partir del 2000, agrupados por año.
+
+A nivel de código se implementó un método nuevo llamado `ImprimirGroupo` esto se debe a que el operador de agrupamiento `GroupBy` además del `IEnumerable` también retorna un `IGrouping` por lo cuál la manipulación de los datos para imprimirlos cambia un poco en la lógica.
+

@@ -29,3 +29,28 @@ Luego esta configuración se conectará a una base de datos real y por ultimo se
 - SQL server / PostgreSQL.
 - SQL management.
 
+## Clase 3 - Conexión a base de datos
+
+**Arquitectura básica**:
+
+![Arquitectura básica](images/Arquitectura_basica.png)
+
+Entity Framework se encarga de simplificar como construimos el Backend para podernos conectar a la base de datos.
+
+**Tipos de conexión**:
+
+- ODBC
+- OLEDB
+- SQL server
+- Conexión Azure SQL
+
+ODBC y OLEBD son dirves que se instalan directamente en el computador y por medio de una cadena se conexión se establece la conexión con la base de datos.
+
+SQL server y Azure SQL son conexiones de Microsoft para la conexión.
+
+En .NET tenemos un componente que permite hacer todas las conexiones a la base se datos, este componente se llama "**ADO.NET**" es un conjunto de librerías para acceder a bases de datos y servicios de datos.
+
+**Funcionamiento de ADO.NET**:
+
+![imagén de Funcionamiento de ADO.NET](images/funcionamiento_ado_dot_net.png)
+

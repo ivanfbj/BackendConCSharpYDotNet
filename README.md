@@ -44,7 +44,7 @@ Entity Framework se encarga de simplificar como construimos el Backend para pode
 - SQL server
 - Conexión Azure SQL
 
-ODBC y OLEBD son dirves que se instalan directamente en el computador y por medio de una cadena se conexión se establece la conexión con la base de datos.
+ODBC y OLEBD son drivers que se instalan directamente en el computador y por medio de una cadena se conexión se establece la conexión con la base de datos.
 
 SQL server y Azure SQL son conexiones de Microsoft para la conexión.
 
@@ -53,4 +53,32 @@ En .NET tenemos un componente que permite hacer todas las conexiones a la base s
 **Funcionamiento de ADO.NET**:
 
 ![imagén de Funcionamiento de ADO.NET](images/funcionamiento_ado_dot_net.png)
+
+## Clase 4 - ¿Qué es un ORM en programación?
+
+ _**Object**-Relational Mapping_: Es una herramienta que realiza un mapeo que nos permite transformar los objetos de la base de datos como tablas y esquemas a clases con atributos en código de programación para poder manipular la información de una forma más fácil sin requerir de SQL.
+
+Se apoya en objetos y clases para realizar la representación del concepto a utilizar.
+
+**Desafíos en la conexión a una base de datos**:
+
+- Mantenimiento del esquema.
+- Creación de consultas usando SQL.
+- Transformación de datos para ser usados en el backend.
+- Garantizar la seguridad al manipular datos.
+
+**ORM**:
+
+Modelado de bases de datos relacional usando programación orientada a objetos.
+
+Reemplaza a SQL como lenguaje de consultas utilizando funcionaes.
+
+![imagen ORM](images/ORM.png)
+
+**ORM populares**:
+
+- Hibernate (Java)
+- Dapper (.NET)
+- NHibernate (.NET)
+- Django ORM (Python)
 

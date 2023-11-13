@@ -1,5 +1,12 @@
 # Curso de Principios SOLID en C# y .NET
 
+Mejora tus habilidades como programador adquiriendo conocimiento sobre buenas prácticas y código limpio en programación. Aprende cada uno de los 5 principios SOLID y como aplicarlos utilizando C#.
+
+- Aprende a identificar y resolver desafíos comunes en programación.
+- Entiende cómo programar código limpio y aplícalo en tus proyectos.
+- Aplica los principios SOLID para tener código mantenible en el tiempo.
+- Prepárate para entrevistas de trabajo conociendo los principios SOLID.
+
 ## Clase 1 - Principios SOLID en C# y .NET
 
 - Aprendizaje de los principios SOLID para aplicarlos en los desarrollo.

@@ -202,3 +202,35 @@ Comando para verificar la versión instalada:
 dotnet --version
 ```
 
+## Clase 12 - IDEs para trabajar con .NET
+
+IDE: Integrated Development Environment, entorno de desarrollo integrado.
+
+- **Visual Studio**: es la herramientas más completa para trabajar con .NET.
+
+  - **Características de VS**: **
+
+    - Integrado a .NET Framework y .NET Core.
+    - Soporta todos los tipos de proyectos de .NET.
+    - Soporta extensiones para ampliar funciones.
+    - Nueva versión cada 3 años.
+    - Plataforma Windows.
+    - Version Community, Profesional, Enterprise.
+
+- **Rider de JetBrains**:
+  - **Características de Rider**
+    - Más ligero que Visual Studio.
+    - Herramientas avanzadas de autocompletado.
+    - Multiplataforma.
+    - Contiene las herramientas de Resharper.
+    - Licenciado.
+
+- **Visual Studio Code**
+  - **Características de VS Code**
+    - Multiplataforma.
+    - Ligero.
+    - Muchas extensiones para potencializar.
+    - Gratuito y de código abierto.
+    - Soporte la mayoría de lenguajes de
+    - programación.
+

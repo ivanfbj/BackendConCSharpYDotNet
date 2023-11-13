@@ -318,3 +318,14 @@ Para limpiar la compilación hecha, podemos usar el comando `dotnet clean` para 
   - Prepara la aplicación para que esté lista en producción, tenga un mejor rendimiento, además de que sea mucho más liviano. Elimina todos los archivos que no se necesitan en producción.
 
   - `dotnet build --configuration release` es el comando que nos permite generar el compilado en **modo release**.
+
+## Clase 18 - Archivo Global JSON
+
+Es un archiv que nos permite administrar las versiones de los SDK con los que trabajamos en .NET.
+
+El archivo global JSON se puede crear manualmente o por medio de un comando del CLI: `dotnet new globaljson`
+
+Al ejecutar el comando se crea el archivo `global.json` que por defecto trae la configuración de la versión del SDK, el objetivo es poder cambiar la versión según se requiera para que el proyecto utilice una versión antigua.
+
+Dentro de la propiedad sdk, existe otra propiedad llamada `allowPrerelease`, esta propiedad nos permite colocarla en `false` o `true` y de esta manera habilitar o deshabilitar el uso de release que no son oficiales dentro del excosistema de .NET, generalmente son releases que estan en modo de prueba, preview o beta, de esta manera se puede forzar a que por ningún motivo se utilice un SDK que este en prueba.
+

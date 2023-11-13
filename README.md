@@ -1,5 +1,12 @@
 # Curso de Buenas Prácticas y Código Limpio en C\#
 
+Mejora tu habilidad como programador siguiendo los mejores estándares en la industria del desarrollo de software y aprende a escribir un mejor código en C# implementado los principios de código limpio.
+
+- Conoce los principios y estándares de calidad de código limpio.
+- Aprende los principios del código limpio
+- Crea código escalable con buenas prácticas de programación
+- Aprende como implementar las mejoras de C#
+
 ## Clase 1 - Presentación
 
 Se aprenderá como mejorar el código, cómo escribir un mejor código en C# y seguir los mejores estandares que hay en la industria del software.

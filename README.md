@@ -337,3 +337,24 @@ Nuget.org es el sitio oficial y público donde podemos utilizar diferentes libre
 
 Sin embargo también se puede crear un servidor propio de NuGet para tener librerías que sean cerradas o privadas que solo sean consumidas por los proyectos de la organización.
 
+## Clase 20 - Descargando un paquete con Nuget
+
+Se requiere un paquete NuGet que nos permita pasar un dato númerico a texto.
+
+La librería [Humanizer](https://www.nuget.org/packages/Humanizer) nos permitirá manipuilar diferentes tipos de datos que tiene .NET y convertirlos en texto o palabras.
+
+Entre las diferentes formas que hay para implementar o descargar el paquete se utilizará la forma de `.NET CLI`
+
+```Bash
+dotnet add package Humanizer --version 2.14.1
+```
+
+Con este comando se agrega el paquete al proyecto al revisar el archivo `cursoDeFundamentosDeDotNet_console.csproj` se ha agregado la referencia al paquete.
+
+```XML
+  <ItemGroup>
+    <PackageReference Include="Humanizer" Version="2.14.1" />
+  </ItemGroup>
+```
+
+A nivel de código en el archivo `Program.cs` se hace la importanción del paquete `Humanizer` y ya nos permite utilizar el método en las variables de tipo int.

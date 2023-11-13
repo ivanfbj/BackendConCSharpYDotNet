@@ -285,3 +285,13 @@ El archivo `cursoDeFundamentosDeDotNet_webapi.csproj` tiene un SDK diferente al 
 
 El archivo `Program.cs` contiene mayor cantidad de código ya que tiene más información que permite que la API se pueda ejecutar sin problema.
 
+## Clase 16 - Compilación y ejecución
+
+Crear mini proyecto para entender el proceso de compilación y ejecución de proyecto en .NET.
+
+`dotnet build` es el comando que nos permite compilar el código para verificar que el código este compilando sin errores, tanto a nivel de código como de las dependencias que se esten utilizando.
+
+`dotnet restore` es el comando que nos permite restaurar las dependencias o librerías que están dentro del proyecto.
+
+`dotnet watch run` es el comando que nos permite ejecutar el proyecto y estar revisando los cambios realizados en tiempo real.
+

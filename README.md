@@ -234,3 +234,32 @@ IDE: Integrated Development Environment, entorno de desarrollo integrado.
     - Soporte la mayoría de lenguajes de
     - programación.
 
+## Clase 13 - dotnet CLI
+
+**Command-line interface**: Es una de las herramientas más importantes que tiene .NET. Con esta herramientas se podrá compilar, ejecutar y publicar los proyectos desarrollados en .NET.
+
+Se divide en 2 grupos de comandos:
+
+**Generales**:
+
+- Creación de un proyecto.
+- Creación de archivos de configuración.
+- Invocación de tools.
+
+**Sobre un proyecto**:
+
+- Restaurar.
+- Compilar.
+- Ejecutar.
+- Limpiar.
+- Ejecutar pruebas.
+
+`dotnet --help`: Comando que brinda toda la ayuda de como funciona el CLI, lista los comando y tiene una breve descripción de para que funciona cada uno.
+![dotnet -help](images/dotnet_help.png)
+
+`dotnet --version`: Revisar la versión de .NET que está instalada.
+
+`dotnet --info`: permite revisar las diferentes versiones de los SKD de .NET que se tienen instalada en el equipo.
+
+`dotnet new`: nos va a dar las opciones que se tiene para crear un nuevo proyecto en .NET.
+

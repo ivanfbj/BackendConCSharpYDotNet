@@ -1,5 +1,11 @@
 # Curso de Programación Orientada a Objetos con C\#
 
+Aprende a construir aplicaciones robustas y flexibles utilizando los principios fundamentales de la POO. Desde la creación de clases y objetos hasta el uso avanzado de herencia, abstracción y polimorfismo, Te brindará las habilidades esenciales para desarrollar software eficiente y mantenible en el entorno de programación de C#.
+
+- Interfaces y Clases Abstractas
+- Fundamentos de la POO en C#
+- Dominar los pilares de POO: abstracción, encapsulamiento, herencia y polimorfismo
+
 ## Clase 1 - Fundamentos de Programación Orientada a Objetos con C\#
 
 Curso base para adquirir los conocimientos para desarrollar aplicaciones en C\# y .NET.  

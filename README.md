@@ -329,3 +329,11 @@ Al ejecutar el comando se crea el archivo `global.json` que por defecto trae la 
 
 Dentro de la propiedad sdk, existe otra propiedad llamada `allowPrerelease`, esta propiedad nos permite colocarla en `false` o `true` y de esta manera habilitar o deshabilitar el uso de release que no son oficiales dentro del excosistema de .NET, generalmente son releases que estan en modo de prueba, preview o beta, de esta manera se puede forzar a que por ningún motivo se utilice un SDK que este en prueba.
 
+## Clase 19 - Cómo encontrar paquetes para .NET usando NuGet
+
+NuGet es el gestor de paquetes de .NET, con NuGet se pueden utilizar diferentes librerías que se encuentran publicadas y compartidas por otros desarrolladores y en general por la comunidad Open Source.
+
+Nuget.org es el sitio oficial y público donde podemos utilizar diferentes librerías que se encuentran completamente abiertas para toda la comunidad.
+
+Sin embargo también se puede crear un servidor propio de NuGet para tener librerías que sean cerradas o privadas que solo sean consumidas por los proyectos de la organización.
+

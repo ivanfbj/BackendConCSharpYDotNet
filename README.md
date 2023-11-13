@@ -192,3 +192,13 @@ Define los diferentes grupos de tipos de datos que debe tener un lenguaje de pro
 - Interfaces
 - Delegados
 
+## Clase 11 - Instalación del SDK
+
+[Download .NET (Linux, macOS, and Windows)](https://dotnet.microsoft.com/en-us/download)
+
+Comando para verificar la versión instalada:
+
+```Bash
+dotnet --version
+```
+

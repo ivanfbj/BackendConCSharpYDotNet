@@ -1,5 +1,12 @@
 # Curso de APIs con .NET
 
+Domina los fundamentos de las interfaces de programación de aplicaciones y crea tu primera API con .NET. Intégrala con una base de datos SQL Server y configura su arquitectura para incluir documentación con Swagger.
+
+- Aprender sobre API y REST.
+- Crear tu primera API con .NET
+- Desarrollar una API con una base de datos SQL server.
+- Documentar la API con Swagger.
+
 ## Clase 3 - ¿Qué es una API?
 
 Application Programming Interface: Una aplicación que nos permite crear una capa de extracción entre una aplicación y otra.

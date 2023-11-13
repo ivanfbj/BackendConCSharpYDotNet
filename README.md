@@ -1,21 +1,20 @@
-# Backend con C# y .NET
+# Curso de Fundamentos de Entity Framework
 
-Cada rama tiene la información relacionada con un curso de la ruta de [Backend con C# y .NET](https://platzi.com/ruta/web-net/) de [Platzi](https://platzi.com).
+Descubre Entity Framework, un ORM moderno diseñado para .Net con un proyecto para sumar a tu portafolio. Realiza la conexión a una base de datos y crea los modelos utilizando Fluent API.
 
-El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalmente las descripciones de los commits contienen el título de la clase y pueden llegar a tener un descripción complementaria de dicha clase.
+- Crea un proyecto .NET con Entity Framework.
+- Utiliza Fluent API para especificar la configuración de los modelos.
+- Conoce qué son las migraciones y agrega datos semilla al proyecto.
+- Aprende los elementos de un CRUD para consumir datos con - Entity Framework
 
-## Cursos finalizados
+## Clase 1 - Bienvenida y presentación
 
-1. [Curso Básico de Programación con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoBasicoDeProgramacionConCSharp)
+Se aprenderá desde cero como funciona este componente de .NET, que permite conectarnos a una base de datos.
 
-2. [Curso de Programación Orientada a Objetos con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeProgramacionOrientadaAObjetosConCSharp)
+- Se analizarán los conceptos que maneja Entity Framework para su funcionamiento.
 
-3. [Curso de Buenas Prácticas y Código Limpio en C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeBuenasPracticasYCodigoLimpioEnCSharp)
+- Se revisarán 2 formas en las que se pueden utilizar Entity Framework, ya sea con atributos o Fluent API.
 
-4. [Curso de Principios SOLID en C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDePrincipiosSolidEnCSharpYDotNet)
+Se crearán 2 módelos: 1 de categoria y 1 de tareas, ambos están relacionados para poder análizar como Entity Framework crea las relaciones entre diferentes tablas
 
-5. [Curso de Manejo de Datos en C# con LINQ](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeManejoDeDatosEnCSharpConLINQ)
-
-6. [Curso de Fundamentos de .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeFundamentosDeDotNet)
-
-8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)
+Luego esta configuración se conectará a una base de datos real y por ultimo se aprenderá como realizar las diferentes acciones de crea, actualizar y eliminar utilizando Entity Framework.

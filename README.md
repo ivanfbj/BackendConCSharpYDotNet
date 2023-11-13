@@ -18,3 +18,14 @@ Se aprenderá desde cero como funciona este componente de .NET, que permite cone
 Se crearán 2 módelos: 1 de categoria y 1 de tareas, ambos están relacionados para poder análizar como Entity Framework crea las relaciones entre diferentes tablas
 
 Luego esta configuración se conectará a una base de datos real y por ultimo se aprenderá como realizar las diferentes acciones de crea, actualizar y eliminar utilizando Entity Framework.
+
+## Clase 2 - Prerrequisitos
+
+- Conocimientos y experiencia en C#.
+- Conocimientos de bases de datos.
+- SDK de .NET.
+- Visual Studio Code.
+- Postman.
+- SQL server / PostgreSQL.
+- SQL management.
+

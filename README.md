@@ -82,3 +82,25 @@ Reemplaza a SQL como lenguaje de consultas utilizando funcionaes.
 - NHibernate (.NET)
 - Django ORM (Python)
 
+## Clase 5 - Introducción a Entity Framework
+
+- ORM de código abierto para .NET.
+- Utiliza ADO.NET para facilitar la conexión a bases de datos y la manipulación de datos.
+
+EF es compatible con: SQL Server, Azure SQL
+Database, SQLite, Azure Cosmos DB, MySQL,
+PostgreSQL, y otras bases de datos utilizando un API
+plugin.
+
+Entity Framework VS Entity Framework Core
+
+Así como a ido evolucionando .NET también a ido evolucionando el Entity Framework.
+
+**Ventajas  de EF:**
+
+- Mejora la velocidad de desarrollo.
+- Permite manejar un solo repositorio para backend y base de datos.
+- Mejora la seguridad.
+- Permite programar de manera más amigable y fácil.
+- Nos permite controlar el historial de cambios de la base de datos de manera muy sencilla.
+

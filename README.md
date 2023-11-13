@@ -1,5 +1,11 @@
 # Curso de Manejo de Datos en C# con LINQ
 
+Realiza queries fácilmente para manipular información en bases de datos con Language-Integrated Query (LINQ). Añade esta tecnología a Entity-Framework y sigue las mejores prácticas, escribiendo código que sea útil para ti y tu equipo.
+
+- Domina los operadores y cláusulas que tienen LINQ para la manipulación de colecciones
+- Minimiza el código para procesar información con la tecnología de LINQ
+- Mejora tus habilidades en desarrollo backend para aplicar a tu siguiente puesto
+
 ## Clase 1 - Bienvenida al curso
 
 Se realizará el análisis de cada uno de los operadores y las clausulas que tiene LINQ para la manípulación de colecciones.

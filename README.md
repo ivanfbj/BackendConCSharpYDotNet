@@ -295,3 +295,26 @@ Crear mini proyecto para entender el proceso de compilación y ejecución de pro
 
 `dotnet watch run` es el comando que nos permite ejecutar el proyecto y estar revisando los cambios realizados en tiempo real.
 
+## Clase 17 - Archivos de compilación
+
+Dentro del proceso de compilación tenemos dos carpetas relacionadas
+
+`obj` : Tiene los archivos que se generan en la compilación de manera temporal, para despues entregar el resultado final que se guardará en la carpeta bin.
+
+`bin` : Contiene el archivo compilado del proyecto .dll y más
+
+- Dentro de esta carpeta se encuentra el archivo .exe, que es el ejecutable de la aplicación que se genera.
+
+Para limpiar la compilación hecha, podemos usar el comando `dotnet clean` para eliminar todo el contenido de la carpeta `bin`.
+
+**Existen dos modos de compilación en .NET**:
+
+- **modo debug**
+
+  - Prepara la aplicación para el uso en un ámbito de pruebas, suele ser un poco más pesado que el modo de compilado release. Se recomienda no usar este compilado en modo producción, ya que se puede exponer información que solo nos interesa que se muestre cuando estamos probando y no así cuando nuestros clientes lo ejecuten.
+ㅤ
+- **modo release**
+
+  - Prepara la aplicación para que esté lista en producción, tenga un mejor rendimiento, además de que sea mucho más liviano. Elimina todos los archivos que no se necesitan en producción.
+
+  - `dotnet build --configuration release` es el comando que nos permite generar el compilado en **modo release**.

@@ -270,3 +270,18 @@ Se divide en 2 grupos de comandos:
 `dotnet new list`: Muestra los nombre de todas las plantillas disponibles para crear un nuevo proyecto en .NET.
 
 `dotnet run`: comando para ejecutar el proyecto luego de haber sido creado.
+
+## Clase 15 - Estructura de un proyecto .NET
+
+**Estructura de un proyecto de consola**:
+
+El archivo `Program.cs` tiene el código que se ejecuta al momento de correr el proyecto con el comando `dotnet run`.
+
+El archivo `cursoDeFundamentosDeDotNet_console.csproj` contiene todas las caracteristicas que tiene el proyecto en general, es un archivo de configuración. Es un archivo en formato XML, una de sus propiedad hace referencia al SDK que utiliza dependiendo del proyecto.
+
+**Estructura de un proyecto web api**:
+
+El archivo `cursoDeFundamentosDeDotNet_webapi.csproj` tiene un SDK diferente al proyecto de consola, adicionalmente agrega las referencias a unas librerias por defecto.
+
+El archivo `Program.cs` contiene mayor cantidad de código ya que tiene más información que permite que la API se pueda ejecutar sin problema.
+

@@ -1,5 +1,12 @@
 # Curso de Fundamentos de .NET
 
+Aprende los fundamentos para empezar a trabajar como un profesional usando .NET. Identifica los diferentes componentes que lo integran y empieza a familiarizarte con este framework. Aprende a instalar .NET junto con tu profesor Miguel Teheran.
+
+- Aprender las bases de .NET.
+- Identificar las diferencias entre .NET, .NET Core y .NET Framework.
+- Explorar la estructura de un proyecto en .NET.
+- Instalar paquetes externos con NuGet.
+
 ## Clase 1 - Todo lo que aprenderás sobre .NET
 
 - Conocimientos base de .NET

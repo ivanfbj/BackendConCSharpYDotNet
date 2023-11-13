@@ -263,3 +263,10 @@ Se divide en 2 grupos de comandos:
 
 `dotnet new`: nos va a dar las opciones que se tiene para crear un nuevo proyecto en .NET.
 
+## Clase 14 - Primera App con dotnet CLI
+
+`dotnet new console`: Para crear un proyecto con la plantilla de tipo consola, se crea un proyecto de consola.
+
+`dotnet new list`: Muestra los nombre de todas las plantillas disponibles para crear un nuevo proyecto en .NET.
+
+`dotnet run`: comando para ejecutar el proyecto luego de haber sido creado.

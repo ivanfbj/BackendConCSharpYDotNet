@@ -104,3 +104,43 @@ Así como a ido evolucionando .NET también a ido evolucionando el Entity Framew
 - Permite programar de manera más amigable y fácil.
 - Nos permite controlar el historial de cambios de la base de datos de manera muy sencilla.
 
+## Clase 6 - Creación de proyecto .NET con Entity Framework
+
+**Proyecto .NET usando Minimal API**:
+
+**Modelo - Tarea**:
+
+- TareaId
+- CategoriaId
+- Titulo
+- Descripcion
+- Prioridad
+- Fecha_Creacion
+
+**Modelo - Categoria**:
+
+- CategoriaId
+- Nombre
+- Descripcion
+
+El proyecto se crea con el comando `dotnet new web`, luego es necesario realizar la instalación del paquete de `Microsoft.EntityFrameworkCore` que se encuentra en [nuget.org](https://www.nuget.org/), se utilizará el comando del .NET CLIENT
+
+```Bash
+dotnet add package Microsoft.EntityFrameworkCore --version 7.0.4
+```
+
+Se debe buscar la versión acordé con el SDK que se esté trabajando en el proyecto y que no sea una version "preview".
+
+El paquete `Microsoft.EntityFrameworkCore.InMemory` ayudará a crear una base de datos en memoria y poder probar el modelo que se está creando en .NET.
+
+```Bash
+dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 7.0.4
+```
+
+El paquete `Microsoft.EntityFrameworkCore.SqlServer` nos permitirá conectarnos al motor de base de datos SQL server.
+
+```Bash
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.4
+```
+
+

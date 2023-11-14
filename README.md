@@ -143,4 +143,17 @@ El paquete `Microsoft.EntityFrameworkCore.SqlServer` nos permitirá conectarnos 
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.4
 ```
 
+## Clase 7 - Creación de modelos
+
+A nivel de código se crean 2 modelos: `Categoria.cs` y `Tarea.cs`,  con sus respectivos atributos.
+
+Los atributos "virtual" que se crearon en ambos modelos permite que en el momentos de realizar una consulta de cualquiera de los dos modelos, poder traer y asociar los datos correspondientes a la categoria que hace referencia, por ejemplo:
+
+Si dentro de la consulta que se va a realizar se quiere traer información de una Tarea puedo saber que Categoria tiene asociada utilizando el atributo "virtual" de esta manera mostrar el nombre y la descripción de la Categoria.
+
+En el caso contrario puedo utilizar la propiedad "virtual" de la clase Categoria para traer todas las Tareas que están asociadas a la categoria que estoy consultando.
+
+Los atributos "virtual" me permite hacer la relación entre los diferente modelos que se tienen.
+
+Estos modelos se convertirán en tablas dentro de la base de datos y cada uno de los atributos que tienen los modelos, serán las columnas que se crearán.
 

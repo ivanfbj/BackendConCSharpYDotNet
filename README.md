@@ -203,3 +203,24 @@ Enlace:
   - **[Table("name_table", Schema = "schema_name")]** -> Definir Nombre de tabla y Schema
 - **[NotMapped] -> Indica que dicho atributo no será creado como columna en la tabla de la base de datos.
 
+## Clase 10 - Utilizando base de datos en memoria
+
+`Programa.cs`: este archivo contiene toda la configuración general que tiene la aplicación. Lo que se va a realizar el configurar Entity Framework del archivo.
+
+A nivel de código antes de que se construya la variable `app` se agrega el contexto como servicio a la variable `builder`
+
+```C#
+builder.Services.AddDbContext<TareasContext>(p=> p.UseInMemoryDatabase("TareasDB"));
+```
+
+Con esto se realiza la configuración general de Entity Framework dentro del proyecto.
+
+Luego se debe de crear el mapeo de un método para verificar que efectivamente Entity Framework es capaz de generar la base de datos en memoria.
+
+Se debe ejecutar la aplicación y luego en postman consumir la API:
+
+```Postman
+http://localhost:5284/dbconexion
+```
+
+La respuesta que debe retornar es: "Base de datos en memoria: True"

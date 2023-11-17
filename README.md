@@ -169,3 +169,37 @@ Estos modelos se convertirán en tablas dentro de la base de datos y cada uno de
 
 A nivel de código se crea la clase `TareasContext.cs` que tiene la configuración genera de Entity Framework para tome los modelos como si fueran tablas en la base de datos.
 
+## Clase 9 - Mapeo de modelos usando atributos
+
+**Data Annotations**: Permite configurar de una manera más estricta y más especifica las diferentes propiedas que tiene los modelos, que a la final se terminan convirtiendo en columnas en la base de datos.
+
+Enlace:
+
+[Anotaciones de datos de Code First](https://learn.microsoft.com/es-es/ef/ef6/modeling/code-first/data-annotations)
+
+**Resumen de Data Annotations:**
+
+- **[Key]** -> indica que es la clave primaria
+  - **[ForeignKey("name_FK")]** -> indica que el campo es una ForeignKey
+- **[Required]** -> indica que es un campo obligatorio
+- **[MaxLength]** -> indica el tamaño máximo del campo
+- **[MinLength]** -> indica el tamaño mínimo del campo
+- **[StringLength]** -> indica el tamaño máximo y mínimo del campo
+- **[RegularExpression]** -> indica que el campo debe tener un formato especifico
+- **[Range]** -> indica que campo debe tener un valor entre un rango especifico
+- **[Email Address]** -> indica que eL campo debe tener un formato de correo electrónico
+- **[Phone]** -> indica que eL campo debe tener un formato de teléfono
+- **[Url]** - > indica que eL campo debe tener un formato de url
+- **[Compare]** - > indica que el campo debe tener el mismo valor que otro campo
+- **[DataType]** - > indica que eL campo debe tener un formato de datos especifico
+- **[Column]** indica que es una columna
+- **[DatabaseGenerated]** -> indica que se genera automáticamente por la base de datos
+- **[Index]** -> indica que es un índice en La base de datos
+- **[InverseProperty]** - > indica que una propiedad es La inversa de otra propiedad
+- **[ComplexType]** -> indica que es un tipo complejo
+- **[ConcurrencyCheck]** -> indica que se debe verificar la concurrencia, es decir, que no se puede modificar una tarea si ya ha sido modificada por otra persona
+- **[Timestamp]** -> sirve para indicar que es un campo de tipo timestamp para La concurrencia
+- **[Table]** -> sirve para indicar que es una tabla
+  - **[Table("name_table", Schema = "schema_name")]** -> Definir Nombre de tabla y Schema
+- **[NotMapped] -> Indica que dicho atributo no será creado como columna en la tabla de la base de datos.
+

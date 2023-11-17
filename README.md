@@ -157,3 +157,15 @@ Los atributos "virtual" me permite hacer la relación entre los diferente modelo
 
 Estos modelos se convertirán en tablas dentro de la base de datos y cada uno de los atributos que tienen los modelos, serán las columnas que se crearán.
 
+## Clase 8 - Configuración de Entity Framework
+
+**Contexto**: Es donde van a ir todas las relaciones de los modelos que nosotros tenemos para poder transformarlo en colecciones que van a representarse dentro de la base de datos.
+
+> Microsoft nos ofrece más información sobre esta clase en el siguiente enlace : [Trabajar con DbContext](https://docs.microsoft.com/es-es/ef/ef6/fundamentals/working-with-dbcontext)
+
+**DBSet**: Es un set o una asignación de datos del modelo que nosotros hemos creado previamente, básicamente esto va a representar lo que sería una tabla dentro del contexto de entity framework.
+
+> Un DbSet representa la colección de todas las entidades en el contexto, o que se puede consultar desde la base de datos, de un tipo determinado. Los objetos DbSet se crean a partir de DbContext mediante el método DbContext. set. Microsoft nos ofrece más información sobre esta clase en el siguiente enlace: [DbSet\<TEntity\> Clase](https://docs.microsoft.com/es-es/dotnet/api/system.data.entity.dbset-1?view=entity-framework-6.2.0)
+
+A nivel de código se crea la clase `TareasContext.cs` que tiene la configuración genera de Entity Framework para tome los modelos como si fueran tablas en la base de datos.
+

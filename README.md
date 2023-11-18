@@ -244,3 +244,11 @@ builder.Configuration.GetConnectionString("nombre_del_atributo_en_appsetings.jso
 Enlace:
 [SQL Server connection strings](https://www.connectionstrings.com/sql-server/)
 
+## Clase 13 - Introducción a Fluent API
+
+**Fluent API:** Es una forma avanzada de configurar los modelos de Entity Framework sin utilizar atributos o data-annotations, permitiendo diseñar la base de datos considerando aspectos avanzados.
+
+Se usan funciones de extensión anidadas para configurar tablas, columnas y especificar el mapeo de los datos.
+
+![Ejemplo Fluent API](images/ejemplo_fluent_Api.png)
+

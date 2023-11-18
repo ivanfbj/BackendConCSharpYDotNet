@@ -252,3 +252,11 @@ Se usan funciones de extensión anidadas para configurar tablas, columnas y espe
 
 ![Ejemplo Fluent API](images/ejemplo_fluent_Api.png)
 
+## Clase 14 - Creando modelo de categoría con Fluent API
+
+A nivel de código en la clase `TareaContext.cs` se sobre escribe el método `OnModelCreating` de la clase `DbContext` indicandole cada una de las restricciones que queremos agregarle al modelo de Categoría, se comentan los Data Annotations para evitar conflictos.
+
+Fluent API va a predominar sobre los atributos, osea que primero tiene en cuenta los Data annotations que tiene el modelo y luego ejecuta el método `OnModelCreating`.
+
+No es buena practica crear ambas cosas por dicho motivo se comentan los Data Annotations del modelo `Categoria`.
+

@@ -24,4 +24,28 @@ app.MapGet("/dbconexion", async ([FromServices] TareasContext dbContext) =>
 
 });
 
+app.MapGet("/api/tareas", async ([FromServices] TareasContext dbContext) =>
+{
+    // Dentro del contexto de Entity Framework se tiene la colección de Tareas
+    // Dicha colección representa la colección de datos que existe dentro de la base de datos.
+    return Results.Ok(dbContext.Tareas);
+});
+
+app.MapGet("/api/tareasFiltradasyCategoria", async ([FromServices] TareasContext dbContext) =>
+{
+    // Se puede utilizar LINQ para realizar filtros según se requiera.
+    //return Results.Ok(dbContext.Tareas.Where(t => t.PrioridadTarea == cursoDeFundamentosDeEntityFramework.Models.Prioridad.Baja));
+
+    // Con el método "Include" se puede incluir la información adicional con la que quiero que se muestre
+    // la Tarea, en este caso la información de la categoria asociada a la Tarea
+    return Results.Ok(dbContext.Tareas.Include(c => c.Categoria).Where(t => t.PrioridadTarea == cursoDeFundamentosDeEntityFramework.Models.Prioridad.Baja));
+});
+
+app.MapGet("/api/categorias", async ([FromServices] TareasContext dbContext) =>
+{
+    // Dentro del contexto de Entity Framework se tiene la colección de Categorias
+    // Dicha colección representa la colección de datos que existe dentro de la base de datos.
+    return Results.Ok(dbContext.Categorias);
+});
+
 app.Run();

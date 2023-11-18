@@ -394,3 +394,15 @@ Y luego se envían los cambios a la base de datos.
 dotnet ef database update
 ```
 
+## Clase 21 - Obteniendo datos con Entity Framework
+
+A nivel de código se crean 2 API nuevas un que retorna todas las tareas y la otra API se le implementa LINQ para filtrar la información, además se implementa el método `Include` para que el registro de la tarea muestre la categoria.
+
+Sobre la propiedad `public virtual ICollection<Tarea> Tareas { get; set; }` se implementa el `[JsonIgnore]`.
+
+Con la propiedad `[JsonIgnore]` le indicamos al sistema que al momento de retornar los datos de la categoria no traiga la colección de tareas para evitar un ciclo infinito.
+
+Al obtener la información de la tarea incluye la información de la categoria a la que esta asociada dicha tarea:
+
+![Postman Api tarea con categoria](images/ApiTarea_con_Categoria.png)
+

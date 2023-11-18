@@ -359,3 +359,22 @@ dotnet ef database update
 es el que se debe ejecutar cada vez que se agregue una migración.
 
 Luego se eliminar la base de datos se ejecuta dicho comando para que de esta manera haga la creación de la base de datos, incluyendo las tablas-modelos y la tabla del vesionamiento de las migraciones `__EFMigrationsHistory`
+
+## Clase 19 - Creando una migración
+
+A nivel de código se agrega una nueva propiedad al modelo de Categoria incluyendo el código de Fluent API, luego se utiliza el comando para crear una nueva migración:
+
+```Bash
+dotnet ef migrations add ColumnPesoCategoria
+```
+
+Se debe procurar que el nombre de la migración sea lo más diciente posible.
+
+Este comando crea un nuevo archivo en la carpeta `Migrations` que contiene el cambio que se realizó (agregar columna al modelo Categoria). El archivo `20231118204458_ColumnPesoCategoria.cs` contiene tanto el método `Up` con el cambio que va a realizar y el método `Down` para devolver el cambio realizado en al migración.
+
+Una vez creada la migración se debe desplegar en la base de datos:
+
+```Bash
+dotnet ef database update
+```
+

@@ -30,6 +30,27 @@ public class TareasContext : DbContext
             categoria.Property(p => p.Descripcion);
         });
 
+        modelBuilder.Entity<Tarea>(tarea =>
+        {
+            tarea.ToTable("Tarea");
+            tarea.HasKey(p => p.TareaId);
+
+            // Se especifica que: Existe una propiedad llamada Categoria dentro de la clase Tarea (HasOne)
+            // y que esa propiedad
+            // puede tener relación con multiples Tareas con la propiedad Tareas de la clase Categoria (WithMany)
+            // y por ultimo existe una clave foranea para esta relación que es la propiedad CategoriaId de
+            // la clase Tarea (HasForeignKey)
+            tarea.HasOne(p => p.Categoria).WithMany(p => p.Tareas).HasForeignKey(p => p.CategoriaId);
+
+            tarea.Property(p => p.Titulo).IsRequired().HasMaxLength(200);
+
+            tarea.Property(p => p.Descripcion);
+
+            tarea.Property(p => p.PrioridadTarea);
+
+            tarea.Property(p => p.FechaCreacion);
+        });
+
 
         base.OnModelCreating(modelBuilder);
     }

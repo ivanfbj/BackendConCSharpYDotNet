@@ -260,3 +260,15 @@ Fluent API va a predominar sobre los atributos, osea que primero tiene en cuenta
 
 No es buena practica crear ambas cosas por dicho motivo se comentan los Data Annotations del modelo `Categoria`.
 
+## Clase 15 - Creando modelo de tarea con Fluent API
+
+A nivel de código se migran de Data Annotations a Fluent API las condiciones del modelo `Tarea.cs`.
+
+La relación de la llave foranea entre los modelos Tarea y Categoria, se requieren utilizar varios métodos para especificar la relación entre los modelos.
+
+Enlaces:
+
+[Introducción a las relaciones](https://learn.microsoft.com/es-es/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key)
+[Configure One-to-Many Relationships using Fluent API in Entity Framework Core](https://www.entityframeworktutorial.net/efcore/configure-one-to-many-relationship-using-fluent-api-in-ef-core.aspx)
+
+

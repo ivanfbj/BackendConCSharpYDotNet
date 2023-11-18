@@ -305,3 +305,57 @@ Nos permitirá actualizar la base de datos y forzar a que se ejecuten todas las 
 dotnet ef database update
 ```
 
+## Clase 18 - Inicializar las migraciones
+
+Para verificar si la herramienta está instalada el comando `dotnet ef` devuelve una información de lo contrario genera error.
+
+Para realizar la instalación se requiere el siguiente comando:
+Con el comando --global la herramientas queda instalada de forma global para utilizarla en cualquier proyecto
+
+```Bash
+dotnet tool install --global dotnet-ef
+```
+
+En caso de tener inconvenientes con la versión como por ejemplo `El paquete dotnet-ef 8.0.0 no es compatible con net7.0` es necesario especificar la versión en el comando de instalación:
+
+```Bash
+dotnet tool install --global --version 7.0.4 dotnet-ef
+```
+
+Ahora el comando `dotnet ef` si retorna información.
+
+Antes de realizar la creación de la primera migracion es necesario realizar la instalación del NuGet `Microsoft.EntityFrameworkCore.Design`
+
+```Bash
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 7.0.4
+```
+
+Ahora se requiere inicializar una primera migración, se le debe asignar un nombre en este caso el nombre de la migración es `InitialCreate`
+
+```Bash
+dotnet ef migrations add InitialCreate
+```
+
+Este comando crea una nueva carpeta llamada `Migrations`, la cual contiene las clases que tiene la configuración del Entity Framework.
+
+El archivo `TareasContextModelSnapshot.cs` contiene la configuración de la versión actual de la base de datos (el archivo tiene un formato diferente al que se utilizó en Fluent API).
+
+El archivo `20231118193452_InitialCreate.cs` sería toda la parte de configuración inicial de la base de datos.
+
+Cada vez que se cree una migración el método `Up` es lo que se va a ejecutar y el método `Down` nos permite revertir los cambios que se realizarón con esa migración y devolver la base de datos a como estaba antes de la migración.
+
+Luego de inicializar las migraciones se debe crear nuevamente la base de datos, ya que en estos momentos no existe la tabla que le permite a Entity Framework llevar el historial de los cambios.
+
+Lo ideal es que se implemente desde el principio las migraciones y luego se cree las base de datos.
+
+Es muy dificl utilizar migraciones una vez el proyecto ya este en producción y tenga datos y configuraciones previas.
+
+El comando
+
+```Bash
+dotnet ef database update
+```
+
+es el que se debe ejecutar cada vez que se agregue una migración.
+
+Luego se eliminar la base de datos se ejecuta dicho comando para que de esta manera haga la creación de la base de datos, incluyendo las tablas-modelos y la tabla del vesionamiento de las migraciones `__EFMigrationsHistory`

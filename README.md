@@ -233,3 +233,14 @@ A nivel de código en el archivo `Program.cs` se agrega el servicio con el conte
 
 Luego se ejecuta el proyecto y desde Postman se consume la API para crear la base de datos en SQL Server.
 
+## Clase 12 - Agregando conexión al archivo appsettings
+
+Por temas de buenas prácticas la cadena de conexión de la base de datos no va directamente en el archivo `Program.cs`, realmente debe de ir en el archivo `appsettings.json` y el atributo con la cadena de conexión de la base de datos se utiliza por medio del método `.GetConnectionString`
+
+```C#
+builder.Configuration.GetConnectionString("nombre_del_atributo_en_appsetings.json")
+```
+
+Enlace:
+[SQL Server connection strings](https://www.connectionstrings.com/sql-server/)
+

@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
 
 // Configuración del servicio para conectarse a SQL Server.
-builder.Services.AddSqlServer<TareasContext>("Data Source=localhost\\sqlexpress;Initial Catalog=TareasDb;user id=sa; password=passwordSQL_sa; Trust Server Certificate= True");
+builder.Services.AddSqlServer<TareasContext>(builder.Configuration.GetConnectionString("connectionTareas"));
 
 var app = builder.Build();
 

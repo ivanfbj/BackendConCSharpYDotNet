@@ -271,4 +271,11 @@ Enlaces:
 [Introducción a las relaciones](https://learn.microsoft.com/es-es/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key)
 [Configure One-to-Many Relationships using Fluent API in Entity Framework Core](https://www.entityframeworktutorial.net/efcore/configure-one-to-many-relationship-using-fluent-api-in-ef-core.aspx)
 
+## Clase 16 - Conectado a base de datos con Fluent API
+
+En caso de no requerir una propiedad del modelo en la creación de la tabla en la base de datos se debe omitir con Fluent API:
+
+```C#
+tarea.Ignore(p => p.Resumen);
+```
 

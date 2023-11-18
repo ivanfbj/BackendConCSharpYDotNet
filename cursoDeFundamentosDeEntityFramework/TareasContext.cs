@@ -49,10 +49,11 @@ public class TareasContext : DbContext
             tarea.Property(p => p.PrioridadTarea);
 
             tarea.Property(p => p.FechaCreacion);
+
+            // Para omitir una propiedad del modelo para que no sea creado en la base de datos se debe incluir
+            tarea.Ignore(p => p.Resumen);
         });
 
-
-        base.OnModelCreating(modelBuilder);
     }
 
 

@@ -378,3 +378,19 @@ Una vez creada la migración se debe desplegar en la base de datos:
 dotnet ef database update
 ```
 
+## Clase 20 - Agregando datos semilla
+
+Para tener unos datos iniciales cargados en el momento de desplegar la migración se crea una lista con los objetos a insertar y se utiliza el método `HasData` para insertarlos.
+
+Luego se crea la migracion:
+
+```Bash
+dotnet ef migrations add InitialData
+```
+
+Y luego se envían los cambios a la base de datos.
+
+```Bash
+dotnet ef database update
+```
+

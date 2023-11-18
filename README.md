@@ -224,3 +224,12 @@ http://localhost:5284/dbconexion
 ```
 
 La respuesta que debe retornar es: "Base de datos en memoria: True"
+
+## Clase 11 - Conectado a base de datos SQL server
+
+Es necesario tener previamente instalado SQL Server express, SQL Server Management Studio (SSMS) y tener el usuario y contraseña del "sa"(super administrador).
+
+A nivel de código en el archivo `Program.cs` se agrega el servicio con el contexto y la cedena de conexión a la base de datos de SQL Server.
+
+Luego se ejecuta el proyecto y desde Postman se consume la API para crear la base de datos en SQL Server.
+

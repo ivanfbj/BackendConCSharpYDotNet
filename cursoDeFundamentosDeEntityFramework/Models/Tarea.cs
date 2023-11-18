@@ -23,12 +23,12 @@ public class Tarea
 
     public virtual Categoria Categoria { get; set; }
     [NotMapped]
-    public string Resumen {  get; set; }
+    public string Resumen { get; set; }
 }
 
 public enum Prioridad
 {
-    Baja = 1,
-    Media = 2,
-    Alta = 3,
+    Baja,
+    Media,
+    Alta,
 }

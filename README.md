@@ -279,3 +279,29 @@ En caso de no requerir una propiedad del modelo en la creación de la tabla en l
 tarea.Ignore(p => p.Resumen);
 ```
 
+## Clase 17 - ¿Qué son las migraciones?
+
+Es una funcionalidad de Entity Framework que nos permite guardar de manera incremental los cambios realizados en la base de datos.
+
+Nos permite construir un versionamiento de la base de datos.
+
+Esto permite que una versión del código se conecte con una versión en especifica de la base de datos.
+
+Para utilizar las migraciones se requiere instalar una herramienta con el CLI de .NET, que nos permitirá agregar una serie de comandos para poder manipular los cambios que se están haciendo dentro del código:
+
+migrations add: agregará una migración, realizará un análisis de todos los cambios que hay dentro de Fluent API o atributos y luego generará un script para poder saber cuales fueron los cambios que se realizarón en ese momento dentro del código y por ende son cambios que se van a reflejar en la base de datos.
+
+```Bash
+dotnet ef migrations add InitialCreate
+```
+
+```Bash
+dotnet ef migrations add MyMigration
+```
+
+Nos permitirá actualizar la base de datos y forzar a que se ejecuten todas las migraciones.
+
+```Bash
+dotnet ef database update
+```
+

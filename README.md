@@ -406,3 +406,18 @@ Al obtener la información de la tarea incluye la información de la categoria a
 
 ![Postman Api tarea con categoria](images/ApiTarea_con_Categoria.png)
 
+## Clase 22 - Guardando datos con Entity framework
+
+Se crea la API para tarea de tipo `POST` lo cual nos permite insertar registros en la base de datos, desde Postman además de consumir el api de tipo `POST` se debe ingresar un JSON con la estructura del objeto:
+
+**Ejemplo:**
+
+```JSON
+{
+        "categoriaId": "e4cb45cb-a7e3-472f-b127-5ac4d5861ee8",
+        "titulo": "Probar POST desde Postman en la API",
+        "descripcion": null,
+        "prioridadTarea": 2
+}
+```
+

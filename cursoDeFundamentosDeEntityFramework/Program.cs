@@ -1,4 +1,5 @@
 using cursoDeFundamentosDeEntityFramework;
+using cursoDeFundamentosDeEntityFramework.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -39,6 +40,21 @@ app.MapGet("/api/tareasFiltradasyCategoria", async ([FromServices] TareasContext
     // Con el método "Include" se puede incluir la información adicional con la que quiero que se muestre
     // la Tarea, en este caso la información de la categoria asociada a la Tarea
     return Results.Ok(dbContext.Tareas.Include(c => c.Categoria).Where(t => t.PrioridadTarea == cursoDeFundamentosDeEntityFramework.Models.Prioridad.Baja));
+});
+
+app.MapPost("/api/tareas", async ([FromServices] TareasContext dbContext, [FromBody] Tarea tarea) =>
+{
+    tarea.TareaId = Guid.NewGuid();
+    tarea.FechaCreacion = DateTime.Now;
+
+    await dbContext.AddAsync(tarea);
+    
+    // Esta es otra forma de insertar una tarea con Entity Framework.
+    //await dbContext.Tareas.AddAsync(tarea);
+
+    await dbContext.SaveChangesAsync();
+
+    return Results.Ok();
 });
 
 app.MapGet("/api/categorias", async ([FromServices] TareasContext dbContext) =>

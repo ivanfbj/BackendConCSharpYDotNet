@@ -76,3 +76,11 @@ Enlaces:
 
 Solo se necesita el atributo `[Fact]` para que cualquier método se convierta en una prueba unitaria, se utiliza el `Assert.` que ayuda a verificar el resultado de la prueba y corressponda con lo que se necesita.
 
+## Clase 5 - Herramientas y código base
+
+Código base se encuentra en GitHub en la rama Master o rama 0-codigobase:
+
+[GitHub - platzi/curso-unit-testing-csharp](https://github.com/platzi/curso-unit-testing-csharp)
+
+El proyecto representa lo que sería una librería en un proyecto real que tiene diferentes funciones para manipular cadena de caracteres.
+

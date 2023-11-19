@@ -17,3 +17,29 @@ Para convertir una función en prueba lo que se tiene que hacer es agregar el at
 - .NET 7 0 superior
 - Visual Studio Code o Visual Studio
 
+## Clase 3 - ¿Qué son pruebas unitarias?
+
+**TDD**(Test-Driven Development): Metodología de trabajo o estilo de programación. Lo que dice TDD es se deben crear todas las pruebas al inicio del proyecto, esas prueba van a fallar ya que aún no existe la implementación del código.
+
+Una vez implementado el código deben de pasar todas las pruebas, luego se debe de estar realizando un refactor constantemente, ya que se puede estar agregando lógica que antes no se habia contemplado o nuevos funcionamientos solicitados.
+
+**Pruebas unitarias:**
+
+- Pruebas sobre una unidad de código como una propiedad, función o método.
+- Automatizables.
+- Reutilizables.
+- Independientes.
+
+En resumen se puede decir que las pruebas unitarias son: **Piezas de código que pruebas otras piezas de código**
+
+**Importancia:**
+
+- Nos ayudan a verificar de manera rápida la lógica de negocio de nuestro código.
+- Detectan cambios que afectan la funcionalidad de manera rápida.
+- Se implementan del lado de desarrollo.
+- Son fáciles de implementar.
+
+Enlace:
+
+[Free Ebook - Unit Testing Succinctly](https://www.syncfusion.com/succinctly-free-ebooks/unittesting)
+

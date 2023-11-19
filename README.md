@@ -10,3 +10,10 @@ El proyecto del curso se basa en una serie de operaciones para manipular diferen
 
 Para convertir una función en prueba lo que se tiene que hacer es agregar el atributo `[Fact]`.
 
+## Clase 2 - Prerequisitos
+
+- Conocimientos de C# y .NET
+- POO en C#
+- .NET 7 0 superior
+- Visual Studio Code o Visual Studio
+

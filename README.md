@@ -43,3 +43,36 @@ Enlace:
 
 [Free Ebook - Unit Testing Succinctly](https://www.syncfusion.com/succinctly-free-ebooks/unittesting)
 
+## Clase 4 - Librerías de pruebas en .NET
+
+**MSTest**:
+
+- Microsoft Test.
+- Gran soporte por el equipo de Microsoft.
+- Excelente integración con Visual Studio.
+- Alta complejidad para algunos escenarios.
+
+**NUnit**:
+
+- JUnit para .NET.
+- Opensource con gran soporte.
+- Muy fácil de usar.
+
+**xUnit**: (Librería a usar en el curso)
+
+- Creada por la comunidad.
+- Open source con gran soporte.
+- Simplifica todo el proceso de creación de pruebas.
+- Una de las más populares para nuevos y modernos proyectos con .NET.
+
+
+Enlaces:
+
+- [NUnit.org](https://nunit.org/)
+- [Home > xUnit.net](https://xunit.net/)
+- [Unit testing C# with MSTest and .NET - .NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)
+
+![Ejemplo de XUnit](images/ejemplo_xunit.png)
+
+Solo se necesita el atributo `[Fact]` para que cualquier método se convierta en una prueba unitaria, se utiliza el `Assert.` que ayuda a verificar el resultado de la prueba y corressponda con lo que se necesita.
+

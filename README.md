@@ -438,3 +438,11 @@ URL: `http://localhost:5284/api/tareas/7EEB34D8-5FB6-4162-B9FC-2DC0995B7897`
 }
 ```
 
+## Clase 24 - Eliminando datos con Entity framework
+
+Se crea la API para tarea de tipo `DELETE` lo cual nos permite eliminar un registro en la base de datos, desde Postman además de consumir el API de tipo `DELETE` se debe ingresar la URL con el ID de la tarea:
+
+**Ejemplo:**
+
+URL: `http://localhost:5284/api/tareas/7EEB34D8-5FB6-4162-B9FC-2DC0995B7897`
+

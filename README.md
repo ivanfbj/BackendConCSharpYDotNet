@@ -421,3 +421,20 @@ Se crea la API para tarea de tipo `POST` lo cual nos permite insertar registros 
 }
 ```
 
+## Clase 23 - Actualizando datos con Entity framework
+
+Se crea la API para tarea de tipo `PUT` lo cual nos permite actualizar un registro en la base de datos, desde Postman, además de consumir el api de tipo `PUT` ingresar la URL con el ID de la tarea y se debe ingresar un JSON con la estructura del objeto con los campos que se van a actualizar:
+
+**Ejemplo:**
+
+URL: `http://localhost:5284/api/tareas/7EEB34D8-5FB6-4162-B9FC-2DC0995B7897`
+
+```JSON
+{
+        "categoriaId": "e4cb45cb-a7e3-472f-b127-5ac4d5861ee8",
+        "titulo": "Probar PUT desde Postman en la API Clase 23",
+        "descripcion": "nueva descripción de PUT",
+        "prioridadTarea": 1
+}
+```
+

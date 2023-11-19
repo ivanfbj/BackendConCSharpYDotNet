@@ -18,4 +18,6 @@ El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalm
 
 6. [Curso de Fundamentos de .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeFundamentosDeDotNet)
 
+7. [Curso de Fundamentos de Entity Framework](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeFundamentosDeEntityFramework)
+
 8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)

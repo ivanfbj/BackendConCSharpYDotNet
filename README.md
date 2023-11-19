@@ -1,23 +1,12 @@
-# Backend con C# y .NET
+# Curso de Unit Testing con C# y .NET
 
-Cada rama tiene la información relacionada con un curso de la ruta de [Backend con C# y .NET](https://platzi.com/ruta/web-net/) de [Platzi](https://platzi.com).
+Este curso está diseñado para proporcionarte una comprensión completa de las pruebas unitarias en el entorno de desarrollo de C# y .NET. A lo largo del curso, aprenderás los fundamentos de las pruebas unitarias, cómo escribir y ejecutar pruebas, y cómo utilizar frameworks de pruebas populares como NUnit y xUnit.
 
-El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalmente las descripciones de los commits contienen el título de la clase y pueden llegar a tener un descripción complementaria de dicha clase.
+## Clase 1 - Conoce una prueba unitaria de concatenación de strings en C\#
 
-## Cursos finalizados
+Pruebas unitarias: pequeñas piezas de código que van a ayudar a probar la lógica de las aplicaciones.
 
-1. [Curso Básico de Programación con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoBasicoDeProgramacionConCSharp)
+El proyecto del curso se basa en una serie de operaciones para manipular diferentes Strings.
 
-2. [Curso de Programación Orientada a Objetos con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeProgramacionOrientadaAObjetosConCSharp)
+Para convertir una función en prueba lo que se tiene que hacer es agregar el atributo `[Fact]`.
 
-3. [Curso de Buenas Prácticas y Código Limpio en C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeBuenasPracticasYCodigoLimpioEnCSharp)
-
-4. [Curso de Principios SOLID en C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDePrincipiosSolidEnCSharpYDotNet)
-
-5. [Curso de Manejo de Datos en C# con LINQ](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeManejoDeDatosEnCSharpConLINQ)
-
-6. [Curso de Fundamentos de .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeFundamentosDeDotNet)
-
-7. [Curso de Fundamentos de Entity Framework](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeFundamentosDeEntityFramework)
-
-8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)

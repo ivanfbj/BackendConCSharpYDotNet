@@ -84,3 +84,19 @@ Código base se encuentra en GitHub en la rama Master o rama 0-codigobase:
 
 El proyecto representa lo que sería una librería en un proyecto real que tiene diferentes funciones para manipular cadena de caracteres.
 
+## Clase 6 - Creando tu primera prueba con xUnit
+
+A nivel de código con Visual Studio lo que se hace es crear un nuevo proyecto, la plantilla que se utilizará es de tipo prueba o test, la plantilla se llama `Proyecto de pruebas xUnit`.
+
+Por buenas prácticas se utiliza el mismo nombre del proyecto que se va a probar y se incluye la palabra "Tests" al final, para este caso sería `StringManipulation.Tests`.
+
+Dentro del nuevo proyecto se crea una nueva clase con el nombre `StringOperationsTest`, para este también se utiliza la convención de ponerle el mismo nombre de la case a la que se le van a realizar las pruebas incluyendo la palabra `Test` al final.
+
+Para poder crear las pruebas es necesario agregar la referencia del proyecto que tiene la clase que se va a probar en este caso se debe ir al proyecto `StringManipulation.Tests` sobre la opción que dice `Dependencias` dar clic derecho `Agregar referencia del proyecto` y en la nueva ventaja que se abre seleccionar el proyecto principal `StringManipulation`.
+
+La clases de pruebas siempre deben de ser publica para que se pueda acceder.
+
+En la clase creado `StringOperationsTest.cs` se crea un método de prueba para uno de los método de la clase principal, al método se le incluye el atributo `[Fact]`.
+
+Para la ejecución de las pruebas se realizar desde el "Explorador de pruebas" de  Visual Studio.
+

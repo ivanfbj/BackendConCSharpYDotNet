@@ -100,3 +100,52 @@ En la clase creado `StringOperationsTest.cs` se crea un método de prueba para u
 
 Para la ejecución de las pruebas se realizar desde el "Explorador de pruebas" de  Visual Studio.
 
+## Clase 7 - Tipos de Assert en xUnit
+
+Buenas prácticas en testing:
+
+**Estructura AAA:**
+
+_**A**rrange_: Donde configuramos las variables, datos de prueba o el objeto que tiene la función que deseamos comprobar
+_**A**ct_: La ejecución de la funcionalidad que deseamos comprobar.
+_**A**ssert_: La comprobación del resultado.
+
+**F.I.R.S.T principles of testing**:
+
+- **F**ast
+- **I**solated/Independent
+- **R**epeatable
+- **S**elf-validating
+- **T**horough
+
+A nivel de código se implementan otras comprobaciones de xUnit que se utilizan con el `Assert` en la primera prueba, que ayudan a validar que el resultado no sea nulo y tampoco que este vacío.
+
+Por temas de buenas practicas se debe de validar los múltiples escenarios que se puedan presentar en las pruebas, una buena práctica es al nombre del método incluir el tipo de escenario que se está probando, por ejemplo: Si un método retorna True o False tener un método para validar cuando retorne True y cuando retorne False.
+
+Desde la consola con el comando también se pueden ejecutar las pruebas:
+
+```Bash
+dotnet test
+```
+
+**Información Complementaria**:
+Los “First Principles of Testing” (Primeros Principios de Pruebas) son una serie de conceptos fundamentales que sirven como base para la disciplina de la ingeniería de pruebas de software. Estos principios se utilizan para guiar la planificación, diseño y ejecución de pruebas de software de manera efectiva y eficiente. A continuación, se describen algunos de los principales primeros principios de pruebas:
+
+El propósito de las pruebas es demostrar la presencia de defectos: El objetivo principal de las pruebas de software es encontrar defectos o errores en el software. Las pruebas no pueden demostrar que un software es completamente libre de errores, pero pueden proporcionar evidencia de la presencia de defectos.
+
+La exhaustividad de las pruebas es imposible: No es posible probar todas las combinaciones posibles de entradas y condiciones en un programa. Por lo tanto, las pruebas se centran en áreas críticas y se basan en la priorización de riesgos para determinar qué probar.
+
+Pruebas tempranas: Las pruebas deben comenzar tan pronto como sea posible en el ciclo de vida del desarrollo de software. Esto permite identificar y abordar problemas en etapas tempranas, lo que suele ser más económico y eficiente que corregir defectos más tarde.
+
+Separación de responsabilidades: El equipo de pruebas debe ser independiente del equipo de desarrollo. Esto ayuda a garantizar una evaluación imparcial y objetiva del software.
+
+Pruebas exhaustivas no garantizan la calidad: Incluso si se realizan pruebas exhaustivas, no se puede garantizar que el software sea completamente libre de defectos. Las pruebas son una parte importante, pero no la única, de un proceso de aseguramiento de la calidad más amplio.
+
+Pruebas de acuerdo con especificaciones: Las pruebas deben basarse en las especificaciones del software, que incluyen requisitos funcionales y no funcionales. Las pruebas exitosas son aquellas que demuestran que el software cumple con estas especificaciones.
+
+Pruebas de regresión: Después de realizar cambios en el software, es importante volver a ejecutar las pruebas existentes para asegurarse de que los cambios no introduzcan nuevos defectos o afecten negativamente a la funcionalidad existente.
+
+Automatización de pruebas: La automatización de pruebas puede mejorar la eficiencia de las pruebas, especialmente en casos de pruebas repetitivas o de regresión. Sin embargo, no todas las pruebas son adecuadas para la automatización.
+
+Estos principios proporcionan una base sólida para el desarrollo de estrategias de pruebas efectivas y ayudan a los equipos de desarrollo de software a garantizar la calidad y confiabilidad de sus productos.
+

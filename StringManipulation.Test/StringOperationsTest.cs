@@ -12,15 +12,45 @@ namespace StringManipulation.Tests
         [Fact]
         public void ConcatenateStrings()
         {
+            // Arrange
             // Se crea un objeto de la clase que se va a probar.
             StringOperations strOperations = new();
 
+            // Act
             // Se guarda en una variable el resultado del método que se va a probar
             var result = strOperations.ConcatenateStrings("Hello", "Platzi");
 
+            // Assert
             // Con esta función se comprueba que el código devuelva lo que debe devolver.
+            Assert.NotNull(result);
+            Assert.NotEmpty(result);
             Assert.Equal("Hello Platzi", result);
         }
 
+        [Fact]
+        public void IsPalindrome_True()
+        {
+            //Arrange
+            StringOperations strOperations = new();
+
+            //Act
+            bool result = strOperations.IsPalindrome("ama");
+            
+            //Assert
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void IsPalindrome_False()
+        {
+            //Arrange
+            StringOperations strOperations = new();
+
+            //Act
+            bool result = strOperations.IsPalindrome("hello");
+
+            //Assert
+            Assert.False(result);
+        }
     }
 }

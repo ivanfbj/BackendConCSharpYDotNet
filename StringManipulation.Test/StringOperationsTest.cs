@@ -35,7 +35,7 @@ namespace StringManipulation.Tests
 
             //Act
             bool result = strOperations.IsPalindrome("ama");
-            
+
             //Assert
             Assert.True(result);
         }
@@ -51,6 +51,33 @@ namespace StringManipulation.Tests
 
             //Assert
             Assert.False(result);
+        }
+
+        [Fact]
+        public void QuantintyInWords()
+        {
+            //Arrange
+            var strOperations = new StringOperations();
+
+            //Act
+            var result = strOperations.QuantintyInWords("cat", 10);
+
+            //Assert
+            Assert.StartsWith("diez", result);
+            Assert.Contains("cat", result);
+
+        }
+
+        [Fact]
+        public void GetStringLength_Exception()
+        {
+            //Arrange
+            var strOperations = new StringOperations();
+
+            //Act
+
+            //Assert
+            Assert.Throws<ArgumentNullException>(() => strOperations.GetStringLength(null));
         }
     }
 }

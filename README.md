@@ -149,3 +149,16 @@ Automatización de pruebas: La automatización de pruebas puede mejorar la efici
 
 Estos principios proporcionan una base sólida para el desarrollo de estrategias de pruebas efectivas y ayudan a los equipos de desarrollo de software a garantizar la calidad y confiabilidad de sus productos.
 
+## Clase 8 - Tipos de Assert en xUnit parte 2
+
+En las validaciones se puede utilizar `StartWith` para valida que el resultado comience con cierto caracteres y `Contains` paara verificar que si contenga la palabra relacionada.
+
+```C#
+ //Assert
+ Assert.StartsWith("diez", result);
+ Assert.Contains("cat", result);
+```
+
+Cuando se tienen métodos que retornan un `throw new ArgumentNullException();` también se requiere una prueba que haga dicha validación.
+
+## Clase 9 - 

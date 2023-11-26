@@ -65,7 +65,6 @@ Enlace:
 - Simplifica todo el proceso de creación de pruebas.
 - Una de las más populares para nuevos y modernos proyectos con .NET.
 
-
 Enlaces:
 
 - [NUnit.org](https://nunit.org/)
@@ -154,11 +153,14 @@ Estos principios proporcionan una base sólida para el desarrollo de estrategias
 En las validaciones se puede utilizar `StartWith` para valida que el resultado comience con cierto caracteres y `Contains` paara verificar que si contenga la palabra relacionada.
 
 ```C#
- //Assert
- Assert.StartsWith("diez", result);
- Assert.Contains("cat", result);
+//Assert
+Assert.StartsWith("diez", result);
+Assert.Contains("cat", result);
 ```
 
 Cuando se tienen métodos que retornan un `throw new ArgumentNullException();` también se requiere una prueba que haga dicha validación.
 
-## Clase 9 - 
+## Clase 9 - Atributos Theory e InlineData
+
+Con los atributos que ofrece xUnit se puede uitilizar párametros en el método de prueba, en vez de utilizar el atributo `[Fact]` se utiliza el atributo `[Theory]`, con esto se puede pasar el atributo `[InlineData]` que va a contener los valores que recibiran los párametros que nos permitirá reutilizar la prueba para poder realizar diferentes comprobaciones dentro de la misma estructura del código de prueba.
+

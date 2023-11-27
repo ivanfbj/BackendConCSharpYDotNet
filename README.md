@@ -193,4 +193,20 @@ Normalmente las pruebas unitarias se hacen despues de realizar la implementació
 - Act
 - Assert
 
+## Clase 12 - Concepto de mock y librería moq en .NET
+
+El concepto de moq nos ayuda a porder simular dependencia que tengamos en nuestro código y de esta manera hacer que nuestras pruebas se ejecuten de manera independiente.
+
+Mock se refiere a un elemento que es imitado o simulado, la idea es evitar la dependencia directa que se puede tener en nuestro código hacía ese elemento como tal (puede ser: servicio, clase, interfaz, clase abstracta, etc).
+
+Por ejemplo se pueden tener dependencia sobre servicios de AWS, Azure, dependencias sobre código externo a nuestro proyecto, entonces lo que se desea realizar es simular el comportamiento de esos servicios o componentes y poder comprobar la lógica del proyecto.
+
+![Objetivo de crear mocks](images/objetivo_crear_mocks.png)
+
+Las dependencias puede ser cualquier servicio externo, entonces lo que se hace es convertir esas dependencias en MOCKS.
+
+El objetivo de una prueba unitaria es que no dependa de las bases de datos, la idea es que los MOCKS simulen el valor que devolvería devolver la base de datos y luego realizar la prueba con ese valor de esta mamera no se depende de una base de datos.
+
+![Ejemplo libreía Moq](images/Ejemplo_libreria_Moq.png)
+
 ## 

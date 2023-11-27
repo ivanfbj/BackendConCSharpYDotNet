@@ -174,5 +174,23 @@ Enlace:
 
 [Comparing xUnit.net to other frameworks](https://xunit.net/docs/comparisons)
 
+## Clase 11 - Revisemos lo que hemos aprendido
 
+Las pruebas unitarias son la base que permite que se pueda aplicar TDD de una manera correcta, complementando las diferentes comprobaciones de la lógica del código antes de realizar la implementación y luego poder ejecutar las pruebas constantemente mientras se realiza la implementación del código hasta que las pruebas pasen.
 
+Normalmente las pruebas unitarias se hacen despues de realizar la implementación del código.
+
+**Librerías de pruebas:** - MSTest, - MUnit - xUnit
+
+**Nombramientos de pruebas:**
+
+- MyProject -> MyProject.Test
+- MyClass -> MyClassTest
+
+**Estructura AAA**:
+
+- Arrange
+- Act
+- Assert
+
+## 

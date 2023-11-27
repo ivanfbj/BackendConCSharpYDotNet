@@ -99,5 +99,23 @@ namespace StringManipulation.Tests
             //Assert
             Assert.Equal(expected, result);
         }
+
+        [Fact(Skip = "Esta prueba no es valida en este momento")]
+        public void ConcatenateStrings_SKIP()
+        {
+            // Arrange
+            // Se crea un objeto de la clase que se va a probar.
+            StringOperations strOperations = new();
+
+            // Act
+            // Se guarda en una variable el resultado del método que se va a probar
+            var result = strOperations.ConcatenateStrings("Hello", "Platzi");
+
+            // Assert
+            // Con esta función se comprueba que el código devuelva lo que debe devolver.
+            Assert.NotNull(result);
+            Assert.NotEmpty(result);
+            Assert.Equal("Hello Platzi", result);
+        }
     }
 }

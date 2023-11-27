@@ -164,3 +164,15 @@ Cuando se tienen métodos que retornan un `throw new ArgumentNullException();` t
 
 Con los atributos que ofrece xUnit se puede uitilizar párametros en el método de prueba, en vez de utilizar el atributo `[Fact]` se utiliza el atributo `[Theory]`, con esto se puede pasar el atributo `[InlineData]` que va a contener los valores que recibiran los párametros que nos permitirá reutilizar la prueba para poder realizar diferentes comprobaciones dentro de la misma estructura del código de prueba.
 
+## Clase 10 - Atributo Skip
+
+El atributo `Skip` en XUnit es una forma de omitir temporalmente una prueba unitaria. Puedes utilizar este atributo para evitar que una prueba se ejecute sin tener que eliminarla del código .
+
+Para utilizar el atributo Skip, simplemente coloca `[Fact(Skip = "Razón para omitir la prueba")]` encima de la definición de la prueba.
+
+Enlace:
+
+[Comparing xUnit.net to other frameworks](https://xunit.net/docs/comparisons)
+
+
+

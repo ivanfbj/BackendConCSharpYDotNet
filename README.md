@@ -209,4 +209,12 @@ El objetivo de una prueba unitaria es que no dependa de las bases de datos, la i
 
 ![Ejemplo libreía Moq](images/Ejemplo_libreria_Moq.png)
 
+## Clase 13 - Utilizando la libreria Moq
+
+A nivel de código al configurar la prueba para el método `CountOccurrences` se está generando un error al momento de llegar a la linea de `_logger.LogInformation`, dicha línea no se requiere probar en el test por lo cual se utilizará la librería moq.
+
+En Visual Studio vamos al proyecto `StringManipulation.Tests`, clic derecho -> Administrar paquetes NuGet y se buscamos la librería `Moq` y se instala la primera opción que es la más popular.
+
+En la prueba no se requiere utilizar el logger real por lo cual se debe simular con la librería `Moq`.
+
 ## 

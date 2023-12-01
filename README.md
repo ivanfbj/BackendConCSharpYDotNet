@@ -217,4 +217,13 @@ En Visual Studio vamos al proyecto `StringManipulation.Tests`, clic derecho -> A
 
 En la prueba no se requiere utilizar el logger real por lo cual se debe simular con la librería `Moq`.
 
-## 
+## Clase 14 - Mock de funciones
+
+En caso de querer simular el comportamiento que tiene alguna dependencia dentro del flujo del código la librería `Moq` permite realizar este proceso.
+
+El método `ReadFile` lo que hace es leer un archivo y regresa el texto que tiene dentro del archivo. Para leer ese archivo uno de los parametros es una interfaz de la que depende, en este caso no recibe la dependencia por el constructor de la clase sino que recibe la dependencia directamente como párametro de la misma función. Para este caso se debe simular la interfaz que está en el método `ReadFile` ya que esta lo que hace es llamar a el archivo `information.txt` y devuelve la información que contiene.
+
+Las pruebas unitarias no deben de depender de este tipo de archivos o de servicios externos, siempre se debe enforcar en probar el código como tal.
+
+A nivel de código se simula con `Moq` como si se estuviera leyendo un archivo .txt y el contenido de tendría dicho archivo.
+

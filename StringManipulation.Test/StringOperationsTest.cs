@@ -133,5 +133,24 @@ namespace StringManipulation.Tests
             // Assert
             Assert.Equal(3, result);
         }
+
+        [Fact]
+        public void ReadFile()
+        {
+            // Arrange
+            StringOperations strOperations = new();
+            var mockFileReader = new Mock<IFileReaderConector>();
+            //mockFileReader.Setup(p => p.ReadString("file.txt")).Returns("Reading file");
+
+            //Una segunda opción es hacer una configuración para que en cualquier escenario siempre retorne
+            //  el texto de "Reading file", sin tener que especificar el nombre del archivo
+            mockFileReader.Setup(p => p.ReadString(It.IsAny<string>())).Returns("Reading file");
+
+            // Act
+            var result = strOperations.ReadFile(mockFileReader.Object, "file.txt");
+
+            // Assert
+            Assert.Equal("Reading file", result);
+        }
     }
 }

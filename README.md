@@ -242,7 +242,7 @@ La licencia de Visual Studio Enterprise ya tiene esta cobertura `Test -> Analyze
 - NCover
 - OpenCover
 
-**Otras opciones**
+**Otras opciones**:
 
 - [dotCover](https://www.jetbrains.com/dotcove) :Utilidad de la empresa jetBrains, viene incorporada dentro de [resharper](resharper).
 
@@ -266,3 +266,24 @@ La licencia de Visual Studio Enterprise ya tiene esta cobertura `Test -> Analyze
 **Notas adicionales.**
 La cobertura de pruebas en C# se refiere a la medida en que las pruebas automatizadas cubren el código fuente de un programa escrito en C#. En otras palabras, indica qué parte del código fuente ha sido ejecutada y probada durante la ejecución de las pruebas automatizadas. La cobertura de pruebas es una métrica importante para evaluar la calidad de las pruebas y la confiabilidad del software.
 
+## Clase 16 - Iniciando con Coverlet
+
+De la forma en como se ha venidod trabajando el proyecto con Visual Studio, el proyecto `StringManipulation.Tests` ya cuenta con una de las librerías que se requiere instalar que es la `coverlet.collector`.
+
+Por medio de `StringManipulation.Tests`, clic derecho -> Administrar paquetes NuGet se va a actualizar la versión de `coverlet.collector`, luego se instalan `coverlet.msbuild` sovbre el proyecto
+
+Y para la instalación de `coverlet.console` se debe realizar por medio de la consola, hay que ir al portal de [nuget](https://www.nuget.org/packages/coverlet.console) para buscar el comando CLI para realizar la intalación.
+
+```Bash
+dotnet tool install --global coverlet.console --version 6.0.0
+```
+
+Desde la terminal del Visual Studio con el comando 
+
+```Bash
+dotnet test /p:CollectCoverage=true
+```
+
+Se puede visualizar los porcentajes de cobertura.
+
+## 

@@ -227,3 +227,42 @@ Las pruebas unitarias no deben de depender de este tipo de archivos o de servici
 
 A nivel de código se simula con `Moq` como si se estuviera leyendo un archivo .txt y el contenido de tendría dicho archivo.
 
+## Clase 15 - ¿Que es la cobertura de pruebas y como se mide?
+
+Dentro de una función o método pueden existir multiples flujos de lógica, cuando se tiene está situación es importante poder medir de manera automática y de manera fácil ya que puede ser escenarios complejos, que tanto de lógica se está cubriendo con las pruebas que se tienen.
+
+La cobertura de pruebas unitarias se trata de una medición de que tan bien estamos haciendo nuestras pruebas y de esta manera vamos a poder concentrarnos en donde se tengan fallas o vacíos en funciones que no estan bien probada o que no se estan cubriendo dentro de la ejecución o implementación de pruebas que se esta realizando. Al final se obtendrá un porcentaje que tanto código en general se está cubriendo.
+
+Lo ideal es llegar a un 70% u 80% ya que púeden haber funciones o método del sistema que no se prueban y puede ser complejo llegar al 100%.
+
+La licencia de Visual Studio Enterprise ya tiene esta cobertura `Test -> Analyze Code Coverage for All Tests`
+
+**Herramientas antiguas**: Todavía funcionan, todavía se pueden utilizar y están enfocadas a la versión tradicional de .NET osea .NET Framework.
+
+- NCover
+- OpenCover
+
+**Otras opciones**
+
+- [dotCover](https://www.jetbrains.com/dotcove) :Utilidad de la empresa jetBrains, viene incorporada dentro de [resharper](resharper).
+
+- **Fine Code Coverage**: Es una extensión de Visual Studio gratuita que permite obtener la cobertura, Se basa en otra herramientas y funcioan tanto para .Net Framework como para .NET Core.
+
+**Librería coverlet**:
+
+- Open source
+- Multiplataforma.
+- Soporta .NET Framework y .NET Core
+- Funciona con VSTest, NUnit, XUnit y otros.
+- Permite generar reportes.
+- Tiene diferentes parámetros de configuración.
+
+**¿Qué se requiere para utilizar coverlet?**
+
+1. dotnet add package coverlet.msbuild
+2. dotnet add package coverlet.collector
+3. dotnet test /p:CollectCoverage=true
+
+**Notas adicionales.**
+La cobertura de pruebas en C# se refiere a la medida en que las pruebas automatizadas cubren el código fuente de un programa escrito en C#. En otras palabras, indica qué parte del código fuente ha sido ejecutada y probada durante la ejecución de las pruebas automatizadas. La cobertura de pruebas es una métrica importante para evaluar la calidad de las pruebas y la confiabilidad del software.
+

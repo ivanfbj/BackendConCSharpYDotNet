@@ -140,6 +140,7 @@ namespace StringManipulation.Tests
             // Arrange
             StringOperations strOperations = new();
             var mockFileReader = new Mock<IFileReaderConector>();
+            //Primera opción
             //mockFileReader.Setup(p => p.ReadString("file.txt")).Returns("Reading file");
 
             //Una segunda opción es hacer una configuración para que en cualquier escenario siempre retorne

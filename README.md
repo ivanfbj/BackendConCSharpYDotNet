@@ -286,4 +286,22 @@ dotnet test /p:CollectCoverage=true
 
 Se puede visualizar los porcentajes de cobertura.
 
-## 
+## Clase 17 - Atributos de configuración en coverlet
+
+El comando `dotnet test /p:CollectCoverage=true` nos está incluyendo la clase `Program.cs` ya que está dentro del proyecto `StringManipulation`, dicha clase contiene métodos que no se requieren probar.
+
+Al comando se le agrega un parámetro en el que se va a especificar que triaga todo lo que haga parte del namespace `StringManipulation` y omita todo lo demás.
+
+```Bash
+dotnet test /p:CollectCoverage=true /p:Include="[*]StringManipulation.*"
+```
+
+Otra forma de excluir alguna clase o método de las cobertura es incluir un atributo a la clase o al método llamado `[ExcludeFromCodeCoverage]`
+
+Una vez aplicado el atributo en donde se requiera se ejecuta el comando que le indica al Coverage el atributo que debe excluir:
+
+```Bash
+dotnet test /p:CollectCoverage=true /p:ExcludeByAttribute="ExcludeFromCodeCoverage" 
+```
+
+

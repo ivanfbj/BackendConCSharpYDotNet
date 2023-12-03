@@ -11,4 +11,10 @@ Se revisaran conceptos de:
 - Diferencias estre Blazor Server y Blazor WebAssembly.
 - Arquitectura y estructura de los componentes en Blazor y las diferentes funcionalidades.
 
-## 
+## Clase 2 - Prerrequisitos
+
+- Conocimiento en C# y .NET
+- Visual Code o Visual Studio
+- Conocimientos sobre desarrollo web (HTML, CSS, JavaScript)
+- .NET 6 0 superior.
+

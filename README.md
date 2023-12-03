@@ -278,7 +278,7 @@ Y para la instalación de `coverlet.console` se debe realizar por medio de la co
 dotnet tool install --global coverlet.console --version 6.0.0
 ```
 
-Desde la terminal del Visual Studio con el comando 
+Desde la terminal del Visual Studio con el comando
 
 ```Bash
 dotnet test /p:CollectCoverage=true
@@ -325,4 +325,3 @@ reportgenerator "-reports:coverage.cobertura.xml" "-targetdir:coverage-report" -
 En Visual Studio también cuenta con una extensión llamada `Fine Code Coverage` para visualizar la cobertura de las pruebas.
 
 (La extensión no me quedó funcionando, aun que se instala y se se reinicia el Visual Studio no aparece la opción para ver y no aparece como instalada.)
-

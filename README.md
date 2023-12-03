@@ -68,4 +68,23 @@ Lecturas recomendadas:
 - [Made with WebAssembly](https://madewithwebassembly.com/)
 - [ASP.NET Core Blazor | Microsoft Learn](https://docs.microsoft.com/en-us/aspnet/core/blazor)
 
+## Clase 4 - Creando un proyecto de Blazor en Visual Studio
+
+Revisar en Visual Studio que se tenga instalada la carga de trabajo de `ASP.NET and web development` en la opcion de `Herramientas -> Obtener herramientas y características...`
+
+Luego en las plantillas de un nuevo proyecto en Visual Studio se selecciona la opción de `Aplicación Blazor para WebAssembly` (Blazor WebAssembly App) una vez asignado el nombre del proyecto y la ruta donde quedará almacenado.
+
+En la información adicional se usa:
+
+- Framework: .NET 6.0
+- Authentication de campo: Ninguno
+- Configurar para HTTPS.
+- Aplicación web progresiva
+
+Ya con esto se puede crear el proyecto.
+
+Al ejecutar el proyecto este abre una página web de demo que genera el proyecto y que será la base para comenzar a trabajar.
+
+La funcionalidad de recarga activa permite que la aplicación cargue y actualice los cambios cada vez que se van guardando los archivos.
+
 ## 

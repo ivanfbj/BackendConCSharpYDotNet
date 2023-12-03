@@ -304,4 +304,25 @@ Una vez aplicado el atributo en donde se requiera se ejecuta el comando que le i
 dotnet test /p:CollectCoverage=true /p:ExcludeByAttribute="ExcludeFromCodeCoverage" 
 ```
 
+## Clase 18 - Reporte de cobertura
+
+Parámetro para crear un reporte de la cobertura de los test con Coverlet:
+
+```Bash
+dotnet test /p:CollectCoverage=true /p:CoverletOutpuFormat=cobertura
+```
+
+Este comando crea un archivo llamado `coverage.json` con la información de las pruebas realizadas.
+
+Hay una librería llamada `ReportGenerator` que nos permitirá ver el reporte de la cobertura de una forma más visual, para esto se realiza la instalación desde el proyecto `StringManipulation.Tests`, clic derecho -> Administrar paquetes NuGet y se buscamos la librería `ReportGenerator` y se instala, luego con el comando se genera el reporte html para ver la información más visual:
+
+```Bash
+reportgenerator "-reports:coverage.cobertura.xml" "-targetdir:coverage-report" -reporttypes:html;
+```
+
+(En el curso generaba un xml y a mi me genera un JSON y el comando no funciona, no lo reconoce como un comando válido.)
+
+En Visual Studio también cuenta con una extensión llamada `Fine Code Coverage` para visualizar la cobertura de las pruebas.
+
+(La extensión no me quedó funcionando, aun que se instala y se se reinicia el Visual Studio no aparece la opción para ver y no aparece como instalada.)
 

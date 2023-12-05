@@ -87,4 +87,28 @@ Al ejecutar el proyecto este abre una página web de demo que genera el proyecto
 
 La funcionalidad de recarga activa permite que la aplicación cargue y actualice los cambios cada vez que se van guardando los archivos.
 
-## 
+## Clase 5 - Creando un proyecto de Blazor con el CLI
+
+Por el CLI una vez ubicado en la carpeta donde se quiere crear el proyecto se utiliza el comando el proyecto
+
+```Bash
+dotnet new blazorwasm
+```
+
+Comando para compilar:
+
+```Bash
+dotnet build
+```
+
+Comando para ejecutar el proyecto:
+
+```Bash
+dotnet run
+```
+
+Comando para tener la recarga activa:
+
+```Bash
+dotnet watch
+```

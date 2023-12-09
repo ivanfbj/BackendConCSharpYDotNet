@@ -119,4 +119,33 @@ dotnet watch
 - Blazor Snippet Pack
 - Blazor Snippets
 
+## Clase 7 - Estructura de componentes y arquitectura en Blazor
+
+- `Program.cs`: Estructura general para poder ejecutar el proyecto, en este archivo se realizará la configuración de los servicios o dependencias que se van a inyectar en la aplicación.
+
+- `cursoDeAplicacionesWebConBlazorWebAssemblyYDotNET.csproj`: archivo de proyecto donde está el SDK de Blazor Web Assembly, verisón de .Net, paquetes de WebAseembly que se utilizan para la ejecución del proyecto.
+
+- `App.razor`: archivo base que va a contener toda la aplica y toda la estructura de componentes que se van a estar creaciondo, normalmente este archivo no se modifica, lo que se hace es extenderlo y agregarle nuevas configuraciones y propiedades.
+
+- `_Imports.razor`: contiene las declaraciones de `using` que se van a utilizar en los componentes de la aplicación, con esto no se tendría que ir a cada componente y colocar el `using` correspondiente.
+
+- Carpeta `wwwroot`: donde se guardan los archivos estaticos, CSS, archivos HTML, imagenes, iconos y demás.
+
+  - Hay un solo archivo `index.html` ya que Blazor es una `SPA` (Single Page Aplication), en donde un unico archivo `HTML` contiene toda la aplicación y lo que hace este archivo HTML es que su interfaz va mutando de acuerdo a lo que el usuario va seleccionando y de acuerdo a los eventos que van ocurriendo, pero siempre es el mismo archivo HTML.
+
+- Carpeta `Shared`: Contiene los componente compartidos. Son componente que se van a utilizar en otros componentes dentro del sistema, componentes genericos que se quieren reutilizar dentro del sistema en diferentes partes.
+
+- Carptea `Properties`: Contiene la configuración para que se ejecute la aplicación.
+
+- Carpeta `Pages`: Contiene los componentes de la aplicación.
+
+  - Lo más importante de un componentes es su estructura general:
+    - El `@page` que contendrá la ruta por la cual se podrá acceder a dicho componente.
+    - El `PageTitle` que se refiere al titulo que lleva la página al momento de navegar a ella.
+    - `Estructura del HTML` combinado con CSS y C#, cada vez que se vaya a escribir código C# se va inicializar con el `@` para poder empezar a escribir y para que al momento de que se compile la aplicación sepa que esa porción de código se refiere a C#.
+    - La sección de `@code` está reservada para todo el código C# que va a tener el componente.
+    - En la parte de arriba siempre tener la estructura HTML y en la parte inferior el código de C#.
+    - El ejemplo del evento se hace con `@onclick="nombreDelMetodo"`.
+    - También dentro de un componente se puede invocar a otro componente compartido pasandole parametros y atributos según lo configurado por ejemplo en el `index.razor` está `<SurveyPrompt Title="How is Blazor working for you?" />`.
+
 ## 

@@ -112,3 +112,11 @@ Comando para tener la recarga activa:
 ```Bash
 dotnet watch
 ```
+
+## Clase 6 - Analizando extensiones de Visual code para blazor
+
+- C#
+- Blazor Snippet Pack
+- Blazor Snippets
+
+## 

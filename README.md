@@ -180,8 +180,16 @@ Otra forma de pasar un parametro es por medio del QueryString, se crea la variab
 
 `https://localhost:7135/counter?CounterFromQuery=10`
 
-
 Enlaces:
 
 [ASP.NET Core Razor component lifecycle | Microsoft Learn](https://docs.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle)
 
+## Clase 9 - Creando componentes compartidos
+
+Todo lo que se encuentre dentro de la carpeta `Shared` son componente compartidos, componentes que se utilizan en todos los demás componentes del sistema.
+
+A nivel de código se crea un nuevo componente compartido para manejar el titulo en los otros componentes.
+
+Los componentes compartidos dentro de Blazor, son componentes que no son llamado directamente en la aplicación, sino que son piezas de código que se reutilizan dentro de otros componentes, con estás piezas se puede tener un patrón similar, de esata manera se reutiliza código y permite hacer cambios de manera rápida.
+
+## 

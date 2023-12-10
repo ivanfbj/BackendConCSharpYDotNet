@@ -148,4 +148,40 @@ dotnet watch
     - El ejemplo del evento se hace con `@onclick="nombreDelMetodo"`.
     - También dentro de un componente se puede invocar a otro componente compartido pasandole parametros y atributos según lo configurado por ejemplo en el `index.razor` está `<SurveyPrompt Title="How is Blazor working for you?" />`.
 
-## 
+## Clase 8 - Ciclo de vida en componentes y parámetros
+
+Es importante conocer los eventos que ocurren dentro del ciclo de vida de un componente de cualquier aplicación, con este conocimiento se puede entender un poco más como funcionan internanmente estos componente y también se sabrá donde colocar las porciones de código que se requieren agregar para poder cumplir con una necesidad o requierimientos especificos.
+
+> Ciclo de vida se refiere a los **eventos que ocurren desde que se crea un componente hasta que se renderiza**
+
+Esta es la gráfica que se tiene de la documentación oficial de Blazor, donde se puede visualizar el diagrama de flujo que contiene los diferentes eventos que hace parte del ciclo de vida de los componentes de Blazor.
+
+![Ciclo de vida](images/ciclo_de_vida_Blazor_componentes.png)
+
+- `SetParametersAsync`: Si quisieramos capturar los párametros que vienen dentro del componentes.
+- `OnInitialized{Async}`: Si quisieramos inicializar algunos datos dentro del componente se debe utilizar este evento.
+- `OnParametersSet{Async}`
+
+**Lista de eventos**:
+
+- SetParametersAsync
+- Onlnitialized{Async}
+- OnAfterRenderAsync (manejo de notificaciones, uso de login)
+- OnParametersSet{Async}
+- StateHasChanged (ocurre cuando cambia algo dentro del estado del componente y la interfaz se va a actualizar)
+
+A nivel de código se sobreescriben los eventos del ciclo de vida para generar un mensaje en la consola del navegador e identificarlos en que momento se ejecuta cada uno.
+
+Adicionalmente al componente de Counter se le agrega un parametro para inicializar el valor del contador según el dato que se ingrese en la URL que se configuró como parametro:
+
+`https://localhost:7135/counter/15`
+
+Otra forma de pasar un parametro es por medio del QueryString, se crea la variable con el atributo de `[SupplyParameterFromQuery]` que permitirá usar QueryString:
+
+`https://localhost:7135/counter?CounterFromQuery=10`
+
+
+Enlaces:
+
+[ASP.NET Core Razor component lifecycle | Microsoft Learn](https://docs.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle)
+

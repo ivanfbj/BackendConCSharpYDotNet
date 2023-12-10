@@ -1,4 +1,9 @@
-﻿@page "/counter"
+﻿@*
+    Con el signo de interrogación en el parametro se vuelve opcional
+    para no tener que pasarle obligatoriamente el valor a la URL
+*@
+@page "/counter/{currentCountParameter?}"
+@inject ILogger<Counter> logger;
 
 <PageTitle>Counter</PageTitle>
 
@@ -10,6 +15,44 @@
 
 @code {
     private int currentCount = 0;
+
+    [Parameter]
+    public string? currentCountParameter { get; set; }
+
+    [SupplyParameterFromQuery]
+    [Parameter]
+    public string? CounterFromQuery { get; set; }
+
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        if (parameters.TryGetValue<string>(nameof(currentCountParameter), out var value))
+        {
+            if (value is not null)
+                currentCountParameter = value;
+        }
+
+        await base.SetParametersAsync(parameters);
+    }
+
+
+    protected override void OnParametersSet()
+    {
+        logger.LogInformation("Se envian los parametros");
+    }
+
+    protected override void OnInitialized()
+    {
+        // currentCount = currentCountParameter != null ? int.Parse(currentCountParameter) : 0;
+
+        currentCount = CounterFromQuery != null ? int.Parse(CounterFromQuery) : 0;
+
+        logger.LogInformation("Se inicia el componente");
+    }
+
+    protected override void OnAfterRender(bool firstRednder)
+    {
+        logger.LogInformation("esto ocurre despues de inicial el componente.");
+    }
 
     private void IncrementCount()
     {

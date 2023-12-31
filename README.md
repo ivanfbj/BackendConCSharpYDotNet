@@ -220,4 +220,15 @@ En el archivo `program.cs` se termina de configurar el uso de la API, ya que se 
 
 Si quisieramos hacer conexión a multiples API's o multiples servicios, se puede hacer utilizando el `HttpFactory` que nos ayuda a construir diferentes `HttpClient`. También se puede crear el propio `HttpClient` en donde se este trabajando en el componente que se este trabajando y no usar el HttpClient generico que se inyecta de manera automatica.
 
+## Clase 12 - Creando componentes para conexión a la API
+
+Se crea la carpeta `Models` para generar las clases con los modelos de `Product` y `Category`.
+
+Luego se crea la carpeta para generar los servicios que utilizan los modelos anteriormentes creados, y que se comunican con la API para poder consultar la información, agregarla y eliminarla.
+
+**Enlaces:**
+[Products - Platzi Fake Store API](https://fakeapi.platzi.com/doc/products)
+
+[Clases a partir de un objeto json](https://quicktype.io/csharp)
+
 ## 

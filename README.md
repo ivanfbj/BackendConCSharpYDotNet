@@ -208,4 +208,16 @@ Con la linea `@inject IConfiguration config` se recibe toda la configuración de
 En la pagina de microsoft hay varios ejemplos de que mas podemos hacer con los archivos de configuracion
 [ASP.NET Core Blazor configuration](https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/configuration?view=aspnetcore-7.0)
 
+## Clase 11 - Configurando conexión al backend para el proyecto
+
+Proyecto base donde se listaran productos, con posibilidad de eliminar cualquier producto con su respectiva opción, además se contará con una opción para agregar un nuevo producto y luego se visualizará.
+
+Se usará la API de platzi: [Platzi Fake Store API](https://fakeapi.platzi.com)
+
+En el archivo `appsenttings.json` se configura la url de la API para poderla usar en el proyecto.
+
+En el archivo `program.cs` se termina de configurar el uso de la API, ya que se le debe indicar al proyecto que esa va a ser la API a la que se va a conectar.
+
+Si quisieramos hacer conexión a multiples API's o multiples servicios, se puede hacer utilizando el `HttpFactory` que nos ayuda a construir diferentes `HttpClient`. También se puede crear el propio `HttpClient` en donde se este trabajando en el componente que se este trabajando y no usar el HttpClient generico que se inyecta de manera automatica.
+
 ## 

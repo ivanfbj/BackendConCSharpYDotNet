@@ -192,4 +192,20 @@ A nivel de código se crea un nuevo componente compartido para manejar el titulo
 
 Los componentes compartidos dentro de Blazor, son componentes que no son llamado directamente en la aplicación, sino que son piezas de código que se reutilizan dentro de otros componentes, con estás piezas se puede tener un patrón similar, de esata manera se reutiliza código y permite hacer cambios de manera rápida.
 
+## Clase 10 - Creando archivo de configuración
+
+Al muy común que siempre se debe incluir dentro de una aplicación es la posibilidad de realizar alguna configuración sin necesidad de cambiar directamente el código.
+
+Dentro de .NET existe un archivo llamado `appsenttings.json` este archivo también se utiliza en aplicaciones Blazor para lograr este proposito, sin embargo no viene por defecto.
+
+Dentro de la carpeta `wwwroot` se crea el archivo `appsenttings.json`.
+
+A nivel de código se crea un atributo en el archivo `appsenttings.json` para utilizar el atributo y su valor asignado desde el archivo `index.razor`. Para poder hacer uso del archivo `appsenttings.json` existe una interfaz que se encarga de realizar dicha conexión y se encuentra dentro de los servicios de Blazor, lo que se debe de hacer es recibirla como inyección de dependencias.
+
+Con la linea `@inject IConfiguration config` se recibe toda la configuración del archivo `appsenttings.json`.
+
+**Comentario:**
+En la pagina de microsoft hay varios ejemplos de que mas podemos hacer con los archivos de configuracion
+[ASP.NET Core Blazor configuration](https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/configuration?view=aspnetcore-7.0)
+
 ## 

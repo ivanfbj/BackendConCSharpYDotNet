@@ -231,4 +231,16 @@ Luego se crea la carpeta para generar los servicios que utilizan los modelos ant
 
 [Clases a partir de un objeto json](https://quicktype.io/csharp)
 
+## Clase 13 - Mostrando lista de productos
+
+Se va a terminar la configuración de los servicios que se van a conectar a la API y se va a crear un componente para listar los productos.
+
+Lo que queda faltando dentro de los servicios básicamentes es crear las interfaces, los tipos abstractos que se van a inyectar a los componente que lo vayan a utilizar, luego de realizar esa configuración los servicios van a quedar habilitados para cualquier componente en Blazor.
+
+Principalmente se va a utilizar en el componente de `Product` donde se van a estar listando los productos y van a estar todas las funcionalidades.
+
+Se crea la interfaz y se realiza la implementación de la interfaz en la clase para poder crear esa relación entre la clase y la interfaz. Ya luego que se utilice la interfaz y se haga la configuración de la inyección ya sabemos la implementación que esa interfaz tiene.
+
+En la carpeta `Pages` se crea el componente para la intefaz gráfica.
+
 ## 

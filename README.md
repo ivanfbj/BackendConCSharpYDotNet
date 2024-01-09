@@ -243,4 +243,7 @@ Se crea la interfaz y se realiza la implementación de la interfaz en la clase p
 
 En la carpeta `Pages` se crea el componente para la intefaz gráfica.
 
-## 
+## Clase 14 - Creando Menú y CSS para la lista de productos
+
+Blazor tiene una opción que se llama **"CSS isolation"** que permite asociar un archivo CSS para cada componente, para esto es necesario que el nombre del archivo sea exactamente igual al del componente terminado con CSS, para este caso sería **"Products.razor.css"**.
+

@@ -1,20 +1,13 @@
 ﻿@page "/product"
 @inject ILogger<Products> logger;
 @inject IProductService productService;
+@inject NavigationManager NavigationManager
 
 <PageTitle>Products</PageTitle>
 
 <ModuleTitle Title="Products" />
 
-@* <style>
-
-    .products-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 280px);
-        grid-auto-rows auto;
-        grid-gap: 1rem;
-    }
-</style> *@
+<button class="btn btn-dark" @onclick="@(()=> NavigationManager.NavigateTo("/addproduct"))">Add product</button>
 
 @if (products?.Count > 0)
 {

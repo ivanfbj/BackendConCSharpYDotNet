@@ -247,3 +247,12 @@ En la carpeta `Pages` se crea el componente para la intefaz gráfica.
 
 Blazor tiene una opción que se llama **"CSS isolation"** que permite asociar un archivo CSS para cada componente, para esto es necesario que el nombre del archivo sea exactamente igual al del componente terminado con CSS, para este caso sería **"Products.razor.css"**.
 
+## Clase 15 - Creando formulario para agregar registros
+
+Crear formulario para agregar productos.
+
+Se crea la estructura base para poder terminar la funcionalidad de agregar, se crea la navergación entre agregar producto y productos.
+
+En la siguiente clase se crerá la implementación para que agregar producto pueda conectarse a la API y guardar los datos.
+
+## 

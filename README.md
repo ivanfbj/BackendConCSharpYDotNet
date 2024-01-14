@@ -255,4 +255,6 @@ Se crea la estructura base para poder terminar la funcionalidad de agregar, se c
 
 En la siguiente clase se crerá la implementación para que agregar producto pueda conectarse a la API y guardar los datos.
 
-## 
+## Clase 16 - Integrando formulario con servicios
+
+A nivel de código se complementa la información del formulario para agregar un nuevo producto.

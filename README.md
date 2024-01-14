@@ -258,3 +258,11 @@ En la siguiente clase se crerá la implementación para que agregar producto pue
 ## Clase 16 - Integrando formulario con servicios
 
 A nivel de código se complementa la información del formulario para agregar un nuevo producto.
+
+## Clase 17 - Creando funcionalidad de eliminar usando JavaScript
+
+Se inyecta la interfaz para poder usar Javascript `@inject IJSRuntime JSRuntime`.
+
+A nivel de código habia un error con la forma en la que se asignaba la lista de productos para que este se pudiera refrescar dentro de la interfaz para ver el cambio al eliminar un producto.
+
+## Clase 18 - Usando Librerías de Blazor

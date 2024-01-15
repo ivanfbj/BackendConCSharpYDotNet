@@ -23,3 +23,5 @@ El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalm
 8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)
 
 9. [Curso de Unit Testing con C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeUnitTestingConCSharpYDotNET)
+
+10. [Curso de Aplicaciones Web con Blazor WebAssembly y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeAplicacionesWebConBlazorWebAssemblyYDotNET)

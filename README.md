@@ -266,3 +266,41 @@ Se inyecta la interfaz para poder usar Javascript `@inject IJSRuntime JSRuntime`
 A nivel de código habia un error con la forma en la que se asignaba la lista de productos para que este se pudiera refrescar dentro de la interfaz para ver el cambio al eliminar un producto.
 
 ## Clase 18 - Usando Librerías de Blazor
+
+- **Telerik**: Es muy avanzada y tiene versión de prueba.
+
+- **Syncfusion**: Tiene muy buen rendimiento, cuenta herramientas como gráficos y calendarios. También tiene versión de prueba .
+
+- **MudBlazor(Gratuito)**: Es de código abierto, tiene funcionabilidades muy interesantes pero con menos que las otras opciones. De sintaxis bastante sencilla. Posee la opción de probarla dentro del navegador sin necesidad de descargar la librería.
+
+- **Radzen(Gratuito)**: Al igual que la anterior es gratuita y de código abierto. Tiene componentes como CheckBox, Buttons, ColorPicker así como Accordion, Dialog o los Panels y heramientas de visualización de datos.
+
+- **Blazored**: Conjunto de librerías de código abierto, son componentes específicos como por ejemplo Modal, LocalStorage o SessionStorage que de momento están de forma nativa en JS únicamente. Chris Sainty a venido trabajando en diferentes controles que se pueden utilizar, él se encarga de crear componentes individuales y especificos (no una libreria como tal que contenga muchos controles).
+
+  Tiene controles para manejar modales, local storage, SessionStorage, son controles que solo maneja Javascript pero con estos controles se pueden manejar desde C#
+
+Para efectos del DEMO se va a utilizar el control [Toast](https://github.com/Blazored/Toast) lo uqe hace es mostrarnos una notificación que se puede cerrar o que se va a eliminar despues de unos segundos, puede ser una confirmación o un error que ocurre dentro de la aplicación.
+
+1. Lo que se debe hacer primero es utilizar el comando
+
+  ```Bash
+  dotnet add package Blazored.Toast
+  ```
+
+para agregar el paquete al proyecto.
+2. Luego se debe configurar el servicio dentro del archivo `Program.cs`
+(En el archivo .csproj me tocó incluir la etiqueta AssemblyName ya que no me funcionada la configuración del `Program.cs`)
+3. Luego se deben agregar los `imports` relacionados con dicha librería en el archivo `_Imports.razor` (Este archivo nos ayuda a que cuando agreguemos un Using no se tenga que hacerlo por cada componente, aqui se hace de manera global)
+4. Luego en el archivo `MainLayout.razor` vamos a agregar el componente de BlazorToast, de esta manera se va a visualizar esa notificación en todo el contexto la aplicación.
+5. Luego se debe agregar los estilos en el archivo `index.html` para la librería Blazored.Toast.
+6. Con esto ya se puede utilizar la librería.
+7. En `Products.razor` se inyecta el servicio de Blazored.
+Toast.
+8. Y luego se puede utilizar según se requiera, en este ejemplo en el momento de eliminar un producto.
+
+Enlace:
+
+- [Blazored · GitHub](https://github.com/Blazored)
+- [MudBlazor - Blazor Component Library](https://mudblazor.com/)
+- [Free Blazor Components | 70+ controls by Radzen](https://blazor.radzen.com/)
+- [Blazor Components | 80+ Native UI Controls | Syncfusion](https://www.syncfusion.com/blazor-components)

@@ -1,27 +1,11 @@
-# Backend con C# y .NET
+# Curso de Azure DevOps: Flujos de CI/CD
 
-Cada rama tiene la información relacionada con un curso de la ruta de [Backend con C# y .NET](https://platzi.com/ruta/web-net/) de [Platzi](https://platzi.com).
+Aprende el flujo de integración continua y despliegue continuo en Azure DevOps, una plataforma ágil para el manejo de los proyectos para equipos de desarrollo.
 
-El archivo `README.md` de cada rama contiene mis notas de cada curso, adicionalmente las descripciones de los commits contienen el título de la clase y pueden llegar a tener un descripción complementaria de dicha clase.
+## Clase 1 - Bienvenida a Azure DevOps
 
-## Cursos finalizados
+Este curso será introducción a la herramientas de Microsoft que permitirá cumplir con el ciclo de desarrollo de un proyecto de software de principio a fin, creando integración y despliegue continuo.
 
-1. [Curso Básico de Programación con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoBasicoDeProgramacionConCSharp)
+Crear cuenta en Azure Devops, entender como funciona las organizaciones y proyectos, para luego implementar un proyecto ya existente, para hacer toda la configuración, para la integración continua, crear el sitio por medio de releases a un servicio de Microsoft.
 
-2. [Curso de Programación Orientada a Objetos con C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeProgramacionOrientadaAObjetosConCSharp)
-
-3. [Curso de Buenas Prácticas y Código Limpio en C#](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeBuenasPracticasYCodigoLimpioEnCSharp)
-
-4. [Curso de Principios SOLID en C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDePrincipiosSolidEnCSharpYDotNet)
-
-5. [Curso de Manejo de Datos en C# con LINQ](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeManejoDeDatosEnCSharpConLINQ)
-
-6. [Curso de Fundamentos de .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeFundamentosDeDotNet)
-
-7. [Curso de Fundamentos de Entity Framework](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeFundamentosDeEntityFramework)
-
-8. [Curso de APIs con .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeApisConDotNet)
-
-9. [Curso de Unit Testing con C# y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeUnitTestingConCSharpYDotNET)
-
-10. [Curso de Aplicaciones Web con Blazor WebAssembly y .NET](https://github.com/ivanfbj/BackendConCSharpYDotNet/tree/cursoDeAplicacionesWebConBlazorWebAssemblyYDotNET)
+## 

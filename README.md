@@ -8,4 +8,20 @@ Este curso será introducción a la herramientas de Microsoft que permitirá cum
 
 Crear cuenta en Azure Devops, entender como funciona las organizaciones y proyectos, para luego implementar un proyecto ya existente, para hacer toda la configuración, para la integración continua, crear el sitio por medio de releases a un servicio de Microsoft.
 
+## Clase 2 - Prerrequisitos
+
+**Prerrequisitos:**
+
+- Conocimientos básicos de programación.
+- Conocimientos generales de DevOps.
+- Cuenta Microsoft (Outlook, Github, Office 365).
+
+**Lecturas recomendadas:**
+
+- [¿Qué es DevOps?](https://platzi.com/blog/que-es-devops/)
+
+- [Nuevo Curso Gratis de Programación Básica - Platzi](https://platzi.com/cursos/programacion-basica-nuevo/)
+
+- [Curso de DevOps [Empieza Gratis] - Platzi](https://platzi.com/cursos/devops/)
+
 ## 

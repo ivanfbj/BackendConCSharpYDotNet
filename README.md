@@ -75,4 +75,27 @@ Es una cultura entre el área Desarrollo y Operaciones para facilitar la comunic
 
 - [Amazon.com](https://www.amazon.com/DevOps-Modern-Enterprise-Practices-Organizations/dp/1942788193)
 
+## Clase 4 - Conociendo Azure DevOps
+
+Grupo de herramientas que acompañan el ciclo de vida de un proyecto de software usando la cultura DevOps, otra forma de identificarla es como la **Suite DevOps de Microsoft**
+
+![Ciclo_vida_Devops_Heramientas_Azure](Images/Ciclo_vida_Devops_Heramientas_Azure.png)
+
+
+**Características:**
+
+- Inicialmente conocida como Visual Studio Online.
+- Cubre todo el proceso de desarrollo.
+- Puedes iniciar completamente gratis.
+- Tiene buena integración los 3 principales proveedores de la nube (AWS, Azure, GCP).
+
+**Azure DevOps Server**
+(Azure DevOps en tu propia infraestructura)
+
+Básicamente permite que en nuestra propia infraestructura instalar Azure DevOps y poder hacer una administración manual de todos los servicios de Azure DevOps, tiene sus limitaciones a comparación de la versión Online, lo que implica un mayor esfuerzo para poder realizar la adminitración.
+
+![Licencias de usuario](Images/Licencias_de_usuarios.png)
+
+![Servicios individuales](Images/Servicios_individuales.png)
+
 ## 
